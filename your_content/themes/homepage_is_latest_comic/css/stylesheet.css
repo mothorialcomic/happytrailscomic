@@ -60,7 +60,6 @@ img {
 
 a.link-bar-link {
     color: white;  /* The color of the links in your links bar */
-	font-weight: bold;
 	padding: 8px 20px;
 	border-radius: 50px;
 	text-decoration: none;
@@ -111,6 +110,10 @@ a.navigation-button-disabled {
     border-right: 3px dotted #62C5E8; /* You can also just delete these two lines if you don't want a dotted border on the blurb box */
 }
 
+.profilePic {
+	width: 138px;
+}
+
 /* This is just some code to make monospaced text a little more readable */
 code {
     font-size: 120%;  /* Make the text a little bigger */
@@ -124,7 +127,7 @@ code {
 
 #post-title {
     color: black;  /* Color of the post title */
-    font-size: 3em;  /* Font size of the post title */
+    font-size: 2em;  /* Font size of the post title */
     font-family: 'Roboto Slab', cursive;
 }
 
