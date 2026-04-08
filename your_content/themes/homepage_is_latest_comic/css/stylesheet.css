@@ -139,3 +139,15 @@ code {
 #storyline, #characters, #tags {
     font-style: italic;  /* Delete this to unitalicize the tags */
 }
+
+.cast {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+  
+.cast:hover {
+  filter: brightness(1.2);
+}

@@ -4,20 +4,39 @@
 {# This is the start of the `content` block. It's part of the <body> of the page. This is where all the visible
    parts of the website after the links bar and before the "Powered by comic_git" footer go. #}
 {% block content %}
-	<header class="post-header">		
-<h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: #47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
-<div style="display: flex; align-items: center;justify-content: center;">
-<img class="profilePic" title="" style="width: 204px;" src="/happytrailscomic/your_content/images/maple.png"><img class="profilePic" title="" style="width: 276px;margin-left: 10px;" src="/happytrailscomic/your_content/images/mapletxt.png">
+	<header class="post-header">        
+
+<div style="background-color: #E3D8C0;border-radius: 25px;border: 10px solid 
+#E3DBC0;margin-left: -10px;position: absolute;z-index: 1000;
+width: 870px;
+height: 480px;
+">
+  <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
+		<img class="profilePic" title="" style="width: 303px;" src="/happytrailscomic/your_content/images/castpage/maplepng.png">
+		<div>
+			<div style="margin: 20px;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
+#47604b;font-size: 2.5em;font-weight: normal;
+padding: 0;
+margin-bottom: -10px;
+/*! margin-left: -9px; */
+text-align: left;
+">Maple</h1><p class="characterDetails">Cocker spaniel</p><p class="characterDetails">28 • F (she/her)</p><article id="post-body">
+				<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it.She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p><p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p><p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
+
+			</article></div>
+			
+		</div>
+	</div>
+</div><h1 style="font-family: &quot;Fredoka&quot;, sans-serif;color: 
+#47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
+<div style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+  <div style="position: relative; width: 1000px; flex-shrink: 0; overflow: hidden; margin: 0; padding: 0; line-height: 0;">
+    <img style="width: 1000px; display: block;" src="/happytrailscomic/your_content/images/castpage/bgonly.png">
+
+    <img src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="cast" style="width: 303px; position: absolute; top: 30px; left: 70px;transition: filter 0.3s ease;">
+  </div>
 </div>
-<div style="height:35px" aria-hidden="true" class="wp-block-spacer"></div>
-<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-ad2f72ca wp-block-group-is-layout-flex">
-<p id="text32"><strong>Cocker spaniel</strong></p>
-<p id="text33"><strong>28 • F (she/her)</strong></p>
-</div>
-<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-ad2f72ca wp-block-group-is-layout-flex">
-<p id="text34">Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it.She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through. Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
-</div>
-	</header>
+    </header>
 {% endblock %}
 {% block script %}
 {% endblock %}`
