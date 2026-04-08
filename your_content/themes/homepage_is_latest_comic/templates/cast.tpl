@@ -31,7 +31,11 @@ text-align: left;
 #47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
 <div class="bulletinBoard">
   
-<img src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple"></div>
+<img src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
+<img class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
+<img src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
+<img class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
+</div>
     </header>
 {% endblock %}
 {% block script %}

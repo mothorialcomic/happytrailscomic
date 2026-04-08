@@ -176,16 +176,40 @@ code {
 .bulletinBoard {
 	border-radius: 25px;
 	border: 8px solid #553923;
-	margin-left: -10px;
-	width: 870px;
-	height: 710px;
+	margin: 0 auto;
+	width: 1000px;
+	height: 1100px;
 	background-image: url("/happytrailscomic/your_content/images/castpage/boardbg.png");
 }
 
 .polaroidMaple {
-	width: 303px;
+	width: 363px;
 	position: absolute;
-	top: 620px;
-	left: 150px;
 	z-index: 1000;
+	top: 610px;
+	left: 279px;
+}
+
+.polaroidSyrup {
+	width: 363px;
+	position: absolute;
+	z-index: 1000;
+	top: 731px;
+	left: 829px;
+}
+
+.polaroidBarry {
+	width: 363px;
+	position: absolute;
+	z-index: 1000;
+	top: 1071px;
+	left: 309px;
+}
+
+.polaroidBrie {
+	width: 373px;
+	position: absolute;
+	z-index: 1000;
+	top: 1231px;
+	left: 759px;
 }
