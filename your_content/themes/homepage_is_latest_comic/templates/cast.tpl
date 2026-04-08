@@ -12,7 +12,7 @@ width: 870px;
 height: 480px;
 ">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/maplepng.png">
+		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/maple.png">
 		<div>
 			<div style="margin: 20px;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;
@@ -29,9 +29,9 @@ text-align: left;
 	</div>
 </div><h1 style="font-family: &quot;Fredoka&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
-<div>
+<div class="bulletinBoard">
   
-<img src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroidMaple"></div>
+<img src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple"></div>
     </header>
 {% endblock %}
 {% block script %}

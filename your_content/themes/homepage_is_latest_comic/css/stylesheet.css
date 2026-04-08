@@ -140,15 +140,11 @@ code {
     font-style: italic;  /* Delete this to unitalicize the tags */
 }
 
-.cast {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
+.polaroid {
+	transition: filter 0.3s ease;
 }
   
-.cast:hover {
+.polaroid:hover {
   filter: brightness(1.2);
 }
 
@@ -183,7 +179,7 @@ code {
 	margin-left: -10px;
 	width: 870px;
 	height: 710px;
-	background-image: url("/happytrailscomic/your_content/images/bgartfixed.png");
+	background-image: url("/happytrailscomic/your_content/images/castpage/boardbg.png");
 }
 
 .polaroidMaple {
@@ -191,6 +187,5 @@ code {
 	position: absolute;
 	top: 620px;
 	left: 150px;
-	transition: filter 0.3s ease;
 	z-index: 1000;
 }
