@@ -5,12 +5,8 @@
    parts of the website after the links bar and before the "Powered by comic_git" footer go. #}
 {% block content %}
 	<header class="post-header">        
-<div class="overlay"></div>
-<div style="background-color: #E3D8C0;border-radius: 25px;border: 10px solid 
-#E3DBC0;margin-left: -10px;position: absolute;z-index: 1000;
-width: 870px;
-height: 480px;
-">
+<div id="overlay"></div>
+<div id="descriptionMaple">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/maple.png">
 		<div>
@@ -31,7 +27,7 @@ text-align: left;
 #47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
 <div class="bulletinBoard">
   
-<img src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
+<img onclick="document.getElementById('descriptionMaple').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
 <img class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
 <img src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
 <img class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">

@@ -161,8 +161,8 @@ code {
 	margin-right: -10px;
 }
 
-.overlay {
-	display: none;
+#overlay {
+	visibility: hidden;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -212,4 +212,16 @@ code {
 	z-index: 1000;
 	top: 1231px;
 	left: 759px;
+}
+
+#descriptionMaple {
+	background-color: #E3D8C0;
+	border-radius: 25px;
+	border: 10px solid #E3DBC0;
+	margin-left: -10px;
+	position: absolute;
+	z-index: 1000;
+	width: 870px;
+	height: 480px;
+	visibility: hidden;
 }
