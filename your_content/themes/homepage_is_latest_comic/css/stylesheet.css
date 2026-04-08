@@ -43,6 +43,10 @@ a {
 	max-width: 1000px;
 }
 
+img {
+	max-width: 1000px;
+}
+
 /* Top navigation links bar */
 #links-bar {
     background-color: #2E9BC7;  /* The background color of your links bar */
