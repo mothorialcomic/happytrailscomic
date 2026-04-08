@@ -151,3 +151,10 @@ code {
 .cast:hover {
   filter: brightness(1.2);
 }
+
+.characterDetails {
+  text-align: left;
+  color: #555001;
+  font-family: "Caprasimo", sans-serif;
+  margin-bottom: -6px;
+}
