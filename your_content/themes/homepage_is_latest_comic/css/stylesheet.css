@@ -56,17 +56,27 @@ img {
 
 /* Top navigation links bar */
 #links-bar {
-    background-color: #2E9BC7;  /* The background color of your links bar */
 }
 
 a.link-bar-link {
     color: white;  /* The color of the links in your links bar */
-    font-weight: bold;  /* Delete this to unbold the links in your links bar*/
-    text-decoration: none;  /* Delete this line to put underlining on the links in your links bar */
+	font-weight: bold;
+	padding: 8px 20px;
+	border-radius: 50px;
+	text-decoration: none;
+	color: #F9F4EE;
+	background-color: #47604B;
+	transition: background-color 0.2s, color 0.2s;
+	line-height: 2.4;
+}
+
+.link-bar-separator {
+  margin: 0px 1px;
+  visibility: hidden;
 }
 
 a.link-bar-link:hover {
-    color: black;  /* The color of the links in your links bar while the cursor is hovering over them */
+    background-color: #bbcc97;
 }
 
 /* Comic navigation buttons */
