@@ -87,7 +87,7 @@
             {%- endfor %}
             </div>
         {%- endif %}
-        {#<hr id="post-body-break">#}
+        <hr id="post-body-break">
         {% if transcripts %}
 		<details>
 			<summary>Click to view transcript</summary>
