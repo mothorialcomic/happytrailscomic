@@ -5,14 +5,14 @@
    parts of the website after the links bar and before the "Powered by comic_git" footer go. #}
 {% block content %}
 	<header class="post-header">        
-
+<div class="overlay"></div>
 <div style="background-color: #E3D8C0;border-radius: 25px;border: 10px solid 
 #E3DBC0;margin-left: -10px;position: absolute;z-index: 1000;
 width: 870px;
 height: 480px;
 ">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-		<img class="profilePic" title="" style="width: 303px;" src="/happytrailscomic/your_content/images/castpage/maplepng.png">
+		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/maplepng.png">
 		<div>
 			<div style="margin: 20px;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;
@@ -29,13 +29,9 @@ text-align: left;
 	</div>
 </div><h1 style="font-family: &quot;Fredoka&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
-<div style="display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
-  <div style="position: relative; width: 1000px; flex-shrink: 0; overflow: hidden; margin: 0; padding: 0; line-height: 0;">
-    <img style="width: 1000px; display: block;" src="/happytrailscomic/your_content/images/castpage/bgonly.png">
-
-    <img src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="cast" style="width: 303px; position: absolute; top: 30px; left: 70px;transition: filter 0.3s ease;">
-  </div>
-</div>
+<div>
+  
+<img src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroidMaple"></div>
     </header>
 {% endblock %}
 {% block script %}

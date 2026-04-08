@@ -158,3 +158,39 @@ code {
   font-family: "Caprasimo", sans-serif;
   margin-bottom: -6px;
 }
+
+.characterPortrait {
+	width: 303px;
+	margin-left: 10px;
+	margin-right: -10px;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 999;
+	backdrop-filter: blur(4px);
+}
+
+.bulletinBoard {
+	border-radius: 25px;
+	border: 8px solid #553923;
+	margin-left: -10px;
+	width: 870px;
+	height: 710px;
+	background-image: url("/happytrailscomic/your_content/images/bgartfixed.png");
+}
+
+.polaroidMaple {
+	width: 303px;
+	position: absolute;
+	top: 620px;
+	left: 150px;
+	transition: filter 0.3s ease;
+	z-index: 1000;
+}
