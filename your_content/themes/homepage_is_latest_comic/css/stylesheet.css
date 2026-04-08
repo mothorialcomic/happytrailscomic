@@ -35,6 +35,14 @@ a {
                                             of your website, play with this or else it will look bad. */
 }
 
+#banner-img {
+	max-width: 1000px;
+}
+
+.comic-image {
+	max-width: 1000px;
+}
+
 /* Top navigation links bar */
 #links-bar {
     background-color: #2E9BC7;  /* The background color of your links bar */
