@@ -176,7 +176,7 @@ code {
 }
 
 .portraitBrie {
-	width: 183px;
+	width: 173px;
 	margin-left: 20px;
 	margin-right: 0px;
 }
@@ -252,7 +252,6 @@ code {
 	position: fixed;
 	z-index: 1001;
 	width: 870px;
-	height: 480px;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -267,7 +266,6 @@ code {
 	position: fixed;
 	z-index: 1001;
 	width: 870px;
-	height: 480px;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -282,7 +280,6 @@ code {
 	position: fixed;
 	z-index: 1001;
 	width: 870px;
-	height: 480px;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -297,7 +294,6 @@ code {
 	position: fixed;
 	z-index: 1001;
 	width: 870px;
-	height: 480px;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
