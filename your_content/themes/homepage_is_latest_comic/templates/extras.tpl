@@ -13,7 +13,7 @@
 						<img src="/happytrailscomic/your_content/images/htq1.png" class="comics">
 					</a>
 					<a href="/happytrailscomic/nightofthelustmoon/comic/001/">
-						<img src="/happytrailscomic/your_content/images/htq1.png" class="comics">
+						<img src="/happytrailscomic/your_content/images/notlm.png" class="comics">
 					</a>
 					<<a href="/happytrailscomic/nightofthelustmoon/comic/001/">
 						<img src="/happytrailscomic/your_content/images/sls.png" class="comics">
