@@ -215,37 +215,89 @@ code {
 .polaroidMaple {
 	width: 403px;
 	position: relative;
-	z-index: 1000;
+	z-index: 998;
 	top: 50px;
 	left: -10px;
 	transition: transform 0.3s ease;
+	transform-origin: 57% 17%;
 }
 
 .polaroidSyrup {
 	width: 393px;
 	position: relative;
-	z-index: 999;
-	top: 170px;
-	left: -70px;
+	z-index: 997;
+	top: 140px;
+	left: -140px;
 	transition: transform 0.3s ease;
+	transform-origin: 48% 18%;
 }
 
 .polaroidBarry {
 	width: 463px;
 	position: relative;
-	z-index: 1000;
-	top: 130px;
-	left: -460px;
+	z-index: 998;
+	top: -615px;
+	left: -220px;
 	transition: transform 0.3s ease;
+	transform-origin: 47% 17%;
 }
 
 .polaroidBrie {
 	width: 453px;
 	position: relative;
-	z-index: 1000;
-	top: 220px;
-	left: 480px;
+	z-index: 999;
+	top: 226px;
+	left: 242px;
 	transition: transform 0.3s ease;
+	transform-origin: 52% 17%;
+}
+
+.polaroidMaple:hover {
+  transform: rotate(10deg);
+}
+
+.polaroidBarry:hover {
+  transform: rotate(10deg);
+}
+
+.polaroidSyrup:hover {
+  transform: rotate(-10deg);
+}
+
+.polaroidBrie:hover {
+  transform: rotate(-10deg);
+}
+
+.pinOne {
+	position: relative;
+	top: -277px;
+	width: 70px;
+	right: -290px;
+	z-index: 999;
+}
+
+.pinTwo {
+	position: relative;
+	top: -190px;
+	width: 70px;
+	right: -120px;
+	z-index: 999;
+}
+
+.pinThree {
+	position: relative;
+	top: -250px;
+	width: 70px;
+	right: -60px;
+	z-index: 999;
+}
+
+.pinFour {
+	position: relative;
+	top: -160px;
+	width: 70px;
+	right: -29px;
+	z-index: 999;
 }
 
 #descriptionMaple {
