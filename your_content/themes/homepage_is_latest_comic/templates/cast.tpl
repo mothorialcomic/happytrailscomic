@@ -5,7 +5,7 @@
    parts of the website after the links bar and before the "Powered by comic_git" footer go. #}
 {% block content %}
 	<header class="post-header">        
-<div id="overlay" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';"></div>
+<div id="overlay" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; onclick="document.getElementById('descriptionSyrup').style.visibility = 'hidden'; onclick="document.getElementById('descriptionBarry').style.visibility = 'hidden'; onclick="document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';"></div>
 <div id="descriptionMaple">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 		<img class="characterPortrait portraitMaple" src="/happytrailscomic/your_content/images/castpage/maple.png">
@@ -26,8 +26,6 @@ text-align: left;
 </div>
 <div id="descriptionSyrup">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/syrup.png">
-		<div>
 			<div style="margin: 20px;text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;
 padding: 0;
@@ -40,12 +38,14 @@ text-align: left;
 			</article></div>
 			
 		</div>
+		<img class="characterPortrait portraitSyrup" src="/happytrailscomic/your_content/images/castpage/syrup.png">
+		<div>
 	</div>
 </div>
-<div id="descriptionBrie" style="visibility: visible;">
+<div id="descriptionBrie">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;margin-bottom: 10px;">
 		
-		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/brie.png"><div>
+		<img class="characterPortrait portraitBrie" src="/happytrailscomic/your_content/images/castpage/brie.png"><div>
 			
 			
 		</div>
@@ -60,6 +60,24 @@ text-align: left;
 
 			</article></div></div>
 </div>
+<div id="descriptionBarry">
+  <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
+		
+		<div>
+			<div style="margin: 20px;text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
+#47604b;font-size: 2.5em;font-weight: normal;
+padding: 0;
+margin-bottom: -10px;
+/*! margin-left: -9px; */
+text-align: left;
+">Barry</h1><p class="characterDetails">Gray Wolf</p><p class="characterDetails">47 • M (he/him)</p><article id="post-body">
+				<p>Barry is a long time park ranger, having served as one for over 20 years. He's serious about his work, and loves nature and the outdoors dearly. He works to maintain the natural beauty of the park around him, and doesn't take well to folks defacing the park or messing with wildlife.</p><p>He knows about the odd quality of the park, but it hasn't affected him for a long time. He's got a past shrouded in mystery, and doesn't let people get too close to him. He keeps to himself. As long as there's peace and quiet, he's letting it be.</p><p>He may not look it, but the hard exterior is just that. He's awfully lenient to folks who do nothing more than enjoy themselves in the park. Because of this, him and Brie clash often.</p>
+
+			</article></div>
+			
+		</div>
+	<img class="characterPortrait portraitBarry" src="/happytrailscomic/your_content/images/castpage/barry.png"></div>
+</div>
 
 <h1 style="font-family: &quot;Fredoka&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
@@ -67,7 +85,7 @@ text-align: left;
   
 <img onclick="document.getElementById('descriptionMaple').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
 <img onclick="document.getElementById('descriptionSyrup').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
-<img src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
+<img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
 <img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
 </div>
     </header>

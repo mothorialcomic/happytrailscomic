@@ -176,6 +176,12 @@ code {
 	margin-right: 0px;
 }
 
+.portraitBarry {
+	width: 343px;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
 #overlay {
 	visibility: hidden;
 	position: fixed;
@@ -218,19 +224,19 @@ code {
 }
 
 .polaroidBarry {
-	width: 363px;
+	width: 383px;
 	position: absolute;
 	z-index: 1000;
-	top: 1071px;
-	left: 309px;
+	top: 1201px;
+	left: 769px;
 }
 
 .polaroidBrie {
 	width: 373px;
 	position: absolute;
 	z-index: 1000;
-	top: 1231px;
-	left: 759px;
+	top: 1081px;
+	left: 299px;
 }
 
 #descriptionMaple {
