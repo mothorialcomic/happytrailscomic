@@ -380,6 +380,14 @@ code {
 	color: #47604b;
 }	
 
+.descriptionMaple, .descriptionSyrup, .descriptionBrie, .descriptionBarry {
+	display: block;
+}
+
+.descriptionMapleMobile, .descriptionSyrupMobile, .descriptionBrieMobile, .descriptionBarryMobile {
+	display: none;
+}
+
 @media only screen and (max-width: 900px) {
 
 body {
@@ -405,6 +413,100 @@ body {
 	width: 100vw;
 	border: none;
 	margin: 0;
+}
+
+.bulletinBoard {
+	width: 90vw;
+	box-sizing: border-box;
+}
+
+.pinOne {
+	left: 120px;
+}
+
+.pinTwo {
+	left: -20px;
+}
+
+.pinThree {
+	left: -340px;
+	top: -250px;
+}
+
+.pinFour {
+	top: -640px;
+	left: -10px;
+}
+
+.polaroidMaple {
+	left: -180px;
+}
+
+.polaroidSyrup {
+	top: -270px;
+	left: 230px;
+}
+
+.polaroidBarry {
+	top: -799px;
+	left: -170px;
+}
+
+.polaroidBrie {
+	top: -260px;
+	left: 210px;
+}
+
+.descriptionMaple, .descriptionSyrup, .descriptionBrie, .descriptionBarry {
+	display: none;
+}
+
+#descriptionMapleMobile {
+	background-color: #E3D8C0;
+	position: fixed;
+	z-index: 1001;
+	width: 100vw;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+#descriptionSyrupMobile {
+	background-color: #E3D8C0;
+	position: fixed;
+	z-index: 1001;
+	width: 100vw;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+#descriptionBarryMobile {
+	background-color: #E3D8C0;
+	position: fixed;
+	z-index: 1001;
+	width: 100vw;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+#descriptionBrieMobile {
+	background-color: #E3D8C0;
+	position: fixed;
+	z-index: 1001;
+	width: 100vw;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+.descriptionMapleMobile, .descriptionSyrupMobile, .descriptionBrieMobile, .descriptionBarryMobile {
+	display: block;
 }
 
 }
