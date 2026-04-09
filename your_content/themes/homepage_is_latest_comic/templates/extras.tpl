@@ -15,7 +15,7 @@
 					<a href="/happytrailscomic/nightofthelustmoon/comic/001/">
 						<img src="/happytrailscomic/your_content/images/notlm.png" class="comics">
 					</a>
-					<<a href="/happytrailscomic/sloppyspiel/comic/001/">
+					<a href="/happytrailscomic/sloppyspiel/comic/001/">
 						<img src="/happytrailscomic/your_content/images/sls.png" class="comics">
 					</a>
 				</td>
