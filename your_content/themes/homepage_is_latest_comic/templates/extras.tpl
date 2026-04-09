@@ -9,13 +9,13 @@
 		<table class="castpage" style="width: 100%;">
 			<tbody><tr style="/*! margin: 0 auto; *//*! position: relative; */">
 				<td class="image" style="padding: -40px;">
-					<a href="/happytrailscomic/nightofthelustmoon/comic/001/">
+					<a href="/happytrailscomic/happytrailsquestone/comic/001/">
 						<img src="/happytrailscomic/your_content/images/htq1.png" class="comics">
 					</a>
 					<a href="/happytrailscomic/nightofthelustmoon/comic/001/">
 						<img src="/happytrailscomic/your_content/images/notlm.png" class="comics">
 					</a>
-					<<a href="/happytrailscomic/nightofthelustmoon/comic/001/">
+					<<a href="/happytrailscomic/sloppyspiel/comic/001/">
 						<img src="/happytrailscomic/your_content/images/sls.png" class="comics">
 					</a>
 				</td>
