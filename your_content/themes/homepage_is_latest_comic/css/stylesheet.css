@@ -195,7 +195,7 @@ code {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(24,28,23,0.8);
-	z-index: 999;
+	z-index: 1001;
 	backdrop-filter: blur(4px);
 }
 
