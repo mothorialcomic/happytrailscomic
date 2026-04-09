@@ -379,3 +379,32 @@ code {
 	font-family: "Caprasimo", sans-serif;
 	color: #47604b;
 }	
+
+@media only screen and (max-width: 900px) {
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#container {
+	width: 100vw;
+	padding: 0px;
+	margin: 0px;
+}
+
+#banner {
+	width: 100vw;
+}
+
+#banner-img {
+	width: 100vw;
+}
+
+.comic-image {
+	width: 100vw;
+	border: none;
+	margin: 0;
+}
+
+}
