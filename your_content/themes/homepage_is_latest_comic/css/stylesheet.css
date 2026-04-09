@@ -214,34 +214,34 @@ code {
 
 .polaroidMaple {
 	width: 363px;
-	position: absolute;
+	position: relative;
 	z-index: 1000;
-	top: 610px;
-	left: 279px;
+	top: 50px;
+	left: -70px;
 }
 
 .polaroidSyrup {
 	width: 363px;
-	position: absolute;
+	position: relative;
 	z-index: 1000;
-	top: 731px;
-	left: 829px;
+	top: 200px;
+	left: 70px;
 }
 
 .polaroidBarry {
 	width: 383px;
-	position: absolute;
+	position: relative;
 	z-index: 1000;
-	top: 1201px;
-	left: 769px;
+	top: 280px;
+	left: 40px;
 }
 
 .polaroidBrie {
 	width: 373px;
-	position: absolute;
+	position: relative;
 	z-index: 1000;
-	top: 1081px;
-	left: 299px;
+	top: 140px;
+	left: 0;
 }
 
 #descriptionMaple {
