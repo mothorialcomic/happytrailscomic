@@ -88,7 +88,7 @@
             </div>
         {%- endif %}
         <hr id="post-body-break">
-        {% if transcripts %}
+        {#{% if transcripts %}
 		<details>
 			<summary>Click to view transcript</summary>
 			<table id="transcripts-container" border>
@@ -116,7 +116,7 @@
 				</tr>
 			</table>
 		</details>
-        {% endif %}
+        {% endif %}#}
     </div>
 
     {% if navigation_bar_below_blurb %}
