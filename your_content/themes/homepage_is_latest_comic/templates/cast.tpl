@@ -5,7 +5,7 @@
    parts of the website after the links bar and before the "Powered by comic_git" footer go. #}
 {% block content %}
 	<header class="post-header">        
-<div id="overlay"></div>
+<div id="overlay" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';"></div>
 <div id="descriptionMaple">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/maple.png">
