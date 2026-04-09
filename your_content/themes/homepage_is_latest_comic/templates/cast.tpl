@@ -8,9 +8,9 @@
 <div id="overlay" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';"></div>
 <div id="descriptionMaple">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/maple.png">
+		<img class="characterPortrait portraitMaple" src="/happytrailscomic/your_content/images/castpage/maple.png">
 		<div>
-			<div style="margin: 20px;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
+			<div style="margin: 20px; text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;
 padding: 0;
 margin-bottom: -10px;
@@ -23,14 +23,52 @@ text-align: left;
 			
 		</div>
 	</div>
-</div><h1 style="font-family: &quot;Fredoka&quot;, sans-serif;color: 
+</div>
+<div id="descriptionSyrup">
+  <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
+		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/syrup.png">
+		<div>
+			<div style="margin: 20px;text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
+#47604b;font-size: 2.5em;font-weight: normal;
+padding: 0;
+margin-bottom: -10px;
+/*! margin-left: -9px; */
+text-align: left;
+">Syrup</h1><p class="characterDetails">Calico</p><p class="characterDetails">25 • M (he/him)</p><p>Syrup is a former botanist who loves documenting the world around him. He's big on journaling, photography, and writing. He'd venture out into the park for new photos to take, and camping and hiking became second nature. He loves space and astronomy as well, and being outside gives him plenty to look at at night.</p><article id="post-body">
+				<p>For him, being out in nature is a meditative experience, and he looks forward to spending time outside.</p><p> When he meets Maple, he's in the midst of a crucial career pivot, and after some time, smitten by her optimistic attitude, decides to forgo it all and spend time with someone he loves out in the place he knows. He might have gotten... a little distracted though.</p>
+
+			</article></div>
+			
+		</div>
+	</div>
+</div>
+<div id="descriptionBrie" style="visibility: visible;">
+  <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;margin-bottom: 10px;">
+		
+		<img class="characterPortrait" src="/happytrailscomic/your_content/images/castpage/brie.png"><div>
+			
+			
+		</div>
+	<div style="/*! margin: 20px; */text-align: left;margin-left: 0px;margin-right: 40px;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
+#47604b;font-size: 2.5em;font-weight: normal;
+padding: 0;
+margin-bottom: -10px;
+/*! margin-left: -9px; */
+text-align: left;
+">Brie</h1><p class="characterDetails">Reindeer</p><p class="characterDetails">33 • F (she/her)</p><p></p>Brie is a new park ranger and police officer who honestly, doesn’t care much for nature. As punishment for her hotheaded attitude, she’s over at Happy Trails for a season or two (or however long she needs to be)! <article id="post-body">
+				<p>This was… supposed to be a temporary situation. She values structure and following the rules, and when it comes to being a ranger, it’s the structure she craves! Even so, she hates the fact Maple and Syrup break the rules and get away with it so often. Not to mention that there seems to be something…off about the park that seems to make everyone a little pent up.</p><p>Her relationship with Barry is strained and tense. For some strange reason Barry lets people off with a warning more than she’d say is acceptable. They both have different ways they want to run the park that don’t mesh well together.</p>
+
+			</article></div></div>
+</div>
+
+<h1 style="font-family: &quot;Fredoka&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
 <div class="bulletinBoard">
   
 <img onclick="document.getElementById('descriptionMaple').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
-<img class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
+<img onclick="document.getElementById('descriptionSyrup').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
 <img src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
-<img class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
+<img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
 </div>
     </header>
 {% endblock %}

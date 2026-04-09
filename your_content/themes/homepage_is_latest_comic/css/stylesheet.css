@@ -156,9 +156,24 @@ code {
 }
 
 .characterPortrait {
+}
+
+.portraitMaple {
 	width: 303px;
 	margin-left: 10px;
 	margin-right: -10px;
+}
+
+.portraitSyrup {
+	width: 343px;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+.portraitBrie {
+	width: 183px;
+	margin-left: 20px;
+	margin-right: 0px;
 }
 
 #overlay {
@@ -230,4 +245,59 @@ code {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+#descriptionSyrup {
+	background-color: #E3D8C0;
+	border-radius: 25px;
+	border: 10px solid #E3DBC0;
+	margin-left: -10px;
+	position: fixed;
+	z-index: 1001;
+	width: 870px;
+	height: 480px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+#descriptionBarry{
+	background-color: #E3D8C0;
+	border-radius: 25px;
+	border: 10px solid #E3DBC0;
+	margin-left: -10px;
+	position: fixed;
+	z-index: 1001;
+	width: 870px;
+	height: 480px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+#descriptionBrie {
+	background-color: #E3D8C0;
+	border-radius: 25px;
+	border: 10px solid #E3DBC0;
+	margin-left: -10px;
+	position: fixed;
+	z-index: 1001;
+	width: 870px;
+	height: 480px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+.characterBox {
+	display: flex;
+	gap: 12px;
+	align-items: flex-start;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 10px;
 }
