@@ -84,8 +84,8 @@ text-align: left;
   
 <img onclick="document.getElementById('descriptionMaple').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
 <img onclick="document.getElementById('descriptionSyrup').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
-<img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
 <img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
+<img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
 </div>
     </header>
 {% endblock %}
