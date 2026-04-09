@@ -37,6 +37,11 @@ a {
 
 #banner-img {
 	max-width: 1000px;
+	transition: opacity 0.2s ease;
+}
+
+#banner-img:hover {
+	opacity: 0.8;
 }
 
 .comic-image {
