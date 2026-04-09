@@ -417,44 +417,73 @@ body {
 
 .bulletinBoard {
 	width: 90vw;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    height: 122vw;
+    position: relative;
 }
 
 .pinOne {
-	left: 120px;
+	position: absolute;
+    width: 9%;
+    height: auto;
+    top: 7%;
+    left: 30%;
 }
 
 .pinTwo {
-	left: -20px;
+	position: absolute;
+    width: 9%;
+    height: auto;
+    top: 13%;
+    left: 74%;
 }
 
 .pinThree {
-	left: -340px;
-	top: -250px;
+	position: absolute;
+    width: 9%;
+    height: auto;
+    top: 51%;
+    left: 26%;
 }
 
 .pinFour {
-	top: -640px;
-	left: -10px;
+	position: absolute;
+    width: 9%;
+    height: auto;
+    top: 56%;
+    left: 75%;
 }
 
 .polaroidMaple {
-	left: -180px;
+	position: absolute;
+    width: 50%;
+    height: auto;
+    top: 5%;
+    left: 2%;
 }
 
 .polaroidSyrup {
-	top: -270px;
-	left: 230px;
+	position: absolute;
+    width: 50%;
+    height: auto;
+    top: 12%;
+    left: 50%;
 }
 
 .polaroidBarry {
-	top: -799px;
-	left: -170px;
+	position: absolute;
+    width: 60%;
+    height: auto;
+    top: 49%;
+    left: -2%;
 }
 
 .polaroidBrie {
-	top: -260px;
-	left: 210px;
+	position: absolute;
+    width: 60%;
+    height: auto;
+    top: 55%;
+    left: 44%;
 }
 
 #descriptionMaple, #descriptionSyrup, #descriptionBrie, #descriptionBarry {
