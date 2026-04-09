@@ -380,11 +380,11 @@ code {
 	color: #47604b;
 }	
 
-.descriptionMaple, .descriptionSyrup, .descriptionBrie, .descriptionBarry {
+#descriptionMaple, #descriptionSyrup, #descriptionBrie, #descriptionBarry {
 	display: block;
 }
 
-.descriptionMapleMobile, .descriptionSyrupMobile, .descriptionBrieMobile, .descriptionBarryMobile {
+#descriptionMapleMobile, #descriptionSyrupMobile, #descriptionBrieMobile, #descriptionBarryMobile {
 	display: none;
 }
 
@@ -457,7 +457,7 @@ body {
 	left: 210px;
 }
 
-.descriptionMaple, .descriptionSyrup, .descriptionBrie, .descriptionBarry {
+#descriptionMaple, #descriptionSyrup, #descriptionBrie, #descriptionBarry {
 	display: none;
 }
 
@@ -505,7 +505,7 @@ body {
 	visibility: hidden;
 }
 
-.descriptionMapleMobile, .descriptionSyrupMobile, .descriptionBrieMobile, .descriptionBarryMobile {
+#descriptionMapleMobile, #descriptionSyrupMobile, #descriptionBrieMobile, #descriptionBarryMobile {
 	display: block;
 }
 

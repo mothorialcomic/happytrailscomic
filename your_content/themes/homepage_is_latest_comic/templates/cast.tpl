@@ -5,8 +5,8 @@
    parts of the website after the links bar and before the "Powered by comic_git" footer go. #}
 {% block content %}
 	<header class="post-header">        
-<div id="overlay" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';"></div>
-<div id="descriptionMapleMobile">
+<div id="overlay" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';"></div>
+<div id="descriptionMapleMobile" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 		<img class="characterPortrait portraitMaple" src="/happytrailscomic/your_content/images/castpage/maple.png">
 		<div>
@@ -24,7 +24,7 @@ text-align: left;
 		</div>
 	</div>
 </div>
-<div id="descriptionSyrupMobile">
+<div id="descriptionSyrupMobile" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 			<div style="margin: 20px;text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;
@@ -42,7 +42,7 @@ margin-top: 0;
 		<div>
 	</div>
 </div>
-<div id="descriptionBrieMobile">
+<div id="descriptionBrieMobile" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;margin-bottom: 10px;">
 		
 		<img class="characterPortrait portraitBrie" src="/happytrailscomic/your_content/images/castpage/brie.png"><div>
@@ -60,7 +60,7 @@ text-align: left;
 
 			</article></div></div>
 </div>
-<div id="descriptionBarryMobile">
+<div id="descriptionBarryMobile" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 		
 		<div>
