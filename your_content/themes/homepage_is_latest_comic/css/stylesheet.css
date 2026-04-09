@@ -213,35 +213,39 @@ code {
 }
 
 .polaroidMaple {
-	width: 363px;
+	width: 403px;
 	position: relative;
 	z-index: 1000;
 	top: 50px;
-	left: -70px;
+	left: -10px;
+	transition: transform 0.3s ease;
 }
 
 .polaroidSyrup {
-	width: 363px;
+	width: 393px;
 	position: relative;
-	z-index: 1000;
-	top: 200px;
-	left: 70px;
+	z-index: 999;
+	top: 170px;
+	left: -70px;
+	transition: transform 0.3s ease;
 }
 
 .polaroidBarry {
-	width: 383px;
+	width: 463px;
 	position: relative;
 	z-index: 1000;
-	top: 280px;
-	left: 40px;
+	top: 130px;
+	left: -460px;
+	transition: transform 0.3s ease;
 }
 
 .polaroidBrie {
-	width: 373px;
+	width: 453px;
 	position: relative;
 	z-index: 1000;
-	top: 140px;
-	left: 0;
+	top: 220px;
+	left: 480px;
+	transition: transform 0.3s ease;
 }
 
 #descriptionMaple {
