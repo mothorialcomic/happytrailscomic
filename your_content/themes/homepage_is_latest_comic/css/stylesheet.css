@@ -364,3 +364,18 @@ code {
 	margin-left: 5px;
 	margin-bottom: 10px;
 }
+
+.comics {
+	width: 167px;
+	transition: opacity 0.2s ease;
+}
+
+.comics:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.comicsListTitle {
+	font-family: "Caprasimo", sans-serif;
+	color: #47604b;
+}	

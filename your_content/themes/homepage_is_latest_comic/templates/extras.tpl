@@ -4,22 +4,18 @@
 {# This is the start of the `content` block. It's part of the <body> of the page. This is where all the visible
    parts of the website after the links bar and before the "Powered by comic_git" footer go. #}
 {% block content %}
-	<h1 id="page-title">EXTRAS</h1>
+	<<h1 class="comicsListTitle">Comics</h1>
 	<div class="castBorder">
-		<table class="castpage">
-			<tr>
-				<td class="image">
-					<img class = "castImage extras" src="/your_content/images/MusicToMyFearsLogo.png">
+		<table class="castpage" style="width: 100%;">
+			<tbody><tr style="/*! margin: 0 auto; *//*! position: relative; */">
+				<td class="image" style="padding: -40px;">
+					<img src="/happytrailscomic/your_content/images/htq1.png" class="comics" href="/happytrailscomic/nightofthelustmoon/comic/001/">
+					<img src="/happytrailscomic/your_content/images/notlm.png" class="comics">
+					<img src="/happytrailscomic/your_content/images/sls.png" class="comics">
 				</td>
-				<td class="description background">
-						<h2>Music to My Fears</h2>
-						<p><i>When Terra, Marie, Ackerley, and Laz get separated from their Trick-or-Treating group, they must figure out how to combat the spirits of the dead that rise from the forest around them!</i></p>
-						<p>Script by: Ari "Metajoker" Noble</p>
-						<p>Art by: Caitlyn Vilbrandt, IzzySqueakzy, Leah Briere, and Michael "Neon Noble" Nicolosi</p>
-						<a class = "ref" href="/extras/music_to_my_fears/comic/001">Read it here!</a>
-				</td>
+				
 			</tr>
-		</table>
+		</tbody></table>
 	</div>
 {% endblock %}
 {% block script %}
