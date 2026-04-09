@@ -29,14 +29,14 @@ a {
 }
 
 #container {
-	max-width: 1500px;
+	max-width: 1000px;
 	margin-top: 15px;
 	padding-top: 0px;
 	margin-top: 10px;
 }
 
 #banner-img {
-	max-width: 1500px;
+	max-width: 1000px;
 	transition: opacity 0.2s ease;
 }
 
@@ -45,7 +45,7 @@ a {
 }
 
 .comic-image {
-	max-width: 1500px;
+	max-width: 1000px;
 	border-radius: 25px;
 	border: 10px solid #E3DBC0;
 	margin-left: -10px;
@@ -56,7 +56,7 @@ a {
 }
 
 img {
-	max-width: 1500px;
+	max-width: 1000px;
 }
 
 /* Top navigation links bar */
