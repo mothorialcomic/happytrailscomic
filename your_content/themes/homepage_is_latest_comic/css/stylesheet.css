@@ -60,6 +60,11 @@ img {
 }
 
 /* Top navigation links bar */
+
+.mobileMenu {
+	display: none;
+}
+
 #links-bar {
 }
 
@@ -536,6 +541,29 @@ body {
 
 #descriptionMapleMobile, #descriptionSyrupMobile, #descriptionBrieMobile, #descriptionBarryMobile {
 	display: block;
+}
+
+.infinite-page-image {
+	width: 100vw;
+}
+
+.mobileMenu {
+	content: "Show Menu";
+	text-decoration: none;
+	font-size: 2em;
+	height: 45px;
+	padding-top: 3px;
+	display: flex;
+	font-family: "Fredoka", sans-serif;
+	justify-content: center;
+	color: white;
+	background-color: #47604B;
+}
+
+.menuToggled {
+	background-color: white;
+	color: black;
+	content: "Hide Menu";
 }
 
 }
