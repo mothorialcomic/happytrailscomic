@@ -118,7 +118,17 @@ a.navigation-button-disabled {
 	width: 75%;  /* The maximum width of the blurb box. */
 	border-radius: 25px;
 	border: 10px solid #E3DBC0;
-	margin-left: -10px;
+}
+
+#blurbQuest {
+	display: inline-block;
+	text-align: left;
+	max-width: 100%;
+	margin-bottom: 20px;
+	padding: 15px 15px 10px 15px;
+	background-color: #E3D8C0;
+	border-radius: 25px;
+	border: 10px solid #E3DBC0;
 }
 
 .profilePic {
