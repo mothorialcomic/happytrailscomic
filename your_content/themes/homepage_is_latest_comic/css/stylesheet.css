@@ -129,6 +129,7 @@ a.navigation-button-disabled {
 	background-color: #E3D8C0;
 	border-radius: 25px;
 	border: 10px solid #E3DBC0;
+	margin-top: 10px;
 }
 
 .profilePic {
