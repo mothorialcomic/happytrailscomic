@@ -559,7 +559,6 @@ body {
 }
 
 .mobileMenu {
-	content: "Show Menu";
 	text-decoration: none;
 	font-size: 2em;
 	height: 45px;
@@ -571,10 +570,17 @@ body {
 	background-color: #47604B;
 }
 
+.mobileMenu::before {
+	content: "Show Menu";
+}
+
 .menuToggled {
 	background-color: white;
-	color: black;
-	content: "Hide Menu";
+	color: black;;
+}
+
+.menuToggled::before {
+	content: "Hide Menu"
 }
 
 }
