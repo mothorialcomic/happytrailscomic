@@ -21,14 +21,9 @@
        the Python script that generates the HTML file. That value is dropped into the existing HTML with no changes.
        For example, if the value passed in to `comic_base_dir` is `/comic_git`, then `{{ comic_base_dir }}/comic`
        becomes `/comic_git/comic` #}
-    {%- if comic_paths %}
     <div id="comic-page">
-            <img class="comic-image" title="" src="/happytrailscomic/your_content/images/guide.png">
+        <img class="comic-image" title="" src="/happytrailscomic/your_content/images/guide.png">
     </div>
-
-    <div id="comic-page-overlay" hidden="">
-        <img id="comic-overlay-image" src="/happytrailscomic/your_content/comics/001/001.png" title="">
-    </div>]
     <div id="blurbQuest">
 	<div style="display: flex; align-items: center; gap: 12px;">
 		<img class="profilePic" src="/happytrailscomic/your_content/images/meicon.png" title="" style="width: 138px;display: f;">
@@ -44,10 +39,6 @@
         <hr id="post-body-break">
         
     </div>
-
-    {% if navigation_bar_below_blurb %}
-    {% include "navigation_bar.tpl" %}
-    {% endif %}
 {%- endblock %}
 {%- block script %}
 <script type="module">
