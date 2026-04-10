@@ -560,9 +560,10 @@ body {
 
 .mobileMenu {
 	text-decoration: none;
-	font-size: 2em;
-	height: 45px;
-	padding-top: 3px;
+	font-size: 3em;
+    height: 90px;
+	align-items: center;
+	margin-bottom: 10px;
 	display: flex;
 	font-family: "Fredoka", sans-serif;
 	justify-content: center;
@@ -581,6 +582,10 @@ body {
 
 .menuToggled::before {
 	content: "Hide Menu"
+}
+
+#links-bar {
+	display: none;
 }
 
 }
