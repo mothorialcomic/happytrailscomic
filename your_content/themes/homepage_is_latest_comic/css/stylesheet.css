@@ -198,7 +198,7 @@ code {
     font-size: 2em;  /* Font size of the post title */
     font-family: "Caprasimo", sans-serif;
 	color: #47604b;
-}
+	margin-top: 0px;
 }
 
 #post-date {
@@ -222,6 +222,11 @@ code {
   color: #555001;
   font-family: "Caprasimo", sans-serif;
   margin-bottom: -6px;
+}
+
+.profilePic {
+	width: 138px;
+	height: 138px;
 }
 
 .characterPortrait {
