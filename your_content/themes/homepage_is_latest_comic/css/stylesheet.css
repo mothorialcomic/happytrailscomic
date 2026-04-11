@@ -491,15 +491,15 @@ body {
     width: 9%;
     height: auto;
     top: 7%;
-    left: 30%;
+    left: 22%;
 }
 
 .pinTwo {
 	position: absolute;
     width: 9%;
     height: auto;
-    top: 13%;
-    left: 74%;
+    top: 14%;
+    left: 72%;
 }
 
 .pinThree {
@@ -507,15 +507,15 @@ body {
     width: 9%;
     height: auto;
     top: 51%;
-    left: 26%;
+    left: 25%;
 }
 
 .pinFour {
 	position: absolute;
     width: 9%;
     height: auto;
-    top: 56%;
-    left: 75%;
+    top: 57%;
+    left: 70%;
 }
 
 .polaroidMaple {
