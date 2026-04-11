@@ -99,14 +99,9 @@ text-align: left;
 </div>
 <div id="descriptionSyrup">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-			<div style="margin: 20px;text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
-#47604b;font-size: 2.5em;font-weight: normal;
-padding: 0;
-margin-bottom: -10px;
-/*! margin-left: -9px; */
-text-align: left;
-margin-top: 0;
-">Syrup</h1><p class="characterDetails">Calico</p><p class="characterDetails">25 • M (he/him)</p><p>Syrup is a former botanist who loves documenting the world around him. He's big on journaling, photography, and writing. He'd venture out into the park for new photos to take, and camping and hiking became second nature. He loves space and astronomy as well, and being outside gives him plenty to look at at night.</p><article id="post-body">
+			<div style="margin: 20px;text-align: left;">
+			<img class="syrupText" src="/happytrailscomic/your_content/images/syruptext.png">
+			<p class="characterDetails">Calico</p><p class="characterDetails">25 • M (he/him)</p><p>Syrup is a former botanist who loves documenting the world around him. He's big on journaling, photography, and writing. He'd venture out into the park for new photos to take, and camping and hiking became second nature. He loves space and astronomy as well, and being outside gives him plenty to look at at night.</p><article id="post-body">
 				<p>For him, being out in nature is a meditative experience, and he looks forward to spending time outside.</p><p> When he meets Maple, he's in the midst of a crucial career pivot, and after some time, smitten by her optimistic attitude, decides to forgo it all and spend time with someone he loves out in the place he knows. He might have gotten... a little distracted though.</p>
 
 			</article></div>

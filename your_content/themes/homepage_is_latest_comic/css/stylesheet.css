@@ -239,9 +239,16 @@ code {
 }
 
 .portraitSyrup {
+	margin-bottom: -241px;
+	margin-left: -100px;
+	position: relative;
+	top: -110px;
+	right: -80px;
+}
+
+.syrupText {
 	width: 343px;
-	margin-left: -10px;
-	margin-right: 10px;
+	margin-left: -86px;
 }
 
 .portraitBrie {
@@ -386,7 +393,7 @@ code {
 #descriptionSyrup {
 	background-color: #E3D8C0;
 	border-radius: 25px;
-	border: 10px solid #E3DBC0;
+	border: 10px solid #F9F4EE;
 	margin-left: -10px;
 	position: fixed;
 	z-index: 1001;
@@ -451,6 +458,7 @@ code {
 
 #descriptionMaple, #descriptionSyrup, #descriptionBrie, #descriptionBarry {
 	display: block;
+	overflow: visible;
 }
 
 #descriptionMapleMobile, #descriptionSyrupMobile, #descriptionBrieMobile, #descriptionBarryMobile {
