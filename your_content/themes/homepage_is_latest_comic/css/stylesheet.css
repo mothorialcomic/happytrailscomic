@@ -383,11 +383,11 @@ code {
 }
 
 @keyframes bounce {
-  0%   { transform: scale(1); }
-  30%  { transform: scale(1.05); }
-  60%  { transform: scale(0.98); }
-  80%  { transform: scale(1.02); }
-  100% { transform: scale(1); }
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-10px); }
+  60%  { transform: translateY(3px); }
+  80%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
 }
 
 .bouncing {
