@@ -105,8 +105,8 @@ text-align: left;
 				<p>For him, being out in nature is a meditative experience, and he looks forward to spending time outside.</p><p> When he meets Maple, he's in the midst of a crucial career pivot, and after some time, smitten by her optimistic attitude, decides to forgo it all and spend time with someone he loves out in the place he knows. He might have gotten... a little distracted though.</p>
 
 			</article></div>
-					<img onclick="document.getElementById('secretSyrup').style.visibility = 'visible'; document.getElementById('regularSyrup').style.visibility = 'hidden';" class="characterPortrait portraitSyrup" id="regularSyrup" src="/happytrailscomic/your_content/images/castpage/syrup.png">
-					<img src="/happytrailscomic/your_content/images/castpage/syrupnude.png" class="characterPortrait portraitSyrup" id="secretSyrup" onclick="document.getElementById('regularSyrup').style.visibility = 'visible'; document.getElementById('secretSyrup').style.visibility = 'hidden';" >
+					<img onclick="document.getElementById('secretSyrup').style.display = 'block'; document.getElementById('regularSyrup').style.display = 'none';" class="characterPortrait portraitSyrup" id="regularSyrup" src="/happytrailscomic/your_content/images/castpage/syrup.png">
+					<img src="/happytrailscomic/your_content/images/castpage/syrupnude.png" class="characterPortrait portraitSyrup" id="secretSyrup" onclick="document.getElementById('regularSyrup').style.display = 'block'; document.getElementById('secretSyrup').style.display = 'none';" >
 		</div>
 		<div>
 	</div>
