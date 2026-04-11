@@ -105,8 +105,8 @@ text-align: left;
 				<p>For him, being out in nature is a meditative experience, and he looks forward to spending time outside.</p><p> When he meets Maple, he's in the midst of a crucial career pivot, and after some time, smitten by her optimistic attitude, decides to forgo it all and spend time with someone he loves out in the place he knows. He might have gotten... a little distracted though.</p>
 
 			</article></div>
-					<img onclick="document.getElementById('secretSyrup').style.display = 'block'; document.getElementById('regularSyrup').style.display = 'none';" class="characterPortrait portraitSyrup" id="regularSyrup" src="/happytrailscomic/your_content/images/castpage/syrup.png">
-					<img src="/happytrailscomic/your_content/images/castpage/syrupnude.png" class="characterPortrait portraitSyrup" id="secretSyrup" onclick="document.getElementById('regularSyrup').style.display = 'block'; document.getElementById('secretSyrup').style.display = 'none';" >
+			<img id="regularSyrup" class="characterPortrait portraitSyrup" src="/happytrailscomic/your_content/images/castpage/syrup.png" style="cursor: pointer;">
+<img id="secretSyrup" class="characterPortrait portraitSyrup" src="/happytrailscomic/your_content/images/castpage/syrupnude.png" style="display: none; cursor: pointer;">
 		</div>
 		<div>
 	</div>
@@ -164,4 +164,37 @@ text-align: left;
     </header>
 {% endblock %}
 {% block script %}
+<script>
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const regularSyrup = document.getElementById('regularSyrup');
+  const secretSyrup = document.getElementById('secretSyrup');
+
+  function setupCanvas(img) {
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+    ctx.drawImage(img, 0, 0);
+  }
+
+  regularSyrup.onload = () => setupCanvas(regularSyrup);
+  if (regularSyrup.complete) setupCanvas(regularSyrup);
+
+  function handleClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = ctx.getImageData(x, y, 1, 1).data[3];
+
+    if (alpha > 0) {
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'block';
+      setupCanvas(otherImg);  // swap canvas to new image for next click
+    }
+  }
+
+  regularSyrup.addEventListener('click', (e) => handleClick(e, regularSyrup, secretSyrup));
+  secretSyrup.addEventListener('click', (e) => handleClick(e, secretSyrup, regularSyrup));
+</script>
 {% endblock %}`
