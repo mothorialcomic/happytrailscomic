@@ -61,7 +61,7 @@
             <div id="storyline">
                 {# `| replace(" ", "-")` takes the value in the variable, in this case `_storyline`, and replaces all
                    spaces with hyphens. This is important when building links to other parts of the site. #}
-                Storyline: <a href="{{ comic_base_dir }}/archive/#archive-section-{{ _storyline | replace(" ", "-") }}">{{ _storyline }}</a>
+            <a href="{{ comic_base_dir }}/archive/#archive-section-{{ _storyline | replace(" ", "-") }}">{{ _storyline }}</a>
             </div>
         {%- endif %}
         {%- if _characters %}
