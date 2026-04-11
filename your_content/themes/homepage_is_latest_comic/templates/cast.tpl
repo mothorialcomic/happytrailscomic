@@ -190,7 +190,11 @@ text-align: left;
     if (alpha > 0) {
       clickedImg.style.display = 'none';
       otherImg.style.display = 'block';
-      setupCanvas(otherImg);  // swap canvas to new image for next click
+      setupCanvas(otherImg);
+
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
     }
   }
 
