@@ -66,7 +66,6 @@
         {%- endif %}
         {%- if _characters %}
             <div id="characters">
-            Characters:
             {# For loops let you take a list of a values and do something for each of those values. In this case,
                it runs through list of all the characters in this page, as defined by your info.ini file for this page,
                and it generates a link for each of those characters connecting to the `tagged` page for that
@@ -80,7 +79,6 @@
         {%- endif %}
         {%- if _tags %}
             <div id="tags">
-            Tags:
             {%- for tag in _tags %}
                 <a class="tag-link" href="{{ comic_base_dir }}/tagged/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {%- endfor %}
