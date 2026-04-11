@@ -56,9 +56,7 @@
 			<article id="post-body" style="color: #47604b;">
 				{{ post_html }}
 			</article>
-		</div>
-	</div>
-	<div class="bottomTags">
+			<div class="bottomTags">
         {%- if _storyline %}
             <div id="storyline">
                 {# `| replace(" ", "-")` takes the value in the variable, in this case `_storyline`, and replaces all
@@ -120,6 +118,8 @@
 		</details>
         {% endif %}#}
     </div>
+		</div>
+	</div>
 
     {% if navigation_bar_below_blurb %}
     {% include "navigation_bar.tpl" %}
