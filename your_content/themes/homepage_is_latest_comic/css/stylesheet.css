@@ -378,7 +378,7 @@ code {
 }
 
 #secretSyrup {
-	visibility: hidden;
+	display: none;
 }
 
 #descriptionMaple {
