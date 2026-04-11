@@ -293,7 +293,7 @@ code {
 	top: 140px;
 	left: -140px;
 	transition: transform 0.3s ease;
-	transform-origin: 48% 18%;
+	transform-origin: 47% 15%;
 }
 
 .polaroidBarry {
@@ -303,7 +303,7 @@ code {
 	top: -335px;
 	left: -220px;
 	transition: transform 0.3s ease;
-	transform-origin: 47% 17%;
+	transform-origin: 53% 10%;
 }
 
 .polaroidBrie {
@@ -313,7 +313,7 @@ code {
 	top: 226px;
 	left: 242px;
 	transition: transform 0.3s ease;
-	transform-origin: 52% 17%;
+	transform-origin: 50% 7%;
 }
 
 .polaroidMaple:hover {
@@ -336,15 +336,15 @@ code {
 	position: relative;
 	top: -277px;
 	width: 70px;
-	right: -290px;
+	right: -230px;
 	z-index: 999;
 }
 
 .pinTwo {
 	position: relative;
-	top: -190px;
+	top: -178px;
 	width: 70px;
-	right: -120px;
+	right: -109px;
 	z-index: 999;
 }
 
@@ -358,9 +358,9 @@ code {
 
 .pinFour {
 	position: relative;
-	top: -160px;
+	top: -150px;
 	width: 70px;
-	right: -29px;
+	right: 21px;
 	z-index: 999;
 }
 
