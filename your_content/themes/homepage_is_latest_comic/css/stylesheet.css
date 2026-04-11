@@ -28,6 +28,53 @@ a {
     color: #2E9BC7;  /* The color of the hyperlinks */
 }
 
+#post-date {
+	margin-top: 0px
+	font-weight: 400;
+	color: #704f38;
+	font-size: smaller;
+}
+
+.bottomTags {
+	display: flex;
+	font-size: smaller;
+	color: #704f38;
+}
+
+#post-date::before {
+	content: '\f133';
+	font-family: 'Font Awesome 6 Free';
+	font-weight: 400;
+	color: #704f38;
+	padding: 0 .3rem 0 0;
+}
+
+#storyline::before {
+	content: '\f1c5';
+	font-family: 'Font Awesome 6 Free';
+	font-weight: 400;
+	color: #704f38;
+	padding: 0 .3rem 0 0;
+}
+
+#characters:before {
+	content: '\e533';
+	font-family: 'Font Awesome 6 Free';
+	font-weight: 900;
+	color: #704f38;
+}
+
+#characters, #tags {
+	padding: 0 0 0 1rem;
+}
+
+#tags:before {
+	font-weight: 900;
+	color: #704f38;
+	content: '\f02c';
+	font-family: 'Font Awesome 6 Free';
+}
+
 #container {
 	max-width: 1000px;
 	margin-top: 15px;
@@ -148,9 +195,10 @@ code {
 }
 
 #post-title {
-    color: black;  /* Color of the post title */
     font-size: 2em;  /* Font size of the post title */
-    font-family: 'Roboto Slab', cursive;
+    font-family: "Caprasimo", sans-serif;
+	color: #47604b;
+}
 }
 
 #post-date {

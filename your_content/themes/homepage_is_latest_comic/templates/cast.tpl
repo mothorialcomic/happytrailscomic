@@ -156,13 +156,13 @@ text-align: left;
 #47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
 <div class="bulletinBoard">
   
-<img src="/happytrailscomic/your_content/images/castpage/pin.png" class="pinOne">
+<img src="/happytrailscomic/your_content/images/castpage/Maplepin.png" class="pinOne">
 <img onclick="document.getElementById('descriptionMaple').style.visibility = 'visible'; document.getElementById('descriptionMapleMobile').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
-<img src="/happytrailscomic/your_content/images/castpage/pin.png" class="pinTwo">
+<img src="/happytrailscomic/your_content/images/castpage/SyrupPin.png" class="pinTwo">
 <img onclick="document.getElementById('descriptionSyrup').style.visibility = 'visible'; document.getElementById('descriptionSyrupMobile').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
-<img src="/happytrailscomic/your_content/images/castpage/pin.png" class="pinThree">
+<img src="/happytrailscomic/your_content/images/castpage/bandbpin.png" class="pinThree">
 <img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('descriptionBrieMobile').style.visibility = 'visible';  document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
-<img src="/happytrailscomic/your_content/images/castpage/pin.png" class="pinFour">
+<img src="/happytrailscomic/your_content/images/castpage/bandbpin.png" class="pinFour">
 <img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('descriptionBarryMobile').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
 </div>
     </header>

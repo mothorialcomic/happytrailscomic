@@ -48,16 +48,17 @@
     {% endif %}
 
     <div id="blurb">
-	<div style="display: flex; align-items: center; gap: 12px;">
+	<div style="display: flex; gap: 12px;">
 		<img class="profilePic" src="/happytrailscomic/your_content/images/meicon.png" title="" style="width: 138px;display: f;">
 		<div>
 			<h1 id="post-title">{{ page_title }}</h1>
-			<article id="post-body">
+			<h3 id="post-date">{{ _post_date }}</h3>
+			<article id="post-body" style="color: #47604b;">
 				{{ post_html }}
 			</article>
 		</div>
 	</div>
-        <h3 id="post-date">Posted on: {{ _post_date }}</h3>
+	<div class="bottomTags">
         {%- if _storyline %}
             <div id="storyline">
                 {# `| replace(" ", "-")` takes the value in the variable, in this case `_storyline`, and replaces all
@@ -87,6 +88,7 @@
             {%- endfor %}
             </div>
         {%- endif %}
+	</div>
         <hr id="post-body-break">
         {#{% if transcripts %}
 		<details>
