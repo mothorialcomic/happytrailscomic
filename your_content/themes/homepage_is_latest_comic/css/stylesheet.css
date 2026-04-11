@@ -377,6 +377,10 @@ code {
 	z-index: 999;
 }
 
+#secretSyrup {
+	visibility: hidden;
+}
+
 #descriptionMaple {
 	background-color: #E3D8C0;
 	border-radius: 25px;
