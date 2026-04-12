@@ -451,13 +451,14 @@ code {
 #secretBrie {
 	margin-bottom: -306px;
 	position: relative;
-	margin-right: -32px;
+	margin-right: -29px;
 	display: block;
 	cursor: pointer;
 	right: 10px;
 	left: -27px;
-	width: 250px;
+	width: 247px;
 	top: -82px;
+}
 }
 
 #regularBrie {
