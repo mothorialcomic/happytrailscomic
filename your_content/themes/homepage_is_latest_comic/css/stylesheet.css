@@ -449,12 +449,15 @@ code {
 }
 
 #secretBrie {
-	width: 258px;
-	top: -102px;
 	margin-bottom: -306px;
-	left: -40px;
 	position: relative;
-	margin-right: -50px;
+	margin-right: -32px;
+	display: block;
+	cursor: pointer;
+	right: 10px;
+	left: -27px;
+	width: 250px;
+	top: -82px;
 }
 
 #regularBrie {
