@@ -162,37 +162,152 @@ text-align: left;
 {% endblock %}
 {% block script %}
 <script>
-const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
+// Syrup
+(function() {
+  const syrupCanvas = document.createElement('canvas');
+  const syrupCtx = syrupCanvas.getContext('2d');
   const regularSyrup = document.getElementById('regularSyrup');
   const secretSyrup = document.getElementById('secretSyrup');
 
-  function setupCanvas(img) {
-    canvas.width = img.naturalWidth;
-    canvas.height = img.naturalHeight;
-    ctx.drawImage(img, 0, 0);
+  function setupSyrupCanvas(img) {
+    syrupCanvas.width = img.naturalWidth;
+    syrupCanvas.height = img.naturalHeight;
+    syrupCtx.drawImage(img, 0, 0);
   }
 
-  regularSyrup.onload = () => setupCanvas(regularSyrup);
-  if (regularSyrup.complete) setupCanvas(regularSyrup);
+  regularSyrup.onload = () => setupSyrupCanvas(regularSyrup);
+  if (regularSyrup.complete) setupSyrupCanvas(regularSyrup);
 
-  function handleClick(e, clickedImg, otherImg) {
+  function handleSyrupClick(e, clickedImg, otherImg) {
     const rect = clickedImg.getBoundingClientRect();
     const scaleX = clickedImg.naturalWidth / rect.width;
     const scaleY = clickedImg.naturalHeight / rect.height;
     const x = (e.clientX - rect.left) * scaleX;
     const y = (e.clientY - rect.top) * scaleY;
-    const alpha = ctx.getImageData(x, y, 1, 1).data[3];
-
+    const alpha = syrupCtx.getImageData(x, y, 1, 1).data[3];
     if (alpha > 0) {
       clickedImg.style.display = 'none';
       otherImg.style.display = 'block';
-      setupCanvas(otherImg);
-
+      setupSyrupCanvas(otherImg);
       otherImg.classList.remove('bouncing');
       void otherImg.offsetWidth;
       otherImg.classList.add('bouncing');
     }
   }
+
+  regularSyrup.addEventListener('click', (e) => handleSyrupClick(e, regularSyrup, secretSyrup));
+  secretSyrup.addEventListener('click', (e) => handleSyrupClick(e, secretSyrup, regularSyrup));
+})();
+
+// Maple
+(function() {
+  const mapleCanvas = document.createElement('canvas');
+  const mapleCtx = mapleCanvas.getContext('2d');
+  const regularMaple = document.getElementById('regularMaple');
+  const secretMaple = document.getElementById('secretMaple');
+
+  function setupMapleCanvas(img) {
+    mapleCanvas.width = img.naturalWidth;
+    mapleCanvas.height = img.naturalHeight;
+    mapleCtx.drawImage(img, 0, 0);
+  }
+
+  regularMaple.onload = () => setupMapleCanvas(regularMaple);
+  if (regularMaple.complete) setupMapleCanvas(regularMaple);
+
+  function handleMapleClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = mapleCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'block';
+      setupMapleCanvas(otherImg);
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
+    }
+  }
+
+  regularMaple.addEventListener('click', (e) => handleMapleClick(e, regularMaple, secretMaple));
+  secretMaple.addEventListener('click', (e) => handleMapleClick(e, secretMaple, regularMaple));
+})();
+
+// Barry
+(function() {
+  const barryCanvas = document.createElement('canvas');
+  const barryCtx = barryCanvas.getContext('2d');
+  const regularBarry = document.getElementById('regularBarry');
+  const secretBarry = document.getElementById('secretBarry');
+
+  function setupBarryCanvas(img) {
+    barryCanvas.width = img.naturalWidth;
+    barryCanvas.height = img.naturalHeight;
+    barryCtx.drawImage(img, 0, 0);
+  }
+
+  regularBarry.onload = () => setupBarryCanvas(regularBarry);
+  if (regularBarry.complete) setupBarryCanvas(regularBarry);
+
+  function handleBarryClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = barryCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'block';
+      setupBarryCanvas(otherImg);
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
+    }
+  }
+
+  regularBarry.addEventListener('click', (e) => handleBarryClick(e, regularBarry, secretBarry));
+  secretBarry.addEventListener('click', (e) => handleBarryClick(e, secretBarry, regularBarry));
+})();
+
+// Brie
+(function() {
+  const brieCanvas = document.createElement('canvas');
+  const brieCtx = brieCanvas.getContext('2d');
+  const regularBrie = document.getElementById('regularBrie');
+  const secretBrie = document.getElementById('secretBrie');
+
+  function setupBrieCanvas(img) {
+    brieCanvas.width = img.naturalWidth;
+    brieCanvas.height = img.naturalHeight;
+    brieCtx.drawImage(img, 0, 0);
+  }
+
+  regularBrie.onload = () => setupBrieCanvas(regularBrie);
+  if (regularBrie.complete) setupBrieCanvas(regularBrie);
+
+  function handleBrieClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = brieCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'block';
+      setupBrieCanvas(otherImg);
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
+    }
+  }
+
+  regularBrie.addEventListener('click', (e) => handleBrieClick(e, regularBrie, secretBrie));
+  secretBrie.addEventListener('click', (e) => handleBrieClick(e, secretBrie, regularBrie));
+})();
 </script>
 {% endblock %}`
