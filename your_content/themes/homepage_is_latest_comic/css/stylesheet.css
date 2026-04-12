@@ -427,6 +427,11 @@ code {
 	margin-left: -91px;
 }
 
+.barryText {
+	width: 343px;
+	margin-left: -95px;
+}
+
 #regularMaple {
 	cursor: pointer;
 	display: block;
@@ -485,9 +490,9 @@ code {
 }
 
 #descriptionBarry{
-	background-color: #E3D8C0;
+	background-image: url("/happytrailscomic/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
-	border: 10px solid #E3DBC0;
+	border: 10px solid #F9F4EE;
 	margin-left: -10px;
 	position: fixed;
 	z-index: 1001;
@@ -496,6 +501,9 @@ code {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	visibility: hidden;
+	background-position-x: -190px;
+	background-size: 1230px;
+	background-position-y: -120px;
 }
 
 #descriptionBrie {

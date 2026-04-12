@@ -127,21 +127,18 @@ text-align: left;
 </div>
 <div id="descriptionBarry">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-		
-		<div>
-			<div style="margin: 20px;text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
-#47604b;font-size: 2.5em;font-weight: normal;
-padding: 0;
-margin-bottom: -10px;
-/*! margin-left: -9px; */
-text-align: left;
-">Barry</h1><p class="characterDetails">Gray Wolf</p><p class="characterDetails">47 • M (he/him)</p><article id="post-body">
+			<div>
+			<div style="margin: 20px;text-align: left;"><img src="/happytrailscomic/your_content/images/barrytxt.png" class="BarryText"><p class="characterDetails">Gray Wolf</p><p class="characterDetails">47 • M (he/him)</p><article id="post-body">
 				<p>Barry is a long time park ranger, having served as one for over 20 years. He's serious about his work, and loves nature and the outdoors dearly. He works to maintain the natural beauty of the park around him, and doesn't take well to folks defacing the park or messing with wildlife.</p><p>He knows about the odd quality of the park, but it hasn't affected him for a long time. He's got a past shrouded in mystery, and doesn't let people get too close to him. He keeps to himself. As long as there's peace and quiet, he's letting it be.</p><p>He may not look it, but the hard exterior is just that. He's awfully lenient to folks who do nothing more than enjoy themselves in the park. Because of this, him and Brie clash often.</p>
 
 			</article></div>
 			
 		</div>
-	<img class="characterPortrait portraitBarry" src="/happytrailscomic/your_content/images/castpage/barry.png"></div>
+			<img class="characterPortrait portraitSyrup bouncing" style="cursor: pointer; display: block;" id="regularBarry" src="/happytrailscomic/your_content/images/castpage/barry.png">
+<img class="characterPortrait portraitSyrup bouncing" style="display: none; cursor: pointer;" id="secretBarry" src="/happytrailscomic/your_content/images/castpage/barrynude.png">
+		</div>
+		<div>
+	</div>
 </div>
 
 <h1 style="font-family: &quot;Fredoka&quot;, sans-serif;color: 
