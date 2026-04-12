@@ -432,6 +432,11 @@ code {
 	margin-left: -95px;
 }
 
+.brieText {
+	width: 343px;
+	margin-left: -110px;
+}
+
 #regularMaple {
 	cursor: pointer;
 	display: block;
@@ -441,6 +446,26 @@ code {
 	left: -100px;
 	position: relative;
 	margin-right: -110px;
+}
+
+#secretBrie {
+	width: 258px;
+	top: -102px;
+	margin-bottom: -306px;
+	left: -40px;
+	position: relative;
+	margin-right: -50px;
+}
+
+#regularBrie {
+	cursor: pointer;
+	display: block;
+	width: 258px;
+	top: -102px;
+	margin-bottom: -326px;
+	left: -40px;
+	position: relative;
+	margin-right: -50px;
 }
 
 @keyframes bounce {
@@ -507,9 +532,9 @@ code {
 }
 
 #descriptionBrie {
-	background-color: #E3D8C0;
+	background-image: url("/happytrailscomic/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
-	border: 10px solid #E3DBC0;
+	border: 10px solid #F9F4EE;
 	margin-left: -10px;
 	position: fixed;
 	z-index: 1001;
@@ -518,6 +543,9 @@ code {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	visibility: hidden;
+	background-position-x: -190px;
+	background-size: 1230px;
+	background-position-y: -120px;
 }
 
 .characterBox {

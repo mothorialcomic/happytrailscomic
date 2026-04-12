@@ -107,23 +107,17 @@ text-align: left;
 		<div>
 	</div>
 </div>
-<div id="descriptionBrie">
-  <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;margin-bottom: 10px;">
-		
-		<img class="characterPortrait portraitBrie" src="/happytrailscomic/your_content/images/castpage/brie.png"><div>
-			
-			
-		</div>
-	<div style="/*! margin: 20px; */text-align: left;margin-left: 0px;margin-right: 40px;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
-#47604b;font-size: 2.5em;font-weight: normal;
-padding: 0;
-margin-bottom: -10px;
-/*! margin-left: -9px; */
-text-align: left;
-">Brie</h1><p class="characterDetails">Reindeer</p><p class="characterDetails">33 • F (she/her)</p><p></p>Brie is a new park ranger and police officer who honestly, doesn’t care much for nature. As punishment for her hotheaded attitude, she’s over at Happy Trails for a season or two (or however long she needs to be)! <article id="post-body">
+<div style="visibility: visible;" id="descriptionBrie">
+  <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
+			<img src="/happytrailscomic/your_content/images/castpage/brie.png" id="regularBrie" class="characterPortrait portraitBrie bouncing">
+			<img id="secretMaple" class="characterPortrait portraitMaple bouncing" style="display: none; cursor: pointer;" src="/happytrailscomic/your_content/images/castpage/brienude.png">
+			<div style="margin: 20px;text-align: left;"><img class="brieText" src="/happytrailscomic/your_content/images/brietxt.png"><p class="characterDetails">Reindeer</p><p class="characterDetails">33 • F (she/her)</p><p></p>Brie is a new park ranger and police officer who honestly, doesn’t care much for nature. As punishment for her hotheaded attitude, she’s over at Happy Trails for a season or two (or however long she needs to be)! <article id="post-body">
 				<p>This was… supposed to be a temporary situation. She values structure and following the rules, and when it comes to being a ranger, it’s the structure she craves! Even so, she hates the fact Maple and Syrup break the rules and get away with it so often. Not to mention that there seems to be something…off about the park that seems to make everyone a little pent up.</p><p>Her relationship with Barry is strained and tense. For some strange reason Barry lets people off with a warning more than she’d say is acceptable. They both have different ways they want to run the park that don’t mesh well together.</p>
 
-			</article></div></div>
+			</article></div>
+			</div>
+		<div>
+	</div>
 </div>
 <div id="descriptionBarry">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
