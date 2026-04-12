@@ -382,6 +382,16 @@ code {
 	scale: 0.95;
 }
 
+#secretMaple {
+	display: none;
+	scale: 0.78;
+	cursor: pointer;
+	top: -140px;
+	margin-bottom: -316px;
+	left: 30px;
+}
+
+
 @keyframes bounce {
   0%   { transform: translateY(0); }
   30%  { transform: translateY(-10px); }

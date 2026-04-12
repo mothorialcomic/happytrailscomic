@@ -80,21 +80,17 @@ text-align: left;
 </div>
 
 <div id="descriptionMaple">
-  <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-		<img class="characterPortrait portraitMaple" src="/happytrailscomic/your_content/images/castpage/maple.png">
-		<div>
-			<div style="margin: 20px; text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
-#47604b;font-size: 2.5em;font-weight: normal;
-padding: 0;
-margin-bottom: -10px;
-/*! margin-left: -9px; */
-text-align: left;
-">Maple</h1><p class="characterDetails">Cocker spaniel</p><p class="characterDetails">28 • F (she/her)</p><article id="post-body">
+  <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
+			<img id="regularMaple" class="characterPortrait portraitMaple bouncing" style="cursor: pointer; display: block;width: 400px;top: -80px;margin-bottom: -206px;left: 30px;" src="/happytrailscomic/your_content/images/castpage/maple.png"><div style="margin: 20px;text-align: left;">
+			<img src="/happytrailscomic/your_content/images/mapletext.png" class="mapleText">
+			<p class="characterDetails">Cocker spaniel</p><p class="characterDetails">28 • F (she/her)</p><article id="post-body">
 				<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it.She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p><p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p><p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
 
 			</article></div>
 			
+<img id="secretMaple" class="characterPortrait portraitMaple bouncing" src="/happytrailscomic/your_content/images/castpage/maplenude.png" style="display: none; cursor: pointer;">
 		</div>
+		<div>
 	</div>
 </div>
 <div id="descriptionSyrup">
@@ -198,7 +194,43 @@ text-align: left;
     }
   }
 
-  regularSyrup.addEventListener('click', (e) => handleClick(e, regularSyrup, secretSyrup));
-  secretSyrup.addEventListener('click', (e) => handleClick(e, secretSyrup, regularSyrup));
+  regularMaple.addEventListener('click', (e) => handleClick(e, regularMaple, secretMaple));
+  secretMaple.addEventListener('click', (e) => handleClick(e, secretMaple, regularMaple));
+  
+   const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const regularMaple = document.getElementById('regularMaple');
+  const secretMaple = document.getElementById('secretMaple');
+
+  function setupCanvas(img) {
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+    ctx.drawImage(img, 0, 0);
+  }
+
+  regularMaple.onload = () => setupCanvas(regularMaple);
+  if (regularMaple.complete) setupCanvas(regularMaple);
+
+  function handleClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = ctx.getImageData(x, y, 1, 1).data[3];
+
+    if (alpha > 0) {
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'block';
+      setupCanvas(otherImg);
+
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
+    }
+  }
+
+  regularMaple.addEventListener('click', (e) => handleClick(e, regularMaple, secretMaple));
+  secretMaple.addEventListener('click', (e) => handleClick(e, secretMaple, regularMaple));
 </script>
 {% endblock %}`
