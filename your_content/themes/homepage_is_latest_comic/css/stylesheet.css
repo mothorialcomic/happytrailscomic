@@ -35,6 +35,15 @@ a {
 	font-size: smaller;
 }
 
+#socials {
+	margin-bottom: 15px;
+	padding-top: 5px;
+	padding-left: 5px;
+	display: flex;
+	padding-bottom: 5px;
+	padding-right: 20px;
+}
+
 .bottomTags {
 	display: flex;
 	font-size: smaller;
@@ -115,13 +124,17 @@ img {
 #links-bar {
 }
 
+.characterBox p {
+	color: #2C0B00;
+}
+
 a.link-bar-link {
     color: white;  /* The color of the links in your links bar */
 	padding: 8px 20px;
 	border-radius: 50px;
 	text-decoration: none;
 	color: #F9F4EE;
-	background-color: #47604B;
+	background-color: #6F855E;
 	transition: background-color 0.2s, color 0.2s;
 	line-height: 2.4;
 }
