@@ -162,140 +162,37 @@ text-align: left;
 {% endblock %}
 {% block script %}
 <script>
-  // Syrup
-(function() {
-  const syrupCanvas = document.createElement('canvas');
-  const syrupCtx = syrupCanvas.getContext('2d');
+const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
   const regularSyrup = document.getElementById('regularSyrup');
   const secretSyrup = document.getElementById('secretSyrup');
 
-  function setupSyrupCanvas(img) {
-    syrupCanvas.width = img.naturalWidth;
-    syrupCanvas.height = img.naturalHeight;
-    syrupCtx.drawImage(img, 0, 0);
+  function setupCanvas(img) {
+    canvas.width = img.naturalWidth;
+    canvas.height = img.naturalHeight;
+    ctx.drawImage(img, 0, 0);
   }
 
-  regularSyrup.onload = () => setupSyrupCanvas(regularSyrup);
-  if (regularSyrup.complete) setupSyrupCanvas(regularSyrup);
+  regularSyrup.onload = () => setupCanvas(regularSyrup);
+  if (regularSyrup.complete) setupCanvas(regularSyrup);
 
-  regularSyrup.addEventListener('click', function(e) {
-    const rect = regularSyrup.getBoundingClientRect();
-    const scaleX = regularSyrup.naturalWidth / rect.width;
-    const scaleY = regularSyrup.naturalHeight / rect.height;
+  function handleClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
     const x = (e.clientX - rect.left) * scaleX;
     const y = (e.clientY - rect.top) * scaleY;
-    const alpha = syrupCtx.getImageData(x, y, 1, 1).data[3];
+    const alpha = ctx.getImageData(x, y, 1, 1).data[3];
+
     if (alpha > 0) {
-      regularSyrup.style.display = 'none';
-      secretSyrup.style.display = 'block';
-      setupSyrupCanvas(secretSyrup);
-      secretSyrup.classList.remove('bouncing');
-      void secretSyrup.offsetWidth;
-      secretSyrup.classList.add('bouncing');
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'block';
+      setupCanvas(otherImg);
+
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
     }
-  });
-})();
-
-// Maple
-(function() {
-  const mapleCanvas = document.createElement('canvas');
-  const mapleCtx = mapleCanvas.getContext('2d');
-  const regularMaple = document.getElementById('regularMaple');
-  const secretMaple = document.getElementById('secretMaple');
-
-  function setupMapleCanvas(img) {
-    mapleCanvas.width = img.naturalWidth;
-    mapleCanvas.height = img.naturalHeight;
-    mapleCtx.drawImage(img, 0, 0);
   }
-
-  regularMaple.onload = () => setupMapleCanvas(regularMaple);
-  if (regularMaple.complete) setupMapleCanvas(regularMaple);
-
-  regularMaple.addEventListener('click', function(e) {
-    const rect = regularMaple.getBoundingClientRect();
-    const scaleX = regularMaple.naturalWidth / rect.width;
-    const scaleY = regularMaple.naturalHeight / rect.height;
-    const x = (e.clientX - rect.left) * scaleX;
-    const y = (e.clientY - rect.top) * scaleY;
-    const alpha = mapleCtx.getImageData(x, y, 1, 1).data[3];
-    if (alpha > 0) {
-      regularMaple.style.display = 'none';
-      secretMaple.style.display = 'block';
-      setupMapleCanvas(secretMaple);
-      secretMaple.classList.remove('bouncing');
-      void secretMaple.offsetWidth;
-      secretMaple.classList.add('bouncing');
-    }
-  });
-})();
-
-// Barry
-(function() {
-  const barryCanvas = document.createElement('canvas');
-  const barryCtx = barryCanvas.getContext('2d');
-  const regularBarry = document.getElementById('regularBarry');
-  const secretBarry = document.getElementById('secretBarry');
-
-  function setupBarryCanvas(img) {
-    barryCanvas.width = img.naturalWidth;
-    barryCanvas.height = img.naturalHeight;
-    barryCtx.drawImage(img, 0, 0);
-  }
-
-  regularBarry.onload = () => setupBarryCanvas(regularBarry);
-  if (regularBarry.complete) setupBarryCanvas(regularBarry);
-
-  regularBarry.addEventListener('click', function(e) {
-    const rect = regularBarry.getBoundingClientRect();
-    const scaleX = regularBarry.naturalWidth / rect.width;
-    const scaleY = regularBarry.naturalHeight / rect.height;
-    const x = (e.clientX - rect.left) * scaleX;
-    const y = (e.clientY - rect.top) * scaleY;
-    const alpha = barryCtx.getImageData(x, y, 1, 1).data[3];
-    if (alpha > 0) {
-      regularBarry.style.display = 'none';
-      secretBarry.style.display = 'block';
-      setupBarryCanvas(secretBarry);
-      secretBarry.classList.remove('bouncing');
-      void secretBarry.offsetWidth;
-      secretBarry.classList.add('bouncing');
-    }
-  });
-})();
-
-// Brie
-(function() {
-  const brieCanvas = document.createElement('canvas');
-  const brieCtx = brieCanvas.getContext('2d');
-  const regularBrie = document.getElementById('regularBrie');
-  const secretBrie = document.getElementById('secretBrie');
-
-  function setupBrieCanvas(img) {
-    brieCanvas.width = img.naturalWidth;
-    brieCanvas.height = img.naturalHeight;
-    brieCtx.drawImage(img, 0, 0);
-  }
-
-  regularBrie.onload = () => setupBrieCanvas(regularBrie);
-  if (regularBrie.complete) setupBrieCanvas(regularBrie);
-
-  regularBrie.addEventListener('click', function(e) {
-    const rect = regularBrie.getBoundingClientRect();
-    const scaleX = regularBrie.naturalWidth / rect.width;
-    const scaleY = regularBrie.naturalHeight / rect.height;
-    const x = (e.clientX - rect.left) * scaleX;
-    const y = (e.clientY - rect.top) * scaleY;
-    const alpha = brieCtx.getImageData(x, y, 1, 1).data[3];
-    if (alpha > 0) {
-      regularBrie.style.display = 'none';
-      secretBrie.style.display = 'block';
-      setupBrieCanvas(secretBrie);
-      secretBrie.classList.remove('bouncing');
-      void secretBrie.offsetWidth;
-      secretBrie.classList.add('bouncing');
-    }
-  });
-})();
 </script>
 {% endblock %}`
