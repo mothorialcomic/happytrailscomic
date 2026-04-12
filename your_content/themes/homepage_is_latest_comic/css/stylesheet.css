@@ -391,6 +391,20 @@ code {
 	left: 30px;
 }
 
+.mapleText {
+	width: 343px;
+	margin-left: -91px;
+}
+
+#regularMaple {
+	cursor: pointer;
+	display: block;
+	width: 400px;
+	top: -80px;
+	margin-bottom: -206px;
+	left: -80px;
+	position: relative;
+}
 
 @keyframes bounce {
   0%   { transform: translateY(0); }
@@ -405,9 +419,9 @@ code {
 }
 
 #descriptionMaple {
-	background-color: #E3D8C0;
+	background-image: url("/happytrailscomic/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
-	border: 10px solid #E3DBC0;
+	border: 10px solid #F9F4EE;
 	margin-left: -10px;
 	position: fixed;
 	z-index: 1001;
@@ -416,6 +430,9 @@ code {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	visibility: hidden;
+	background-position-x: -190px;
+	background-size: 1230px;
+	background-position-y: -120px;
 }
 
 #descriptionSyrup {
@@ -430,6 +447,9 @@ code {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	visibility: hidden;
+	background-position-x: -190px;
+	background-size: 1230px;
+	background-position-y: -120px;
 }
 
 #descriptionBarry{

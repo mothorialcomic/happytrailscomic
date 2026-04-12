@@ -81,7 +81,8 @@ text-align: left;
 
 <div id="descriptionMaple">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-			<img id="regularMaple" class="characterPortrait portraitMaple bouncing" style="cursor: pointer; display: block;width: 400px;top: -80px;margin-bottom: -206px;left: 30px;" src="/happytrailscomic/your_content/images/castpage/maple.png"><div style="margin: 20px;text-align: left;">
+			<img id="regularMaple" class="characterPortrait portraitMaple bouncing" src="/happytrailscomic/your_content/images/castpage/maple.png">
+			<div style="margin: 20px;text-align: left;margin-left: 10px;>
 			<img src="/happytrailscomic/your_content/images/mapletext.png" class="mapleText">
 			<p class="characterDetails">Cocker spaniel</p><p class="characterDetails">28 • F (she/her)</p><article id="post-body">
 				<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it.She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p><p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p><p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
@@ -161,76 +162,140 @@ text-align: left;
 {% endblock %}
 {% block script %}
 <script>
-  const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
+  // Syrup
+(function() {
+  const syrupCanvas = document.createElement('canvas');
+  const syrupCtx = syrupCanvas.getContext('2d');
   const regularSyrup = document.getElementById('regularSyrup');
   const secretSyrup = document.getElementById('secretSyrup');
 
-  function setupCanvas(img) {
-    canvas.width = img.naturalWidth;
-    canvas.height = img.naturalHeight;
-    ctx.drawImage(img, 0, 0);
+  function setupSyrupCanvas(img) {
+    syrupCanvas.width = img.naturalWidth;
+    syrupCanvas.height = img.naturalHeight;
+    syrupCtx.drawImage(img, 0, 0);
   }
 
-  regularSyrup.onload = () => setupCanvas(regularSyrup);
-  if (regularSyrup.complete) setupCanvas(regularSyrup);
+  regularSyrup.onload = () => setupSyrupCanvas(regularSyrup);
+  if (regularSyrup.complete) setupSyrupCanvas(regularSyrup);
 
-  function handleClick(e, clickedImg, otherImg) {
-    const rect = clickedImg.getBoundingClientRect();
-    const scaleX = clickedImg.naturalWidth / rect.width;
-    const scaleY = clickedImg.naturalHeight / rect.height;
+  regularSyrup.addEventListener('click', function(e) {
+    const rect = regularSyrup.getBoundingClientRect();
+    const scaleX = regularSyrup.naturalWidth / rect.width;
+    const scaleY = regularSyrup.naturalHeight / rect.height;
     const x = (e.clientX - rect.left) * scaleX;
     const y = (e.clientY - rect.top) * scaleY;
-    const alpha = ctx.getImageData(x, y, 1, 1).data[3];
-
+    const alpha = syrupCtx.getImageData(x, y, 1, 1).data[3];
     if (alpha > 0) {
-      clickedImg.style.display = 'none';
-      otherImg.style.display = 'block';
-      setupCanvas(otherImg);
-
-      otherImg.classList.remove('bouncing');
-      void otherImg.offsetWidth;
-      otherImg.classList.add('bouncing');
+      regularSyrup.style.display = 'none';
+      secretSyrup.style.display = 'block';
+      setupSyrupCanvas(secretSyrup);
+      secretSyrup.classList.remove('bouncing');
+      void secretSyrup.offsetWidth;
+      secretSyrup.classList.add('bouncing');
     }
-  }
+  });
+})();
 
-  regularMaple.addEventListener('click', (e) => handleClick(e, regularMaple, secretMaple));
-  secretMaple.addEventListener('click', (e) => handleClick(e, secretMaple, regularMaple));
-  
-   const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
+// Maple
+(function() {
+  const mapleCanvas = document.createElement('canvas');
+  const mapleCtx = mapleCanvas.getContext('2d');
   const regularMaple = document.getElementById('regularMaple');
   const secretMaple = document.getElementById('secretMaple');
 
-  function setupCanvas(img) {
-    canvas.width = img.naturalWidth;
-    canvas.height = img.naturalHeight;
-    ctx.drawImage(img, 0, 0);
+  function setupMapleCanvas(img) {
+    mapleCanvas.width = img.naturalWidth;
+    mapleCanvas.height = img.naturalHeight;
+    mapleCtx.drawImage(img, 0, 0);
   }
 
-  regularMaple.onload = () => setupCanvas(regularMaple);
-  if (regularMaple.complete) setupCanvas(regularMaple);
+  regularMaple.onload = () => setupMapleCanvas(regularMaple);
+  if (regularMaple.complete) setupMapleCanvas(regularMaple);
 
-  function handleClick(e, clickedImg, otherImg) {
-    const rect = clickedImg.getBoundingClientRect();
-    const scaleX = clickedImg.naturalWidth / rect.width;
-    const scaleY = clickedImg.naturalHeight / rect.height;
+  regularMaple.addEventListener('click', function(e) {
+    const rect = regularMaple.getBoundingClientRect();
+    const scaleX = regularMaple.naturalWidth / rect.width;
+    const scaleY = regularMaple.naturalHeight / rect.height;
     const x = (e.clientX - rect.left) * scaleX;
     const y = (e.clientY - rect.top) * scaleY;
-    const alpha = ctx.getImageData(x, y, 1, 1).data[3];
-
+    const alpha = mapleCtx.getImageData(x, y, 1, 1).data[3];
     if (alpha > 0) {
-      clickedImg.style.display = 'none';
-      otherImg.style.display = 'block';
-      setupCanvas(otherImg);
-
-      otherImg.classList.remove('bouncing');
-      void otherImg.offsetWidth;
-      otherImg.classList.add('bouncing');
+      regularMaple.style.display = 'none';
+      secretMaple.style.display = 'block';
+      setupMapleCanvas(secretMaple);
+      secretMaple.classList.remove('bouncing');
+      void secretMaple.offsetWidth;
+      secretMaple.classList.add('bouncing');
     }
+  });
+})();
+
+// Barry
+(function() {
+  const barryCanvas = document.createElement('canvas');
+  const barryCtx = barryCanvas.getContext('2d');
+  const regularBarry = document.getElementById('regularBarry');
+  const secretBarry = document.getElementById('secretBarry');
+
+  function setupBarryCanvas(img) {
+    barryCanvas.width = img.naturalWidth;
+    barryCanvas.height = img.naturalHeight;
+    barryCtx.drawImage(img, 0, 0);
   }
 
-  regularMaple.addEventListener('click', (e) => handleClick(e, regularMaple, secretMaple));
-  secretMaple.addEventListener('click', (e) => handleClick(e, secretMaple, regularMaple));
+  regularBarry.onload = () => setupBarryCanvas(regularBarry);
+  if (regularBarry.complete) setupBarryCanvas(regularBarry);
+
+  regularBarry.addEventListener('click', function(e) {
+    const rect = regularBarry.getBoundingClientRect();
+    const scaleX = regularBarry.naturalWidth / rect.width;
+    const scaleY = regularBarry.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = barryCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      regularBarry.style.display = 'none';
+      secretBarry.style.display = 'block';
+      setupBarryCanvas(secretBarry);
+      secretBarry.classList.remove('bouncing');
+      void secretBarry.offsetWidth;
+      secretBarry.classList.add('bouncing');
+    }
+  });
+})();
+
+// Brie
+(function() {
+  const brieCanvas = document.createElement('canvas');
+  const brieCtx = brieCanvas.getContext('2d');
+  const regularBrie = document.getElementById('regularBrie');
+  const secretBrie = document.getElementById('secretBrie');
+
+  function setupBrieCanvas(img) {
+    brieCanvas.width = img.naturalWidth;
+    brieCanvas.height = img.naturalHeight;
+    brieCtx.drawImage(img, 0, 0);
+  }
+
+  regularBrie.onload = () => setupBrieCanvas(regularBrie);
+  if (regularBrie.complete) setupBrieCanvas(regularBrie);
+
+  regularBrie.addEventListener('click', function(e) {
+    const rect = regularBrie.getBoundingClientRect();
+    const scaleX = regularBrie.naturalWidth / rect.width;
+    const scaleY = regularBrie.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = brieCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      regularBrie.style.display = 'none';
+      secretBrie.style.display = 'block';
+      setupBrieCanvas(secretBrie);
+      secretBrie.classList.remove('bouncing');
+      void secretBrie.offsetWidth;
+      secretBrie.classList.add('bouncing');
+    }
+  });
+})();
 </script>
 {% endblock %}`
