@@ -107,7 +107,7 @@ text-align: left;
 		<div>
 	</div>
 </div>
-<div style="visibility: visible;" id="descriptionBrie">
+<div id="descriptionBrie">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 			<img src="/happytrailscomic/your_content/images/castpage/brie.png" id="regularBrie" class="characterPortrait portraitBrie bouncing">
 			<img id="secretBrie" class="characterPortrait portraitMaple bouncing" style="display: none; cursor: pointer;" src="/happytrailscomic/your_content/images/castpage/brienude.png">
