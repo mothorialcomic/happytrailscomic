@@ -44,6 +44,11 @@ a {
 	padding-right: 20px;
 }
 
+#allLinks {
+	display: flex;
+	justify-content: space-between;
+}
+
 .bottomTags {
 	display: flex;
 	font-size: smaller;

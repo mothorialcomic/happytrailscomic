@@ -77,6 +77,7 @@
 			</a>
 			{% if not loop.last %}<span class="link-bar-separator">|</span>{% endif %}
 		{%- endfor %}
+		</div>
 		<div id="socials">
 
   
@@ -89,7 +90,6 @@
         </a><span class="link-bar-separator">|</span><a class="link-bar-link" href="https://www.patreon.com/cw/HappyTrailsComic" target="_blank" style="justify-content: right;display: flex;">
                 Patreon
         </a></div>
-		</div>
 	</div>
     {%- endif %}
 
