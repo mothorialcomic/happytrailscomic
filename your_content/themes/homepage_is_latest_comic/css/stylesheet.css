@@ -18,6 +18,8 @@ body {
     background-color: white;  /* The color of the background behind everything */
     background-image: url("../../../images/bgartfixed.png");
 	background-size: contain;
+	padding-top: env(safe-area-inset-top);
+	padding-bottom: env(safe-area-inset-bottom);
 }
 
 h1, h2, h3 {
