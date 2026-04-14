@@ -589,6 +589,14 @@ code {
 	display: block;
 }
 
+.polaroid {
+	display: block;
+}
+
+.polaroidMobile {
+	display: none;
+}
+
 @media only screen and (max-width: 900px) {
 
 body {
@@ -653,6 +661,14 @@ body {
     height: auto;
     top: 57%;
     left: 70%;
+}
+
+.polaroid {
+	display: none;
+}
+
+.polaroidMobile {
+	display: block;
 }
 
 .polaroidMaple {
@@ -736,7 +752,7 @@ body {
 }
 
 #descriptionMapleMobile, #descriptionSyrupMobile, #descriptionBrieMobile, #descriptionBarryMobile {
-	display: block;
+	display: flex;
 }
 
 .castMobile {

@@ -138,13 +138,17 @@ text-align: left;
 <div class="bulletinBoard">
   
 <img src="/happytrailscomic/your_content/images/castpage/Maplepin.png" class="pinOne">
-<img onclick="document.getElementById('descriptionMaple').style.visibility = 'visible'; document.getElementById('descriptionMapleMobile').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
+<img onclick="document.getElementById('descriptionMaple').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
 <img src="/happytrailscomic/your_content/images/castpage/SyrupPin.png" class="pinTwo">
-<img onclick="document.getElementById('descriptionSyrup').style.visibility = 'visible'; document.getElementById('descriptionSyrupMobile').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
+<img onclick="document.getElementById('descriptionSyrup').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
 <img src="/happytrailscomic/your_content/images/castpage/bandbpin.png" class="pinThree">
-<img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('descriptionBrieMobile').style.visibility = 'visible';  document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
+<img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
 <img src="/happytrailscomic/your_content/images/castpage/bandbpin.png" class="pinFour">
-<img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('descriptionBarryMobile').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
+<img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidBarry" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png">
+<img onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'visible'; document.body.style.overflow = 'hidden';" src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroidMobile polaroidMaple">
+<img onclick="document.getElementById('descriptionSyrupMobile').style.visibility = 'visible'; document.body.style.overflow = 'hidden';" class="polaroidMobile polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
+<img onclick="document.getElementById('descriptionBrieMobile').style.visibility = 'visible'; document.body.style.overflow = 'hidden';" class="polaroidMobile polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
+<img onclick="document.getElementById('descriptionBarryMobile').style.visibility = 'visible'; document.body.style.overflow = 'hidden';" class="polaroidMobile polaroidBarry" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png">
 	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1310px;left: 60px;" src="/happytrailscomic/your_content/images/ufobadge.png">
 	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1440px;left: 500px;" src="/happytrailscomic/your_content/images/flowerbadge.png">
 	<img class="badge" style="width: 160px;position: relative;transform: rotate(4deg);top: -1570px;left: 760px;" src="/happytrailscomic/your_content/images/earthbadge.png">
