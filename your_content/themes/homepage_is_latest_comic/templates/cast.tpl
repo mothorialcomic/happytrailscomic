@@ -136,7 +136,7 @@ text-align: left;
 	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1310px;left: 60px;" src="/happytrailscomic/your_content/images/ufobadge.png">
 	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1440px;left: 500px;" src="/happytrailscomic/your_content/images/flowerbadge.png">
 	<img class="badge" style="width: 120px;position: relative;transform: rotate(4deg);top: -1500px;left: 750px;" src="/happytrailscomic/your_content/images/earthbadge.png">
-	<img class="badge" style="width: 110px;position: relative;transform: rotate(4deg);top: -1270px;left: 70px;" src="/happytrailscomic/your_content/images/earthbadge.png">
+	<img class="badge" style="width: 110px;position: relative;transform: rotate(4deg);top: -1270px;left: 70px;" src="/happytrailscomic/your_content/images/cryptidseekerbadge.png">
 	<img class="badge" style="width: 110px;position: relative;transform: rotate(-13deg);top: -1360px;left: 350px;" src="/happytrailscomic/your_content/images/nessiebadge.png">
 	<img class="badge" style="width: 118px;position: relative;transform: rotate(5deg);top: -1400px;left: 500px;" src="/happytrailscomic/your_content/images/cedarbadge.png">
 	<img class="badge" style="width: 136px;position: relative;transform: rotate(14deg);top: -1600px;left: 770px;" src="/happytrailscomic/your_content/images/saplingbadge.png">
