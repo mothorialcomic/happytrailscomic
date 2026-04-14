@@ -133,15 +133,6 @@ text-align: left;
 		</div>
 		<div>
 	</div>
-	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1310px;left: 60px;" src="/happytrailscomic/your_content/images/ufobadge.png">
-	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1440px;left: 500px;" src="/happytrailscomic/your_content/images/flowerbadge.png">
-	<img class="badge" style="width: 120px;position: relative;transform: rotate(4deg);top: -1500px;left: 750px;" src="/happytrailscomic/your_content/images/earthbadge.png">
-	<img class="badge" style="width: 110px;position: relative;transform: rotate(4deg);top: -1270px;left: 70px;" src="/happytrailscomic/your_content/images/cryptidseekerbadge.png">
-	<img class="badge" style="width: 110px;position: relative;transform: rotate(-13deg);top: -1360px;left: 350px;" src="/happytrailscomic/your_content/images/nessiebadge.png">
-	<img class="badge" style="width: 118px;position: relative;transform: rotate(5deg);top: -1400px;left: 500px;" src="/happytrailscomic/your_content/images/cedarbadge.png">
-	<img class="badge" style="width: 136px;position: relative;transform: rotate(14deg);top: -1600px;left: 770px;" src="/happytrailscomic/your_content/images/saplingbadge.png">
-	<img class="badge" style="width: 140px;position: relative;transform: rotate(7deg);top: -1250px;left: 140px;" src="/happytrailscomic/your_content/images/redwoodbadge.png">
-	<img class="badge" style="width: 120px;position: relative;transform: rotate(-10deg);top: -1360px;left: 400px;" src="/happytrailscomic/your_content/images/oakbadge.png">
 </div>
 
 <h1 style="font-family: &quot;Fredoka&quot;, sans-serif;color: 
@@ -156,6 +147,15 @@ text-align: left;
 <img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('descriptionBrieMobile').style.visibility = 'visible';  document.getElementById('overlay').style.visibility = 'visible';" class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
 <img src="/happytrailscomic/your_content/images/castpage/bandbpin.png" class="pinFour">
 <img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('descriptionBarryMobile').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible';" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png" class="polaroid polaroidBarry">
+<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1310px;left: 60px;" src="/happytrailscomic/your_content/images/ufobadge.png">
+	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1440px;left: 500px;" src="/happytrailscomic/your_content/images/flowerbadge.png">
+	<img class="badge" style="width: 120px;position: relative;transform: rotate(4deg);top: -1500px;left: 750px;" src="/happytrailscomic/your_content/images/earthbadge.png">
+	<img class="badge" style="width: 110px;position: relative;transform: rotate(4deg);top: -1270px;left: 70px;" src="/happytrailscomic/your_content/images/cryptidseekerbadge.png">
+	<img class="badge" style="width: 110px;position: relative;transform: rotate(-13deg);top: -1360px;left: 350px;" src="/happytrailscomic/your_content/images/nessiebadge.png">
+	<img class="badge" style="width: 118px;position: relative;transform: rotate(5deg);top: -1400px;left: 500px;" src="/happytrailscomic/your_content/images/cedarbadge.png">
+	<img class="badge" style="width: 136px;position: relative;transform: rotate(14deg);top: -1600px;left: 770px;" src="/happytrailscomic/your_content/images/saplingbadge.png">
+	<img class="badge" style="width: 140px;position: relative;transform: rotate(7deg);top: -1250px;left: 140px;" src="/happytrailscomic/your_content/images/redwoodbadge.png">
+	<img class="badge" style="width: 120px;position: relative;transform: rotate(-10deg);top: -1360px;left: 400px;" src="/happytrailscomic/your_content/images/oakbadge.png">
 </div>
     </header>
 {% endblock %}
