@@ -21,7 +21,7 @@
 		</article>
 		<img class="characterPortrait portraitMaple" src="/happytrailscomic/your_content/images/maple.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
 	</div>
-	<button class="close-btn" onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'hidden';">CLOSE</button>
+	<button class="close-btn" id="buttonMaple" onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'hidden';">CLOSE</button>
 </div>
 
 <div id="descriptionSyrupMobile" class="castMobile">
@@ -306,5 +306,23 @@ text-align: left;
   regularBrie.addEventListener('click', (e) => handleBrieClick(e, regularBrie, secretBrie));
   secretBrie.addEventListener('click', (e) => handleBrieClick(e, secretBrie, regularBrie));
 })();
+
+  const isMobile = () => window.innerWidth <= 900;
+
+  const popups = [
+    { open: 'polaroidMaple', popup: 'descriptionMapleMobile', close: 'buttonMaple' },
+  ];
+
+  popups.forEach(({ open, popup, close }) => {
+    document.getElementById(open).addEventListener('click', function() {
+      if (isMobile()) document.body.style.overflow = 'hidden';
+      document.getElementById(popup).style.visibility = 'visible';
+    });
+
+    document.getElementById(close).addEventListener('click', function() {
+      document.body.style.overflow = '';
+      document.getElementById(popup).style.visibility = 'hidden';
+    });
+  });
 </script>
 {% endblock %}`
