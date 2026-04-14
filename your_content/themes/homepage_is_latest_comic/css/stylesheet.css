@@ -314,7 +314,7 @@ code {
 	border-radius: 25px;
 	border: 8px solid #553923;
 	margin: 0 auto;
-	width: 1000px;
+	width: 960px;
 	height: 1100px;
 	background-image: url("/happytrailscomic/your_content/images/castpage/boardbg.png");
 }
@@ -344,9 +344,10 @@ code {
 	position: relative;
 	z-index: 998;
 	top: -335px;
-	left: -220px;
+	left: 28px;
 	transition: transform 0.3s ease;
 	transform-origin: 53% 10%;
+	display: block;
 }
 
 .polaroidBrie {
@@ -584,6 +585,10 @@ code {
 	display: none;
 }
 
+.badge {
+	display: block;
+}
+
 @media only screen and (max-width: 900px) {
 
 body {
@@ -775,6 +780,10 @@ body {
 .profilePic {
 	width: 90px;
 	height: 90px;
+}
+
+.badge {
+	display: none;
 }
 
 }
