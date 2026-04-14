@@ -6,25 +6,26 @@
 {% block content %}
 	<header class="post-header">        
 <div id="overlay" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';"></div>
-<div id="descriptionMapleMobile" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">
-  <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
+
+<div id="descriptionMapleMobile" class="castMobile">
+	<div class="popupMobile">
 		<img class="characterPortrait portraitMaple" src="/happytrailscomic/your_content/images/castpage/maple.png">
 		<div>
-			<div style="margin: 20px; text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
-#47604b;font-size: 2.5em;font-weight: normal;
-padding: 0;
-margin-bottom: -10px;
-/*! margin-left: -9px; */
-text-align: left;
-">Maple</h1><p class="characterDetails">Cocker spaniel</p><p class="characterDetails">28 • F (she/her)</p><article id="post-body">
-				<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it.She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p><p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p><p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
-
-			</article></div>
-			
+			<img src="/happytrailscomic/your_content/images/mapletext.png" class="mapleText" style="margin-left: 0px;">
+			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Cocker spaniel</p>
+			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: -19px;text-align: center;">28 • F (she/her)</p>
 		</div>
+		<article id="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;font-size: 18px;margin-left: 30px;margin-right: 30px;">
+			<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it.She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p>
+			<p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p>
+			<p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
+		</article>
+		<img class="characterPortrait portraitMaple" src="/happytrailscomic/your_content/images/maple.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;">	
 	</div>
+	<button class="close-btn" onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'hidden';">CLOSE</button>
 </div>
-<div id="descriptionSyrupMobile" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">
+
+<div id="descriptionSyrupMobile" class="castMobile">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 			<div style="margin: 20px;text-align: left;"><h1 style="font-family: &quot;Caprasimo&quot;, sans-serif;color: 
 #47604b;font-size: 2.5em;font-weight: normal;
@@ -42,7 +43,7 @@ margin-top: 0;
 		<div>
 	</div>
 </div>
-<div id="descriptionBrieMobile" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">
+<div id="descriptionBrieMobile" class="castMobile">
   <div style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;margin-bottom: 10px;">
 		
 		<img class="characterPortrait portraitBrie" src="/happytrailscomic/your_content/images/castpage/brie.png"><div>
@@ -60,7 +61,7 @@ text-align: left;
 
 			</article></div></div>
 </div>
-<div id="descriptionBarryMobile" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">
+<div id="descriptionBarryMobile" class="castMobile">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 		
 		<div>
