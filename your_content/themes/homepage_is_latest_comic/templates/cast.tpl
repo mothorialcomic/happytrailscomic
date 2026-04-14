@@ -7,7 +7,7 @@
 	<header class="post-header">        
 <div id="overlay" onclick="document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';"></div>
 
-<div id="descriptionMapleMobile" class="castMobile">
+<div id="descriptionMapleMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
 		<div>
 			<img src="/happytrailscomic/your_content/images/mapletext.png" class="mapleText" style="margin-left: 0px;">
@@ -23,7 +23,7 @@
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
-<div id="descriptionSyrupMobile" class="castMobile">
+<div id="descriptionSyrupMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
 		<div>
 			<img src="/happytrailscomic/your_content/images/syruptext.png" class="syrupText" style="margin-left: 0px;">
@@ -39,7 +39,7 @@
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
-<div id="descriptionBrieMobile" class="castMobile">
+<div id="descriptionBrieMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
 		<div>
 			<img src="/happytrailscomic/your_content/images/brietext.png" class="brieText" style="margin-left: 0px;">
@@ -55,7 +55,7 @@
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
-<div id="descriptionBarryMobile" class="castMobile">
+<div id="descriptionBarryMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
 		<div>
 			<img src="/happytrailscomic/your_content/images/barrytext.png" class="barryText" style="margin-left: 0px;">
