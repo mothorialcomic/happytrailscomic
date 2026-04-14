@@ -684,23 +684,42 @@ body {
     left: 44%;
 }
 
-#secretMapleMobile, #secretSyrupMobile, #secretBarryMobile {
+#secretMapleMobile, #secretBarryMobile {
 	cursor: pointer;
 	width: 80%;
 	margin-right: 0px;
 	padding-bottom: 20px;
 	margin-left: 0px;
-	max-height: 550px;
+	max-width: 550px;
 }
 
-#regularMapleMobile, #regularSyrupMobile, #regularBarryMobile {
+#regularMapleMobile, #regularBarryMobile {
 	cursor: pointer;
     width: 80%;
     margin-right: 0px;
     padding-bottom: 20px;
     margin-left: 0px;
     display: initial;
-	max-height: 550px;
+	max-width: 550px;
+}
+
+#secretSyrupMobile {
+	cursor: pointer;
+    width: 90%;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    max-width: 550px;
+}
+
+#regularSyrupMobile{
+	cursor: pointer;
+    width: 90%;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    max-width: 550px;
+	display: initial;
 }
 
 #regularBrieMobile {
