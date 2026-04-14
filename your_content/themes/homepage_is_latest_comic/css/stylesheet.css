@@ -768,7 +768,6 @@ body {
 .close-btn {
 	position: sticky;
 	bottom: 0;
-	padding: 14px;
 	height: 10vh;
 	width: 100%;
 	border: none;
@@ -778,6 +777,7 @@ body {
 	font-weight: 500;
 	letter-spacing: 0.05em;
 	cursor: pointer;
+	padding-bottom: 17px;
 }
 
 .infinite-page-image {
