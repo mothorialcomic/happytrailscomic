@@ -19,7 +19,8 @@
 			<p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p>
 			<p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
 		</article>
-		<img class="characterPortrait" src="/happytrailscomic/your_content/images/maple.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
+		<img id="regularMapleMobile" class="portraitMaple bouncing" src="/happytrailscomic/your_content/images/castpage/maple.png">
+		<img id="secretMapleMobile" class="portraitMaple bouncing" src="/happytrailscomic/your_content/images/castpage/maplenude.png" style="display: none;">	
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
@@ -35,7 +36,8 @@
 			<p>For him, being out in nature is a meditative experience, and he looks forward to spending time outside.</p>
 			<p> When he meets Maple, he's in the midst of a crucial career pivot, and after some time, smitten by her optimistic attitude, decides to forgo it all and spend time with someone he loves out in the place he knows. He might have gotten... a little distracted though.</p>
 		</article>
-		<img class="characterPortrait" src="/happytrailscomic/your_content/images/syrup.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
+		<img id="regularSyrupMobile" class="portraitSyrup bouncing" src="/happytrailscomic/your_content/images/castpage/syrup.png">
+		<img id="secretSyrupMobile" class="portraitSyrup bouncing" src="/happytrailscomic/your_content/images/castpage/syrupnude.png" style="display: none;">	
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
@@ -51,7 +53,8 @@
 			<p>This was… supposed to be a temporary situation. She values structure and following the rules, and when it comes to being a ranger, it’s the structure she craves! Even so, she hates the fact Maple and Syrup break the rules and get away with it so often. Not to mention that there seems to be something…off about the park that seems to make everyone a little pent up.</p>
 			<p>Her relationship with Barry is strained and tense. For some strange reason Barry lets people off with a warning more than she’d say is acceptable. They both have different ways they want to run the park that don’t mesh well together.</p>
 		</article>
-		<img class="characterPortrait" src="/happytrailscomic/your_content/images/brie.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
+		<img id="regularBrieMobile" class="portraitBrie bouncing" src="/happytrailscomic/your_content/images/castpage/brie.png">
+		<img id="secretBrieMobile" class="portraitBrie bouncing" src="/happytrailscomic/your_content/images/castpage/brienude.png" style="display: none;">	
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
@@ -67,7 +70,8 @@
 			<p>He knows about the odd quality of the park, but it hasn't affected him for a long time. He's got a past shrouded in mystery, and doesn't let people get too close to him. He keeps to himself. As long as there's peace and quiet, he's letting it be.</p>
 			<p>He may not look it, but the hard exterior is just that. He's awfully lenient to folks who do nothing more than enjoy themselves in the park. Because of this, him and Brie clash often.</p>
 		</article>
-		<img class="characterPortrait" src="/happytrailscomic/your_content/images/barry.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
+		<img id="regularBarryMobile" class="portraitBarry bouncing" src="/happytrailscomic/your_content/images/castpage/barry.png">
+		<img id="secretBarryMobile" class="portraitBarry bouncing" src="/happytrailscomic/your_content/images/castpage/barrynude.png" style="display: none;">	
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
@@ -214,7 +218,7 @@
     const alpha = mapleCtx.getImageData(x, y, 1, 1).data[3];
     if (alpha > 0) {
       clickedImg.style.display = 'none';
-      otherImg.style.display = 'block';
+      otherImg.style.display = 'initial';
       setupMapleCanvas(otherImg);
       otherImg.classList.remove('bouncing');
       void otherImg.offsetWidth;
@@ -251,7 +255,7 @@
     const alpha = barryCtx.getImageData(x, y, 1, 1).data[3];
     if (alpha > 0) {
       clickedImg.style.display = 'none';
-      otherImg.style.display = 'block';
+      otherImg.style.display = 'initial';
       setupBarryCanvas(otherImg);
       otherImg.classList.remove('bouncing');
       void otherImg.offsetWidth;
@@ -288,7 +292,7 @@
     const alpha = brieCtx.getImageData(x, y, 1, 1).data[3];
     if (alpha > 0) {
       clickedImg.style.display = 'none';
-      otherImg.style.display = 'block';
+      otherImg.style.display = 'initial';
       setupBrieCanvas(otherImg);
       otherImg.classList.remove('bouncing');
       void otherImg.offsetWidth;
@@ -298,6 +302,154 @@
 
   regularBrie.addEventListener('click', (e) => handleBrieClick(e, regularBrie, secretBrie));
   secretBrie.addEventListener('click', (e) => handleBrieClick(e, secretBrie, regularBrie));
+})();
+
+// Syrup Mobile
+(function() {
+  const syrupMobileCanvas = document.createElement('canvas');
+  const syrupMobileCtx = syrupMobileCanvas.getContext('2d');
+  const regularSyrupMobile = document.getElementById('regularSyrupMobile');
+  const secretSyrupMobile = document.getElementById('secretSyrupMobile');
+
+  function setupSyrupMobileCanvas(img) {
+    syrupMobileCanvas.width = img.naturalWidth;
+    syrupMobileCanvas.height = img.naturalHeight;
+    syrupMobileCtx.drawImage(img, 0, 0);
+  }
+
+  regularSyrupMobile.onload = () => setupSyrupMobileCanvas(regularSyrupMobile);
+  if (regularSyrupMobile.complete) setupSyrupMobileCanvas(regularSyrupMobile);
+
+  function handleSyrupMobileClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = syrupMobileCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'block';
+      setupSyrupMobileCanvas(otherImg);
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
+    }
+  }
+
+  regularSyrupMobile.addEventListener('click', (e) => handleSyrupMobileClick(e, regularSyrupMobile, secretSyrupMobile));
+  secretSyrupMobile.addEventListener('click', (e) => handleSyrupMobileClick(e, secretSyrupMobile, regularSyrupMobile));
+})();
+
+// Maple Mobile
+(function() {
+  const mapleMobileCanvas = document.createElement('canvas');
+  const mapleMobileCtx = mapleMobileCanvas.getContext('2d');
+  const regularMapleMobile = document.getElementById('regularMapleMobile');
+  const secretMapleMobile = document.getElementById('secretMapleMobile');
+
+  function setupMapleMobileCanvas(img) {
+    mapleMobileCanvas.width = img.naturalWidth;
+    mapleMobileCanvas.height = img.naturalHeight;
+    mapleMobileCtx.drawImage(img, 0, 0);
+  }
+
+  regularMapleMobile.onload = () => setupMapleMobileCanvas(regularMapleMobile);
+  if (regularMapleMobile.complete) setupMapleMobileCanvas(regularMapleMobile);
+
+  function handleMapleMobileClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = mapleMobileCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'initial';
+      setupMapleMobileCanvas(otherImg);
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
+    }
+  }
+
+  regularMapleMobile.addEventListener('click', (e) => handleMapleMobileClick(e, regularMapleMobile, secretMapleMobile));
+  secretMapleMobile.addEventListener('click', (e) => handleMapleMobileClick(e, secretMapleMobile, regularMapleMobile));
+})();
+
+// Barry Mobile
+(function() {
+  const barryMobileCanvas = document.createElement('canvas');
+  const barryMobileCtx = barryMobileCanvas.getContext('2d');
+  const regularBarryMobile = document.getElementById('regularBarryMobile');
+  const secretBarryMobile = document.getElementById('secretBarryMobile');
+
+  function setupBarryMobileCanvas(img) {
+    barryMobileCanvas.width = img.naturalWidth;
+    barryMobileCanvas.height = img.naturalHeight;
+    barryMobileCtx.drawImage(img, 0, 0);
+  }
+
+  regularBarryMobile.onload = () => setupBarryMobileCanvas(regularBarryMobile);
+  if (regularBarryMobile.complete) setupBarryMobileCanvas(regularBarryMobile);
+
+  function handleBarryMobileClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = barryMobileCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'initial';
+      setupBarryMobileCanvas(otherImg);
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
+    }
+  }
+
+  regularBarryMobile.addEventListener('click', (e) => handleBarryMobileClick(e, regularBarryMobile, secretBarryMobile));
+  secretBarryMobile.addEventListener('click', (e) => handleBarryMobileClick(e, secretBarryMobile, regularBarryMobile));
+})();
+
+// Brie Mobile
+(function() {
+  const brieMobileCanvas = document.createElement('canvas');
+  const brieMobileCtx = brieMobileCanvas.getContext('2d');
+  const regularBrieMobile = document.getElementById('regularBrieMobile');
+  const secretBrieMobile = document.getElementById('secretBrieMobile');
+
+  function setupBrieMobileCanvas(img) {
+    brieMobileCanvas.width = img.naturalWidth;
+    brieMobileCanvas.height = img.naturalHeight;
+    brieMobileCtx.drawImage(img, 0, 0);
+  }
+
+  regularBrieMobile.onload = () => setupBrieMobileCanvas(regularBrieMobile);
+  if (regularBrieMobile.complete) setupBrieMobileCanvas(regularBrieMobile);
+
+  function handleBrieMobileClick(e, clickedImg, otherImg) {
+    const rect = clickedImg.getBoundingClientRect();
+    const scaleX = clickedImg.naturalWidth / rect.width;
+    const scaleY = clickedImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = brieMobileCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      clickedImg.style.display = 'none';
+      otherImg.style.display = 'initial';
+      setupBrieMobileCanvas(otherImg);
+      otherImg.classList.remove('bouncing');
+      void otherImg.offsetWidth;
+      otherImg.classList.add('bouncing');
+    }
+  }
+
+  regularBrieMobile.addEventListener('click', (e) => handleBrieMobileClick(e, regularBrieMobile, secretBrieMobile));
+  secretBrieMobile.addEventListener('click', (e) => handleBrieMobileClick(e, secretBrieMobile, regularBrieMobile));
 })();
 </script>
 {% endblock %}`

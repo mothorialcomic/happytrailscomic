@@ -259,9 +259,6 @@ code {
 	height: 138px;
 }
 
-.characterPortrait {
-}
-
 .portraitMaple {
 	width: 303px;
 	margin-left: 10px;
@@ -687,6 +684,22 @@ body {
     left: 44%;
 }
 
+#secretMapleMobile, #secretSyrupMobile, #secretBrieMobile, #secretBarryMobile {
+	cursor: pointer;
+	width: 80%;
+	margin-right: 0px;
+	padding-bottom: 20px;
+	margin-left: 0px;
+}
+
+#regularMapleMobile, #regularSyrupMobile, #regularBrieMobile, #regularBarryMobile {
+	cursor: pointer;
+	width: 80%;
+	margin-right: 0px;
+	padding-bottom: 20px;
+	margin-left: 0px;
+}
+
 #descriptionMaple, #descriptionSyrup, #descriptionBrie, #descriptionBarry {
 	display: none;
 }
@@ -766,7 +779,7 @@ body {
 }
 
 .close-btn {
-	position: sticky;
+	position: fixed;
 	bottom: 0;
 	height: 10vh;
 	width: 100%;
