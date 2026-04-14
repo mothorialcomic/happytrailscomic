@@ -690,6 +690,7 @@ body {
 	margin-right: 0px;
 	padding-bottom: 20px;
 	margin-left: 0px;
+	max-height: 550px;
 }
 
 #regularMapleMobile, #regularSyrupMobile, #regularBarryMobile {
@@ -699,6 +700,7 @@ body {
     padding-bottom: 20px;
     margin-left: 0px;
     display: initial;
+	max-height: 550px;
 }
 
 #regularBrieMobile {
@@ -708,6 +710,7 @@ body {
     padding-bottom: 20px;
     margin-left: 0px;
     display: initial;
+	max-height: 550px;
 }
 
 #secretBrieMobile {
@@ -716,6 +719,7 @@ body {
     margin-right: 0px;
     padding-bottom: 20px;
     margin-left: 0px;
+	max-height: 550px;
 }
 
 #descriptionMaple, #descriptionSyrup, #descriptionBrie, #descriptionBarry {
