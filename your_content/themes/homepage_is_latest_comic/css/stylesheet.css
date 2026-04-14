@@ -589,14 +589,6 @@ code {
 	display: block;
 }
 
-.polaroid {
-	display: block;
-}
-
-.polaroidMobile {
-	display: none;
-}
-
 @media only screen and (max-width: 900px) {
 
 body {
@@ -661,14 +653,6 @@ body {
     height: auto;
     top: 57%;
     left: 70%;
-}
-
-.polaroid {
-	display: none;
-}
-
-.polaroidMobile {
-	display: block;
 }
 
 .polaroidMaple {
@@ -842,5 +826,12 @@ body {
 .badge {
 	display: none;
 }
+
+body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
+  body:has(#descriptionSyrupMobile:not([style*="visibility: hidden"])),
+  body:has(#descriptionBrieMobile:not([style*="visibility: hidden"])),
+  body:has(#descriptionBarryMobile:not([style*="visibility: hidden"])) {
+    overflow: hidden;
+  }
 
 }
