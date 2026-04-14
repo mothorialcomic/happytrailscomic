@@ -275,8 +275,8 @@ code {
 }
 
 .syrupText {
-	width: 343px;
-	margin-left: -86px;
+	width: 203px;
+	margin-left: -18px;
 }
 
 .portraitBrie {
@@ -421,8 +421,8 @@ code {
 }
 
 .mapleText {
-	width: 343px;
-	margin-left: -91px;
+	width: 203px;
+	margin-left: -18px;
 }
 
 .barryText {
@@ -684,7 +684,7 @@ body {
     left: 44%;
 }
 
-#secretMapleMobile, #secretSyrupMobile, #secretBrieMobile, #secretBarryMobile {
+#secretMapleMobile, #secretSyrupMobile, #secretBarryMobile {
 	cursor: pointer;
 	width: 80%;
 	margin-right: 0px;
@@ -692,12 +692,30 @@ body {
 	margin-left: 0px;
 }
 
-#regularMapleMobile, #regularSyrupMobile, #regularBrieMobile, #regularBarryMobile {
+#regularMapleMobile, #regularSyrupMobile, #regularBarryMobile {
 	cursor: pointer;
-	width: 80%;
-	margin-right: 0px;
-	padding-bottom: 20px;
-	margin-left: 0px;
+    width: 80%;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    display: initial;
+}
+
+#regularBrieMobile {
+	cursor: pointer;
+    width: 50%;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    display: initial;
+}
+
+#secretBrieMobile {
+	cursor: pointer;
+    width: 50%;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    margin-left: 0px;
 }
 
 #descriptionMaple, #descriptionSyrup, #descriptionBrie, #descriptionBarry {
@@ -845,5 +863,25 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
   body:has(#descriptionBarryMobile:not([style*="visibility: hidden"])) {
     overflow: hidden;
   }
+  
+.mapleText {
+	margin-left: 0px;
+	width: 70%;
+}
+
+.syrupText {
+	margin-left: 0px;
+	width: 70%;
+}
+
+.brieText {
+	margin-left: 0px;
+	width: 70%;
+}
+
+.barryText {
+	margin-left: 0px;
+	width: 70%;
+}
 
 }
