@@ -306,29 +306,5 @@ text-align: left;
   regularBrie.addEventListener('click', (e) => handleBrieClick(e, regularBrie, secretBrie));
   secretBrie.addEventListener('click', (e) => handleBrieClick(e, secretBrie, regularBrie));
 })();
-
-const popups = [
-    { open: 'polaroidMaple', popup: 'descriptionMapleMobile', close: 'buttonMaple' },
-  ];
-  
-document.addEventListener('DOMContentLoaded', function() {
-    const isMobile = () => window.innerWidth <= 900;
-
-    const popups = [
-      { open: 'polaroidMaple', popup: 'descriptionMapleMobile', close: 'buttonMaple' },
-    ];
-
-    popups.forEach(({ open, popup, close }) => {
-      document.getElementById(open).addEventListener('click', function() {
-        if (isMobile()) document.body.style.overflow = 'hidden';
-        document.getElementById(popup).style.visibility = 'visible';
-      });
-
-      document.getElementById(close).addEventListener('click', function() {
-        document.body.style.overflow = '';
-        document.getElementById(popup).style.visibility = 'hidden';
-      });
-    });
-  });
 </script>
 {% endblock %}`
