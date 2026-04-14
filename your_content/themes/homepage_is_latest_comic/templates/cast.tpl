@@ -134,9 +134,7 @@ text-align: left;
 		<div>
 	</div>
 </div>
-
-<h1 style="font-family: &quot;Fredoka&quot;, sans-serif;color: 
-#47604b;font-size: 2.5em;font-weight: normal;">Characters</h1>
+<img src="/happytrailscomic/your_content/images/charas.png" style="width: 60%;max-width: 400px;margin-bottom: 10px;">
 <div class="bulletinBoard">
   
 <img src="/happytrailscomic/your_content/images/castpage/Maplepin.png" class="pinOne">
