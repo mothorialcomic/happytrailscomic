@@ -19,7 +19,7 @@
 			<p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p>
 			<p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
 		</article>
-		<img class="characterPortrait portraitMaple" src="/happytrailscomic/your_content/images/maple.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
+		<img class="characterPortrait" src="/happytrailscomic/your_content/images/maple.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
@@ -35,7 +35,7 @@
 			<p>For him, being out in nature is a meditative experience, and he looks forward to spending time outside.</p>
 			<p> When he meets Maple, he's in the midst of a crucial career pivot, and after some time, smitten by her optimistic attitude, decides to forgo it all and spend time with someone he loves out in the place he knows. He might have gotten... a little distracted though.</p>
 		</article>
-		<img class="characterPortrait portraitSyrup" src="/happytrailscomic/your_content/images/syrup.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
+		<img class="characterPortrait" src="/happytrailscomic/your_content/images/syrup.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
@@ -51,7 +51,7 @@
 			<p>This was… supposed to be a temporary situation. She values structure and following the rules, and when it comes to being a ranger, it’s the structure she craves! Even so, she hates the fact Maple and Syrup break the rules and get away with it so often. Not to mention that there seems to be something…off about the park that seems to make everyone a little pent up.</p>
 			<p>Her relationship with Barry is strained and tense. For some strange reason Barry lets people off with a warning more than she’d say is acceptable. They both have different ways they want to run the park that don’t mesh well together.</p>
 		</article>
-		<img class="characterPortrait portraitBrie" src="/happytrailscomic/your_content/images/brie.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
+		<img class="characterPortrait" src="/happytrailscomic/your_content/images/brie.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
@@ -67,7 +67,7 @@
 			<p>He knows about the odd quality of the park, but it hasn't affected him for a long time. He's got a past shrouded in mystery, and doesn't let people get too close to him. He keeps to himself. As long as there's peace and quiet, he's letting it be.</p>
 			<p>He may not look it, but the hard exterior is just that. He's awfully lenient to folks who do nothing more than enjoy themselves in the park. Because of this, him and Brie clash often.</p>
 		</article>
-		<img class="characterPortrait portraitBarry" src="/happytrailscomic/your_content/images/barry.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
+		<img class="characterPortrait" src="/happytrailscomic/your_content/images/barry.png" style="width: 80%;margin-top: 10px;margin-left: 0px;padding-bottom: 20px;margin-right: 0px;">	
 	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
