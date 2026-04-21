@@ -896,21 +896,25 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
 .mapleText {
 	margin-left: 0px;
 	width: 70%;
+	max-width: 350px;
 }
 
 .syrupText {
 	margin-left: 0px;
 	width: 70%;
+	max-width: 350px;
 }
 
 .brieText {
 	margin-left: 0px;
 	width: 70%;
+	max-width: 350px;
 }
 
 .barryText {
 	margin-left: 0px;
 	width: 70%;
+	max-width: 350px;
 }
 
 }
