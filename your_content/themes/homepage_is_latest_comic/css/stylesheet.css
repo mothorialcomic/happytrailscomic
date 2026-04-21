@@ -143,6 +143,10 @@ img {
 #links-bar {
 }
 
+.navigation-button-disabled img, .navigation-button img {
+	width: 85px;
+}
+
 .characterBox p {
 	color: #2C0B00;
 }
