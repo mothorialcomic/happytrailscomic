@@ -173,13 +173,9 @@
 {% endblock %}
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Script loaded');
 
   const hamburger = document.querySelector('.hamburger');
   const dropdown = document.getElementById('menu-dropdown');
-
-  console.log('Hamburger found:', hamburger);
-  console.log('Dropdown found:', dropdown);
 
   if (!hamburger || !dropdown) {
     console.error('Hamburger or dropdown not found!');
@@ -187,7 +183,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   hamburger.addEventListener('click', () => {
-    console.log('Hamburger clicked!');
     hamburger.classList.toggle('is-open');
     dropdown.classList.toggle('open');
   });
