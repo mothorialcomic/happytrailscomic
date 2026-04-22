@@ -30,7 +30,7 @@ a {
     color: #2E9BC7;  /* The color of the hyperlinks */
 }
 
-#banner-img {
+#banner-img-link {
 	content: url("/happytrailscomic/your_content/images/banner.png");
 }
 
@@ -114,12 +114,12 @@ a {
 	margin-top: 10px;
 }
 
-#banner-img {
+#banner-img-link {
 	max-width: 1000px;
 	transition: opacity 0.2s ease;
 }
 
-#banner-img:hover {
+#banner-img-link:hover {
 	opacity: 0.8;
 }
 
@@ -608,10 +608,6 @@ code {
 	height: 60px;
 }
 
-#mobile-wrapper {
-	margin-bottom: 16px;
-}
-
 .header-socials {
 	display: flex;
 	align-items: center;
@@ -724,7 +720,7 @@ body {
 	margin-bottom: 0px;
 }
 
-#banner-img {
+#banner-img-link {
 	width: 100vw;
 	content: url("/happytrailscomic/your_content/images/bannerMobile.png");
 }
@@ -741,6 +737,10 @@ body {
     box-sizing: border-box;
     height: 222vw;
     position: relative;
+}
+
+.charas {
+	margin-top: 16px;
 }
 
 .pinOne {

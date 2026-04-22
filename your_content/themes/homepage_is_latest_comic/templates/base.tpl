@@ -55,8 +55,7 @@
 {% block body %}
 <div id="container">
     <div id="banner">
-        <a id="banner-img-link" href="{{ base_dir }}/">
-            <img id="banner-img" alt="banner">
+        <a id="banner-img-link" href="{{ base_dir }}/" alt="banner">
         </a>
     </div>
     {%- if links %}
@@ -105,7 +104,6 @@
 		</div>
 	</div>
     {%- endif %}
-	<div id="mobile-wrapper">
 		<div id="mobile-header">
 		<div class="header-socials">
 		<a href="https://bsky.app/profile/puppeypawbs.art" aria-label="Bluesky">
@@ -152,7 +150,6 @@
 			{%- endfor %}
 			</div>
 		</div>
-	</div>
 
     {# This is the start of the `content` block. Nothing is here now because other templates are expected to fill it
        in on their own. It will contain everything on a webpage after the links bar and before the
