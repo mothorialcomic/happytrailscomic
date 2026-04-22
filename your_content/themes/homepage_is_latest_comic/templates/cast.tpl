@@ -156,7 +156,7 @@
 	<img style="width: 28%;position: relative;transform: rotate(7deg);top: 21%;left: 68%;" class="badgeMobile" src="/happytrailscomic/your_content/images/redwoodbadge.png">
 	<img style="width: 28%;position: relative;transform: rotate(-9deg);top: 26%;left: 60%;" class="badgeMobile" src="/happytrailscomic/your_content/images/nessiebadge.png">
 	<img style="width: 28%;position: relative;transform: rotate(14deg);top: 27%;left: 6%;" class="badgeMobile" src="/happytrailscomic/your_content/images/flowerbadge.png">
-	<img style="width: 28%;position: relative;transform: rotate(-9deg);top: 31%;left: 10%;: class="badgeMobile" src="/happytrailscomic/your_content/images/oakbadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(-9deg);top: 31%;left: 10%;" class="badgeMobile" src="/happytrailscomic/your_content/images/oakbadge.png">
 </div>
     </header>
 {% endblock %}
