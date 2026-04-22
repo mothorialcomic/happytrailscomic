@@ -136,19 +136,21 @@
 		</div>
 		
 		<div id="menu-dropdown">
-			<div id="links-bar-mobile">
-			{# For loops let you take a list of values and do something for each of those values. In this case,
-			   it runs through list of all the links provided by the [Links Bar] section of your comic_info.ini file,
-			   and it generates a link for each of them. #}
-			{%- for link in links %}
-				<a class="link-bar-link" href="{{ link.url }}" {{ 'target="_blank"' if link.open_in_new_tab else "" }}>
-					{%- if link.image_url %}
-						<img class="link-bar-link-image" src="{{ link.image_url }}">
-					{%- else %}
-						{{ link.name }}
-					{%- endif %}
-				</a>
-			{%- endfor %}
+			<div id="menu-dropdown-inner">
+				<div id="links-bar-mobile">
+					{# For loops let you take a list of values and do something for each of those values. In this case,
+					   it runs through list of all the links provided by the [Links Bar] section of your comic_info.ini file,
+					   and it generates a link for each of them. #}
+					{%- for link in links %}
+						<a class="link-bar-link" href="{{ link.url }}" {{ 'target="_blank"' if link.open_in_new_tab else "" }}>
+							{%- if link.image_url %}
+								<img class="link-bar-link-image" src="{{ link.image_url }}">
+							{%- else %}
+								{{ link.name }}
+							{%- endif %}
+						</a>
+					{%- endfor %}
+				</div>
 			</div>
 		</div>
 

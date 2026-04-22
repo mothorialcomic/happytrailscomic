@@ -972,8 +972,17 @@ body {
 	display: flex;
 }
 
+#menu-dropdown {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
 #menu-dropdown.open {
-	display: flex;
+  grid-template-rows: 1fr;
+}
+#menu-dropdown-inner {
+  overflow: hidden;
 }
 
 #links-bar-mobile {
