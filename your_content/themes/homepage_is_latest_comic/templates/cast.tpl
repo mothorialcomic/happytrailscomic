@@ -15,7 +15,7 @@
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">28 • F (she/her)</p>
 		</div>
 		<article id="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;margin-left: 30px;margin-right: 30px;font-size: clamp(14px, 5vw, 28px);">
-			<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it.She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p>
+			<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it. She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p>
 			<p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p>
 			<p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
 		</article>
@@ -83,7 +83,7 @@
 			<div style="margin: 20px;text-align: left;margin-left: 10px;">
 			<img src="/happytrailscomic/your_content/images/mapletext.png" class="mapleText">
 			<p class="characterDetails">Cocker spaniel</p><p class="characterDetails">28 • F (she/her)</p><article id="post-body">
-				<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it.She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p><p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p><p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
+				<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it. She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p><p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p><p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
 
 			</article></div>
 			</div>
