@@ -142,6 +142,12 @@
 <img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionBrieMobile').style.visibility = 'visible'; " class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
 <img src="/happytrailscomic/your_content/images/castpage/bandbpin.png" class="pinFour">
 <img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionBarryMobile').style.visibility = 'visible'; " class="polaroid polaroidBarry" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png">
+	<img style="width: 28%;position: relative;transform: rotate(4deg);top: 3%;left: 67%;" src="/happytrailscomic/your_content/images/earthbadge.png" class="badgeMobile">
+	<img style="width: 28%;position: relative;transform: rotate(4deg);top: 15%;left: 8%; class="badgeMobile" src="/happytrailscomic/your_content/images/cryptidseekerbadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(7deg);top: 21%;left: 68%;" class="badgeMobile" src="/happytrailscomic/your_content/images/redwoodbadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(-9deg);top: 26%;left: 60%;" class="badgeMobile" src="/happytrailscomic/your_content/images/nessiebadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(14deg);top: 27%;left: 6%;" class="badgeMobile" src="/happytrailscomic/your_content/images/flowerbadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(-9deg);top: 31%;left: 10%; class="badgeMobile" src="/happytrailscomic/your_content/images/oakbadge.png">
 	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1310px;left: 60px;" src="/happytrailscomic/your_content/images/ufobadge.png">
 	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1440px;left: 500px;" src="/happytrailscomic/your_content/images/flowerbadge.png">
 	<img class="badge" style="width: 160px;position: relative;transform: rotate(4deg);top: -1570px;left: 760px;" src="/happytrailscomic/your_content/images/earthbadge.png">

@@ -30,6 +30,10 @@ a {
     color: #2E9BC7;  /* The color of the hyperlinks */
 }
 
+#banner-img {
+	content: url("/happytrailscomic/your_content/images/banner.png");
+}
+
 #post-date {
 	margin-top: 0px
 	font-weight: 400;
@@ -604,6 +608,10 @@ code {
 	height: 60px;
 }
 
+#mobile-wrapper {
+	margin-bottom: 16px;
+}
+
 .header-socials {
 	display: flex;
 	align-items: center;
@@ -694,6 +702,10 @@ code {
 	color: #3a4a30;
 }
 
+.badgeMobile {
+	display: none;
+}
+
 @media only screen and (max-width: 900px) {
 
 body {
@@ -709,10 +721,12 @@ body {
 
 #banner {
 	width: 100vw;
+	margin-bottom: 0px;
 }
 
 #banner-img {
 	width: 100vw;
+	content: url("/happytrailscomic/your_content/images/bannerMobile.png");
 }
 
 .comic-image {
@@ -1036,6 +1050,10 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
 	margin-left: 0px;
 	width: 70%;
 	max-width: 350px;
+}
+
+.badgeMobile {
+	display: block;
 }
 
 }
