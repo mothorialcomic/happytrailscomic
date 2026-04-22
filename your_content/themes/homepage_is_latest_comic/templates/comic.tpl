@@ -49,7 +49,6 @@
 
     <div id="blurb">
 	<div style="display: flex; gap: 12px;">
-		<img class="profilePic" src="/happytrailscomic/your_content/images/meicon.png" title="">
 		<div>
 			<h1 id="post-title">{{ page_title }}</h1>
 			<h3 id="post-date">{{ _post_date }}</h3>
