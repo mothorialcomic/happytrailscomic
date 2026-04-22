@@ -20,6 +20,7 @@ body {
 	background-size: contain;
 	padding-top: env(safe-area-inset-top);
 	padding-bottom: env(safe-area-inset-bottom);
+	margin-top: 0px;
 }
 
 h1, h2, h3 {
@@ -105,19 +106,13 @@ a {
 
 #container {
 	max-width: 1000px;
-	margin-top: 15px;
 	padding-top: 0px;
-	margin-top: 10px;
 }
 
 #banner-img {
 	max-width: 1000px;
 	transition: opacity 0.2s ease;
 	width: 100%;
-}
-
-#banner-img:hover {
-	opacity: 0.8;
 }
 
 .comic-image {

@@ -205,15 +205,25 @@ document.addEventListener('DOMContentLoaded', () => {
   crossImg.onload = () => setupBannerCanvas(crossImg);
   crossImg.src = bannerImg.src;
 
-  bannerLink.addEventListener('mousemove', (e) => {
-    const rect = bannerImg.getBoundingClientRect();
-    const scaleX = bannerImg.naturalWidth / rect.width;
-    const scaleY = bannerImg.naturalHeight / rect.height;
-    const x = (e.clientX - rect.left) * scaleX;
-    const y = (e.clientY - rect.top) * scaleY;
-    const alpha = bannerCtx.getImageData(x, y, 1, 1).data[3];
-    bannerLink.style.cursor = alpha === 0 ? 'default' : 'pointer';
-  });
+	bannerLink.addEventListener('mousemove', (e) => {
+		const rect = bannerImg.getBoundingClientRect();
+		const scaleX = bannerImg.naturalWidth / rect.width;
+		const scaleY = bannerImg.naturalHeight / rect.height;
+		const x = (e.clientX - rect.left) * scaleX;
+		const y = (e.clientY - rect.top) * scaleY;
+		const alpha = bannerCtx.getImageData(x, y, 1, 1).data[3];
+		if (alpha === 0) {
+		bannerLink.style.cursor = 'default';
+		bannerImg.style.opacity = '1';
+		} else {
+		bannerLink.style.cursor = 'pointer';
+		bannerImg.style.opacity = '0.8';
+		}
+	});
+
+	bannerLink.addEventListener('mouseleave', () => {
+		bannerImg.style.opacity = '1';
+	});
 
   bannerLink.addEventListener('click', (e) => {
     const rect = bannerImg.getBoundingClientRect();
