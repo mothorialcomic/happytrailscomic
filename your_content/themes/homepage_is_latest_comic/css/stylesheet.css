@@ -926,7 +926,7 @@ body {
 }
 
 .close-btn {
-	position: fixed;
+	position: sticky;
 	bottom: 0;
 	height: 10vh;
 	width: 100%;
