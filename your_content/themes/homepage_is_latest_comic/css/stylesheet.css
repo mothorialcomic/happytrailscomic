@@ -710,6 +710,11 @@ body {
 #banner {
 	width: 100vw;
 	margin-bottom: -5px;
+	background-color: #47604B;
+}
+
+.navigation-button-disabled img, .navigation-button img {
+	width: 70%;
 }
 
 .comic-image {
