@@ -55,7 +55,8 @@
 {% block body %}
 <div id="container">
     <div id="banner">
-        <a id="banner-img-link" href="{{ base_dir }}/" alt="banner">
+        <a id="banner-img-link" href="{{ base_dir }}/">
+            <img id="banner-img" alt="banner" src="{{ banner_image }}">
         </a>
     </div>
     {%- if links %}
@@ -185,6 +186,34 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdown.classList.toggle('open');
   });
 });
+
+(function() {
+  const bannerCanvas = document.createElement('canvas');
+  const bannerCtx = bannerCanvas.getContext('2d');
+  const bannerImg = document.getElementById('banner-img');
+  const bannerLink = document.getElementById('banner-img-link');
+
+  function setupBannerCanvas(img) {
+    bannerCanvas.width = img.naturalWidth;
+    bannerCanvas.height = img.naturalHeight;
+    bannerCtx.drawImage(img, 0, 0);
+  }
+
+  bannerImg.onload = () => setupBannerCanvas(bannerImg);
+  if (bannerImg.complete) setupBannerCanvas(bannerImg);
+
+  bannerLink.addEventListener('click', (e) => {
+    const rect = bannerImg.getBoundingClientRect();
+    const scaleX = bannerImg.naturalWidth / rect.width;
+    const scaleY = bannerImg.naturalHeight / rect.height;
+    const x = (e.clientX - rect.left) * scaleX;
+    const y = (e.clientY - rect.top) * scaleY;
+    const alpha = bannerCtx.getImageData(x, y, 1, 1).data[3];
+    if (alpha > 0) {
+      e.preventDefault(); // block the link on non-transparent pixels
+    }
+  });
+})();
 </script>
 </body>
 </html>
