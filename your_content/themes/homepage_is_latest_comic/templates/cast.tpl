@@ -14,13 +14,13 @@
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Cocker spaniel</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">28 • F (she/her)</p>
 		</div>
+		<img id="regularMapleMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/maple.png">
+		<img id="secretMapleMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/maplenude.png" style="display: none;">	
 		<article id="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;margin-left: 30px;margin-right: 30px;font-size: clamp(14px, 5vw, 28px);">
 			<p>Maple is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it. She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p>
 			<p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p>
 			<p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
 		</article>
-		<img id="regularMapleMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/maple.png">
-		<img id="secretMapleMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/maplenude.png" style="display: none;">	
 		<button class="close-btn" onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 	</div>
 </div>
@@ -31,13 +31,13 @@
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Calico</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">25 • M (he/him)</p>
 		</div>
+		<img id="regularSyrupMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/syrup.png">
+		<img id="secretSyrupMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/syrupnude.png" style="display: none;">	
 		<article id="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;margin-left: 30px;margin-right: 30px;font-size: clamp(14px, 5vw, 28px);">
 			<p>Syrup is a former botanist who loves documenting the world around him. He's big on journaling, photography, and writing. He'd venture out into the park for new photos to take, and camping and hiking became second nature. He loves space and astronomy as well, and being outside gives him plenty to look at at night.</p>
 			<p>For him, being out in nature is a meditative experience, and he looks forward to spending time outside.</p>
 			<p> When he meets Maple, he's in the midst of a crucial career pivot, and after some time, smitten by her optimistic attitude, decides to forgo it all and spend time with someone he loves out in the place he knows. He might have gotten... a little distracted though.</p>
 		</article>
-		<img id="regularSyrupMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/syrup.png">
-		<img id="secretSyrupMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/syrupnude.png" style="display: none;">	
 		<button class="close-btn" onclick="document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 	</div>
 </div>
@@ -48,13 +48,13 @@
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Reindeer</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">33 • F (she/her)</p>
 		</div>
+		<img id="regularBrieMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/brie.png">
+		<img id="secretBrieMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/brienude.png" style="display: none;">	
 		<article id="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;margin-left: 30px;margin-right: 30px;font-size: clamp(14px, 5vw, 28px);">
 			<p>Brie is a new park ranger and police officer who honestly, doesn’t care much for nature. As punishment for her hotheaded attitude, she’s over at Happy Trails for a season or two (or however long she needs to be)!</p>
 			<p>This was… supposed to be a temporary situation. She values structure and following the rules, and when it comes to being a ranger, it’s the structure she craves! Even so, she hates the fact Maple and Syrup break the rules and get away with it so often. Not to mention that there seems to be something…off about the park that seems to make everyone a little pent up.</p>
 			<p>Her relationship with Barry is strained and tense. For some strange reason Barry lets people off with a warning more than she’d say is acceptable. They both have different ways they want to run the park that don’t mesh well together.</p>
 		</article>
-		<img id="regularBrieMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/brie.png">
-		<img id="secretBrieMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/brienude.png" style="display: none;">	
 	<button class="close-btn" onclick="document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 	</div>
 </div>
@@ -65,13 +65,13 @@
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Gray Wolf</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">47 • M (he/him)</p>
 		</div>
+		<img id="regularBarryMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/barry.png">
+		<img id="secretBarryMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/barrynude.png" style="display: none;">	
 		<article id="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;margin-left: 30px;margin-right: 30px;font-size: clamp(14px, 5vw, 28px);">
 			<p>Barry is a long time park ranger, having served as one for over 20 years. He's serious about his work, and loves nature and the outdoors dearly. He works to maintain the natural beauty of the park around him, and doesn't take well to folks defacing the park or messing with wildlife.</p>
 			<p>He knows about the odd quality of the park, but it hasn't affected him for a long time. He's got a past shrouded in mystery, and doesn't let people get too close to him. He keeps to himself. As long as there's peace and quiet, he's letting it be.</p>
 			<p>He may not look it, but the hard exterior is just that. He's awfully lenient to folks who do nothing more than enjoy themselves in the park. Because of this, him and Brie clash often.</p>
 		</article>
-		<img id="regularBarryMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/barry.png">
-		<img id="secretBarryMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/barrynude.png" style="display: none;">	
 	<button class="close-btn" onclick="document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 	</div>
 </div>
