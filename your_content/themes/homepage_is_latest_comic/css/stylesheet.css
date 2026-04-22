@@ -28,7 +28,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: #2E9BC7;  /* The color of the hyperlinks */
+    color: #B08669;  /* The color of the hyperlinks */
 }
 
 #post-date {
@@ -67,7 +67,7 @@ a {
 .bottomTags {
 	display: flex;
 	font-size: smaller;
-	color: #704f38;
+	color: #B08669;
 }
 
 #post-date::before {
@@ -82,7 +82,7 @@ a {
 	content: '\f1c5';
 	font-family: 'Font Awesome 6 Free';
 	font-weight: 400;
-	color: #704f38;
+	color: #B08669;
 	padding: 0 .3rem 0 0;
 }
 
@@ -90,7 +90,7 @@ a {
 	content: '\e533';
 	font-family: 'Font Awesome 6 Free';
 	font-weight: 900;
-	color: #704f38;
+	color: #B08669;
 }
 
 #characters, #tags {
@@ -99,7 +99,7 @@ a {
 
 #tags:before {
 	font-weight: 900;
-	color: #704f38;
+	color: #B08669;
 	content: '\f02c';
 	font-family: 'Font Awesome 6 Free';
 }
@@ -200,10 +200,10 @@ a.navigation-button-disabled {
 
 /* The blue background with the dotted borders that shows up on most pages. */
 #blurb {
-	background-color: #E3D8C0;  /* The color of the "blurb" box that contains post title, post date, tags, etc. */
+	background-color: #E0E7CD;  /* The color of the "blurb" box that contains post title, post date, tags, etc. */
 	width: 75%;  /* The maximum width of the blurb box. */
 	border-radius: 25px;
-	border: 10px solid #E3DBC0;
+	border: 10px solid #E0E7CD;
 }
 
 #blurbQuest {
@@ -212,9 +212,9 @@ a.navigation-button-disabled {
 	max-width: 100%;
 	margin-bottom: 20px;
 	padding: 15px 15px 10px 15px;
-	background-color: #E3D8C0;
+	background-color: #E0E7CD;
 	border-radius: 25px;
-	border: 10px solid #E3DBC0;
+	border: 10px solid #E0E7CD;
 	margin-top: 10px;
 }
 
@@ -234,10 +234,11 @@ code {
 }
 
 #post-title {
-    font-size: 2em;  /* Font size of the post title */
-    font-family: "Corben", sans-serif;
-	color: #47604b;
+	font-size: 1.3em;
+	font-family: "Corben", sans-serif;
+	color: #704f38;
 	margin-top: 0px;
+	margin-bottom: -9px;
 }
 
 #post-date {
