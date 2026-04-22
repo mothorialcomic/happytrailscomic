@@ -681,6 +681,8 @@ code {
 	background-color: #47604B;
 	border-bottom: 1px solid rgba(255,255,255,0.2);
 	transition: background-color 0.2s, color 0.2s;
+	border-radius: 0;
+	line-height: initial;
 }
 
 #links-bar-mobile a:hover {
@@ -717,6 +719,7 @@ body {
 	width: 100vw;
 	border: none;
 	margin: 0;
+	border-radius: 0;
 }
 
 .bulletinBoard {
@@ -966,7 +969,6 @@ body {
 	flex-direction: column;
 	width: 100%;
 	display: flex;
-	margin-bottom: 15px;
 }
 
 .link-bar-link {
