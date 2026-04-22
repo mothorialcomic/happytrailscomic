@@ -9,7 +9,7 @@
 
 <div id="descriptionMapleMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
-		<div>
+		<div style="margin-bottom: 30px;">
 			<img src="/happytrailscomic/your_content/images/mapletext.png" class="mapleText">
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Cocker spaniel</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">28 • F (she/her)</p>
@@ -26,7 +26,7 @@
 </div>
 <div id="descriptionSyrupMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
-		<div>
+		<div style="margin-bottom: 30px;">
 			<img src="/happytrailscomic/your_content/images/syruptext.png" class="syrupText">
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Calico</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">25 • M (he/him)</p>
@@ -43,7 +43,7 @@
 </div>
 <div id="descriptionBrieMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
-		<div>
+		<div style="margin-bottom: 30px;">
 			<img src="/happytrailscomic/your_content/images/brietext.png" class="brieText">
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Reindeer</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">33 • F (she/her)</p>
@@ -60,7 +60,7 @@
 </div>
 <div id="descriptionBarryMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
-		<div>
+		<div style="margin-bottom: 30px;">
 			<img src="/happytrailscomic/your_content/images/barrytext.png" class="barryText">
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Gray Wolf</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">47 • M (he/him)</p>

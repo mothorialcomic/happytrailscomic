@@ -107,6 +107,9 @@ a {
 #container {
 	max-width: 1000px;
 	padding-top: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFED;
 }
 
 #banner-img {
@@ -705,6 +708,7 @@ body {
 	width: 100vw;
 	padding: 0px;
 	margin: 0px;
+	background-color: #FFFFED;
 }
 
 #banner {
@@ -803,7 +807,7 @@ body {
 	cursor: pointer;
 	width: 80%;
 	margin-right: 0px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
 	margin-left: 0px;
 	max-width: 550px;
 }
@@ -812,7 +816,7 @@ body {
 	cursor: pointer;
     width: 80%;
     margin-right: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     margin-left: 0px;
     display: initial;
 	max-width: 550px;
@@ -822,7 +826,7 @@ body {
 	cursor: pointer;
     width: 90%;
     margin-right: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     margin-left: 0px;
     max-width: 550px;
 }
@@ -831,7 +835,7 @@ body {
 	cursor: pointer;
     width: 90%;
     margin-right: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     margin-left: 0px;
     max-width: 550px;
 	display: initial;
@@ -841,7 +845,7 @@ body {
 	cursor: pointer;
     width: 50%;
     margin-right: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     margin-left: 0px;
     display: initial;
 	max-width: 225px;
@@ -851,7 +855,7 @@ body {
 	cursor: pointer;
     width: 50%;
     margin-right: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     margin-left: 0px;
 	max-width: 225px;
 }
