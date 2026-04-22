@@ -592,7 +592,7 @@ code {
 }
 
 #menu-dropdown {
-	display: none !important;
+	display: none;
 }
 
 #mobile-header {
@@ -961,6 +961,7 @@ body {
 #menu-dropdown.open {
 	display: flex;
 }
+
 #links-bar-mobile {
 	flex-direction: column;
 	width: 100%;
