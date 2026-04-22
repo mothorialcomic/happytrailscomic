@@ -1049,4 +1049,8 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
 	display: block;
 }
 
+.navigation-button, .navigation-button-disabled {
+  padding: 0 0px;
+}
+
 }
