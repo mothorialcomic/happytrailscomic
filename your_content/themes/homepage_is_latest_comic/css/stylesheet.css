@@ -235,7 +235,7 @@ code {
 
 #post-title {
     font-size: 2em;  /* Font size of the post title */
-    font-family: "Caprasimo", sans-serif;
+    font-family: "Corben", sans-serif;
 	color: #47604b;
 	margin-top: 0px;
 }
@@ -259,7 +259,7 @@ code {
 .characterDetails {
   text-align: left;
   color: #555001;
-  font-family: "Caprasimo", sans-serif;
+  font-family: "Corben", sans-serif;
   margin-bottom: -6px;
 }
 
@@ -578,7 +578,7 @@ code {
 }
 
 .comicsListTitle {
-	font-family: "Caprasimo", sans-serif;
+	font-family: "Corben", sans-serif;
 	color: #47604b;
 }	
 

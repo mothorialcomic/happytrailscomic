@@ -4,7 +4,7 @@
 {# This is the start of the `content` block. It's part of the <body> of the page. This is where all the visible
    parts of the website after the links bar and before the "Powered by comic_git" footer go. #}
 {% block content %}
-	<h1 class="comicsListTitle">Comics</h1>
+	<img class="charas" src="/happytrailscomic/your_content/images/comics.png" style="width: 60%;max-width: 400px;margin-bottom: 10px;">
 	<div class="castBorder">
 		<table class="castpage" style="width: 100%;">
 			<tbody><tr style="/*! margin: 0 auto; *//*! position: relative; */">
