@@ -630,7 +630,7 @@ body {
 	position: absolute;
     width: 9%;
     height: auto;
-    top: 3%;
+    top: 2%;
     left: 29%;
 }
 
@@ -838,8 +838,7 @@ body {
 .mobileMenu {
 	text-decoration: none;
 	font-size: 3em;
-    height: 90px;
-	align-items: center;
+    height: 60px;
 	margin-bottom: 10px;
 	display: flex;
 	font-family: "Fredoka", sans-serif;
