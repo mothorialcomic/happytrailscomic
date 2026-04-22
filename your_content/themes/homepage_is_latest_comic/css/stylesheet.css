@@ -671,18 +671,31 @@ code {
 
 
 #links-bar-mobile a {
-	color: white;
-	text-decoration: none;
-	font-family: "Fredoka", sans-serif;
-	font-size: 2em;
-	text-align: center;
-	padding: 15px 0;
-	background-color: #47604B;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-	transition: background-color 0.2s, color 0.2s;
-	border-radius: 0;
-	line-height: initial;
+  color: white;
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #47604B;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-radius: 0;
+  line-height: initial;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: background-color 0.2s, color 0.2s, opacity 0.3s ease, transform 0.3s ease;
 }
+
+#menu-dropdown.open #links-bar-mobile a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#links-bar-mobile a:nth-child(1) { transition-delay: 0.05s; }
+#links-bar-mobile a:nth-child(2) { transition-delay: 0.1s; }
+#links-bar-mobile a:nth-child(3) { transition-delay: 0.15s; }
+#links-bar-mobile a:nth-child(4) { transition-delay: 0.2s; }
+#links-bar-mobile a:nth-child(5) { transition-delay: 0.25s; }
 
 #links-bar-mobile a:hover {
 	background-color: #6F855E;
@@ -981,6 +994,7 @@ body {
 #menu-dropdown.open {
   grid-template-rows: 1fr;
 }
+
 #menu-dropdown-inner {
   overflow: hidden;
 }
