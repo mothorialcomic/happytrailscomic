@@ -170,6 +170,8 @@
 {# This is the start of the `script` block. Most pages don't need any javascript, so by default it's blank, but some
    pages like infinite_scroll.tpl will fill this in with a <script> tag. #}
 {% block script %}
+{% endblock %}
+<script>
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Script loaded');
 
@@ -179,12 +181,8 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('Hamburger found:', hamburger);
   console.log('Dropdown found:', dropdown);
 
-  if (!hamburger) {
-    console.error('Hamburger button not found! Check that the HTML is in the page.');
-    return;
-  }
-  if (!dropdown) {
-    console.error('Dropdown not found! Check that #menu-dropdown is in the page.');
+  if (!hamburger || !dropdown) {
+    console.error('Hamburger or dropdown not found!');
     return;
   }
 
@@ -192,11 +190,8 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Hamburger clicked!');
     hamburger.classList.toggle('is-open');
     dropdown.classList.toggle('open');
-    console.log('Dropdown classes:', dropdown.classList.toString());
   });
-
-  console.log('Click listener attached successfully');
 });
-{% endblock %}
+</script>
 </body>
 </html>
