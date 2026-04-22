@@ -173,47 +173,53 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Hamburger menu
   const hamburger = document.querySelector('.hamburger');
   const dropdown = document.getElementById('menu-dropdown');
-
   if (!hamburger || !dropdown) {
     console.error('Hamburger or dropdown not found!');
     return;
   }
-
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('is-open');
     dropdown.classList.toggle('open');
   });
-});
 
-(function() {
-  const bannerCanvas = document.createElement('canvas');
-  const bannerCtx = bannerCanvas.getContext('2d');
-  const bannerImg = document.getElementById('banner-img');
-  const bannerLink = document.getElementById('banner-img-link');
+  // Banner click detection
+  (function() {
+    const bannerCanvas = document.createElement('canvas');
+    const bannerCtx = bannerCanvas.getContext('2d');
+    const bannerImg = document.getElementById('banner-img');
+    const bannerLink = document.getElementById('banner-img-link');
 
-  function setupBannerCanvas(img) {
-    bannerCanvas.width = img.naturalWidth;
-    bannerCanvas.height = img.naturalHeight;
-    bannerCtx.drawImage(img, 0, 0);
-  }
-
-  bannerImg.onload = () => setupBannerCanvas(bannerImg);
-  if (bannerImg.complete) setupBannerCanvas(bannerImg);
-
-  bannerLink.addEventListener('click', (e) => {
-    const rect = bannerImg.getBoundingClientRect();
-    const scaleX = bannerImg.naturalWidth / rect.width;
-    const scaleY = bannerImg.naturalHeight / rect.height;
-    const x = (e.clientX - rect.left) * scaleX;
-    const y = (e.clientY - rect.top) * scaleY;
-    const alpha = bannerCtx.getImageData(x, y, 1, 1).data[3];
-    if (alpha > 0) {
-      e.preventDefault(); // block the link on non-transparent pixels
+    if (!bannerImg || !bannerLink) {
+      console.error('Banner elements not found!');
+      return;
     }
-  });
-})();
+
+    function setupBannerCanvas(img) {
+      bannerCanvas.width = img.naturalWidth;
+      bannerCanvas.height = img.naturalHeight;
+      bannerCtx.drawImage(img, 0, 0);
+    }
+
+    bannerImg.onload = () => setupBannerCanvas(bannerImg);
+    if (bannerImg.complete) setupBannerCanvas(bannerImg);
+
+    bannerLink.addEventListener('click', (e) => {
+      const rect = bannerImg.getBoundingClientRect();
+      const scaleX = bannerImg.naturalWidth / rect.width;
+      const scaleY = bannerImg.naturalHeight / rect.height;
+      const x = (e.clientX - rect.left) * scaleX;
+      const y = (e.clientY - rect.top) * scaleY;
+      const alpha = bannerCtx.getImageData(x, y, 1, 1).data[3];
+      if (alpha > 0) {
+        e.preventDefault();
+      }
+    });
+  })();
+
+});
 </script>
 </body>
 </html>
