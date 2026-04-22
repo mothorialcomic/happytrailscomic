@@ -49,7 +49,7 @@
 
     <div id="blurb">
 	<div style="display: flex; gap: 12px;">
-		<img class="profilePic" src="/happytrailscomic/your_content/images/meicon.png" title="" style="width: 138px;display: f;">
+		<img class="profilePic" src="/happytrailscomic/your_content/images/meicon.png" title="">
 		<div>
 			<h1 id="post-title">{{ page_title }}</h1>
 			<h3 id="post-date">{{ _post_date }}</h3>
@@ -129,7 +129,6 @@
     init_overlay();
 {% if transcripts %}
     import { init_transcript } from "{{ base_dir }}/comic_git_engine/js/transcript.js";
-    init_transcript();
 {% endif %}
 </script>
 {%- endblock %}
