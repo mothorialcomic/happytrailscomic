@@ -246,7 +246,6 @@ code {
 }
 
 #storyline, #characters, #tags {
-    font-style: italic;  /* Delete this to unitalicize the tags */
 }
 
 .polaroid {
