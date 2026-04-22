@@ -207,16 +207,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bannerImg.complete) setupBannerCanvas(bannerImg);
 
     bannerLink.addEventListener('click', (e) => {
-      const rect = bannerImg.getBoundingClientRect();
-      const scaleX = bannerImg.naturalWidth / rect.width;
-      const scaleY = bannerImg.naturalHeight / rect.height;
-      const x = (e.clientX - rect.left) * scaleX;
-      const y = (e.clientY - rect.top) * scaleY;
-      const alpha = bannerCtx.getImageData(x, y, 1, 1).data[3];
-      if (alpha > 0) {
-        e.preventDefault();
-      }
-    });
+  const rect = bannerImg.getBoundingClientRect();
+  const scaleX = bannerImg.naturalWidth / rect.width;
+  const scaleY = bannerImg.naturalHeight / rect.height;
+  const x = (e.clientX - rect.left) * scaleX;
+  const y = (e.clientY - rect.top) * scaleY;
+  const alpha = bannerCtx.getImageData(x, y, 1, 1).data[3];
+  console.log('Clicked at:', x, y);
+  console.log('Alpha value:', alpha);
+  console.log('Canvas size:', bannerCanvas.width, bannerCanvas.height);
+  console.log('Image size:', bannerImg.naturalWidth, bannerImg.naturalHeight);
+  if (alpha > 0) {
+    e.preventDefault();
+  }
+});
   })();
 
 });
