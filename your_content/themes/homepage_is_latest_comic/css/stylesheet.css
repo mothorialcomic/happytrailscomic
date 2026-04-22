@@ -938,6 +938,7 @@ body {
     letter-spacing: 0.05em;
     cursor: pointer;
     font-family: "Fredoka", sans-serif;
+	display: block;
 }
 
 .infinite-page-image {

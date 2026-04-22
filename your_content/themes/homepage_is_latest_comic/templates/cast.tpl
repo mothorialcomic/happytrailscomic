@@ -21,8 +21,8 @@
 		</article>
 		<img id="regularMapleMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/maple.png">
 		<img id="secretMapleMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/maplenude.png" style="display: none;">	
+		<button class="close-btn" onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 	</div>
-	<button class="close-btn" onclick="document.getElementById('descriptionMapleMobile').style.visibility = 'hidden'; document.getElementById('descriptionMaple').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
 <div id="descriptionSyrupMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
@@ -38,8 +38,8 @@
 		</article>
 		<img id="regularSyrupMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/syrup.png">
 		<img id="secretSyrupMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/syrupnude.png" style="display: none;">	
+		<button class="close-btn" onclick="document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 	</div>
-	<button class="close-btn" onclick="document.getElementById('descriptionSyrupMobile').style.visibility = 'hidden'; document.getElementById('descriptionSyrup').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
 </div>
 <div id="descriptionBrieMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
@@ -55,8 +55,8 @@
 		</article>
 		<img id="regularBrieMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/brie.png">
 		<img id="secretBrieMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/brienude.png" style="display: none;">	
-	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionBrieMobile').style.visibility = 'hidden'; document.getElementById('descriptionBrie').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
+	</div>
 </div>
 <div id="descriptionBarryMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
@@ -72,8 +72,8 @@
 		</article>
 		<img id="regularBarryMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/barry.png">
 		<img id="secretBarryMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/barrynude.png" style="display: none;">	
-	</div>
 	<button class="close-btn" onclick="document.getElementById('descriptionBarryMobile').style.visibility = 'hidden'; document.getElementById('descriptionBarry').style.visibility = 'hidden'; document.getElementById('overlay').style.visibility = 'hidden';">CLOSE</button>
+	</div>
 </div>
 
 <div id="descriptionMaple">
