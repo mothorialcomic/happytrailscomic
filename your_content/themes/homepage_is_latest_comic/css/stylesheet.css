@@ -960,6 +960,7 @@ body {
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	padding-top: 20px;
+	overflow-x: hidden;
 }
 
 .popupMobile::-webkit-scrollbar {
