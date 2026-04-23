@@ -26,7 +26,7 @@
 </div>
 <div id="descriptionSyrupMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
-		<div style="margin-bottom: 30px;">
+		<div style="margin-bottom: 30px;"> 
 			<img src="/happytrailscomic/your_content/images/syruptext.png" class="syrupText">
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Calico</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">25 • M (he/him)</p>
