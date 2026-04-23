@@ -11,6 +11,7 @@
 </div>
 <div class="aboutOne">
     <img title="" src="/happytrailscomic/your_content/images/aboutartist.png" class="aboutArtist">
+	<img title="" src="/happytrailscomic/your_content/images/meicon.png" class="yeenMobile">
     <div style="padding-left: 10px; padding-right: 10px;">
         <p class="aboutText">Thanks for taking a look!<br>I'm plum, and I make this thing!</p>
         <p class="aboutText">A little about me, I love nature, the color green (if you can't tell) and making art!</p>
