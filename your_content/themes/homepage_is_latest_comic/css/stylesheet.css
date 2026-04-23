@@ -936,7 +936,7 @@ body {
 .popupMobile {
 	width: 100%;
 	margin-left: 0px;
-	max-height: 100vh;
+	max-height: 100dvh;
 	overflow-y: auto;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
@@ -950,7 +950,7 @@ body {
 .close-btn {
 	position: fixed;
 	bottom: 0;
-	height: 10vh;
+	height: 10dvh;
 	width: 100%;
 	border: none;
 	background: #47604B !important;
@@ -1082,7 +1082,7 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
 }
 
 .post-body {
-	padding-bottom: 10vh;
+	padding-bottom: 10dvh;
 }
 
 .navigation-button, .navigation-button-disabled {
