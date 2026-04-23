@@ -718,7 +718,7 @@ code {
 .welcomeOne {
   background-color: #E0E7CD;
   width: 46%;
-  border-radius: 25px;
+  border-radius: 45px;
   border: 10px solid #E0E7CD;
   text-align: left;
   max-width: 100%;
@@ -768,11 +768,11 @@ code {
 .aboutOne {
   background-color: #E0E7CD;
   width: 33%;
-  border-radius: 25px;
+  border-radius: 45px;
   border: 10px solid #E0E7CD;
   text-align: left;
   max-width: 100%;
-  padding: 30px 15px 10px 15px;
+  padding: 20px 15px 10px 15px;
   justify-content: center;
   display: flex;
   margin-top: 250px;
@@ -780,12 +780,13 @@ code {
   flex-direction: column;
   position: relative;
   margin-left: auto;
-  margin-right: 170px;
+  margin-right: 160px;
   margin-bottom: 22px;
 }
 
 .aboutArtist {
   width: 80%;
+  margin-bottom: 20px;
 }
 
 .aboutText {
@@ -804,8 +805,8 @@ code {
 .yeen {
   position: absolute;
   width: 390px;
-  top: -3px;
-  left: -344px;
+  top: 7px;
+  left: -354px;
 }
 
 @media only screen and (max-width: 900px) {

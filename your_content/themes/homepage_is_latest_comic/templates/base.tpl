@@ -163,10 +163,10 @@
     {% include "webring.tpl" %}
     {%- endif %}
 
-    <div id="powered-by">
+</div>
+<div id="powered-by">
         Powered by <a id="powered-by-link" href="https://www.comic-git.com">comic_git</a> v{{ version }}
     </div>
-</div>
 {% endblock %}
 {# This is the start of the `script` block. Most pages don't need any javascript, so by default it's blank, but some
    pages like infinite_scroll.tpl will fill this in with a <script> tag. #}
