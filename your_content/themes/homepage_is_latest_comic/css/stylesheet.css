@@ -819,7 +819,6 @@ code {
 body {
 	padding: 0;
 	margin: 0;
-	overflow-x: hidden;
 }
 
 #container {
@@ -1211,8 +1210,8 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
 
 .welcomeOne {
 	width: 90%;
-	padding: 8px 15px 50px 15px;
-	box-sizing: border-box;
+    padding: 8px 15px 26px 15px;
+    box-sizing: border-box;
 }
 
 .welcomeBanner {
@@ -1222,27 +1221,29 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
 
 .comicsLink {
 	width: 60%;
-	top: 216px;
-	left: -31px;
+    top: 85%;
+    right: calc(50% + 0%);
+    left: inherit;
 }
 
 .latestLink {
 	width: 60%;
-	top: 216px;
-	left: 170px;
+    top: 85%;
+    left: calc(50% + 0%);
 }
 
 .ageRange {
 	width: 23%;
-	top: 237px;
+    top: 92%;
 }
 
 .aboutOne {
 	width: 90%;
-	padding: 20px 15px 10px 15px;
-	margin-bottom: 22px;
-	box-sizing: border-box;
-	margin-top: 140px;
+    padding: 20px 15px 10px 15px;
+    margin-bottom: 22px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-top: 47%;
 }
 
 .aboutArtist {
