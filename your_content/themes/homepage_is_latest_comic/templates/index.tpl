@@ -136,6 +136,19 @@ document.addEventListener('DOMContentLoaded', () => {
       regularHomeButtonComics.style.display = 'initial';
       setupHomeButtonComicsCanvas(regularHomeButtonComics);
     });
+	
+	regularHomeButtonComics.addEventListener('click', (e) => {
+      if (isOverOpaque(e, regularHomeButtonComics)) {
+        window.location.href = '/happytrailscomic/happytrailsquestone/comics/';
+      }
+    });
+
+    hoverHomeButtonComics.addEventListener('click', (e) => {
+      if (isOverOpaque(e, hoverHomeButtonComics)) {
+        window.location.href = '/happytrailscomic/happytrailsquestone/comics/';
+      }
+    });
+
   })();
 });
 </script>
