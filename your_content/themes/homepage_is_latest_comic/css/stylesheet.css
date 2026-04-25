@@ -17,7 +17,9 @@ body {
                       of the elements it contains. */
     background-color: white;  /* The color of the background behind everything */
     background-image: url("../../../images/bgartfixed.png");
-	background-size: contain;
+	background-attachment: fixed;
+	background-size: 1097px auto;
+	background-repeat: repeat;
 	padding-top: env(safe-area-inset-top);
 	padding-bottom: env(safe-area-inset-bottom);
 	margin-top: 0px;
