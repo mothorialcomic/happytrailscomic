@@ -749,14 +749,14 @@ code {
   position: absolute;
   width: 390px;
   top: 117px;
-  left: -144px;
+  right: calc(50% + 0%);
 }
 
 .latestLink {
   position: absolute;
   width: 390px;
   top: 117px;
-  left: 255px;
+	left: calc(50% + 0%);
 }
 
 .ageRange {
@@ -813,6 +813,8 @@ code {
 .yeenMobile {
 	display: none;
 }
+
+.latestLink:hover {}
 
 @media only screen and (max-width: 900px) {
 
@@ -1221,15 +1223,12 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
 
 .comicsLink {
 	width: 60%;
-    top: 85%;
-    right: calc(50% + 0%);
-    left: inherit;
+    top: 83%;
 }
 
 .latestLink {
 	width: 60%;
-    top: 85%;
-    left: calc(50% + 0%);
+    top: 83%;
 }
 
 .ageRange {
