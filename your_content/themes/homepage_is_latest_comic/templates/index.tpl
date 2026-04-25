@@ -25,8 +25,6 @@
 {%- endblock %}
 {% block script %}
 <script>
-javascript
-
 // Home Button
 document.addEventListener('DOMContentLoaded', () => {
   (function() {
