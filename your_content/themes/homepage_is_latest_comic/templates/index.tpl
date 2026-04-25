@@ -139,13 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	regularHomeButtonComics.addEventListener('click', (e) => {
       if (isOverOpaque(e, regularHomeButtonComics)) {
-        window.location.href = '/happytrailscomic/happytrailsquestone/comics/';
+        window.location.href = '/happytrailscomic/comics/';
       }
     });
 
     hoverHomeButtonComics.addEventListener('click', (e) => {
       if (isOverOpaque(e, hoverHomeButtonComics)) {
-        window.location.href = '/happytrailscomic/happytrailsquestone/comics/';
+        window.location.href = '/happytrailscomic/comics/';
       }
     });
 
