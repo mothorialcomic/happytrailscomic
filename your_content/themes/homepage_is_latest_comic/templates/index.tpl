@@ -5,7 +5,8 @@
     <img title="" class="welcomeBanner" src="/happytrailscomic/your_content/images/welcomebanner.png">
     <p class="welcomeText">Happy Trails is a comic series about two fun-loving kinky campers! It's a silly little romp that explores different kinks from all over with a comfy attitude. Read my latest page, or dive into some previous comics of mine!</p>
     <p class="welcomeText">Have fun looking around, Camper!</p>
-    <img title="" src="/happytrailscomic/your_content/images/buttonshomeM.png" class="comicsLink">
+    <img class="regularHomeButtonComics comicsLink" src="/happytrailscomic/your_content/images/buttonshomeM.png" />
+	<img class="hoverHomeButtonComics comicsLink" src="/happytrailscomic/your_content/images/buttonshomeMAlt.png" style="display:none;" />
     <img class="regularHomeButton latestLink" src="/happytrailscomic/your_content/images/buttonshomeS.png" />
 	<img class="hoverHomeButton latestLink" src="/happytrailscomic/your_content/images/buttonshomeSAlt.png" style="display:none;" />
     <img title="" src="/happytrailscomic/your_content/images/18plus.png" class="ageRange">
@@ -24,6 +25,8 @@
 {%- endblock %}
 {% block script %}
 <script>
+javascript
+
 // Home Button
 document.addEventListener('DOMContentLoaded', () => {
   (function() {
@@ -52,14 +55,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     regularHomeButton.addEventListener('mousemove', (e) => {
       if (isOverOpaque(e, regularHomeButton)) {
+        regularHomeButton.style.cursor = 'pointer';
         regularHomeButton.style.display = 'none';
         hoverHomeButton.style.display = 'initial';
         setupHomeButtonCanvas(hoverHomeButton);
+      } else {
+        regularHomeButton.style.cursor = 'default';
       }
     });
 
     hoverHomeButton.addEventListener('mousemove', (e) => {
-      if (!isOverOpaque(e, hoverHomeButton)) {
+      if (isOverOpaque(e, hoverHomeButton)) {
+        hoverHomeButton.style.cursor = 'pointer';
+      } else {
+        hoverHomeButton.style.cursor = 'default';
         hoverHomeButton.style.display = 'none';
         regularHomeButton.style.display = 'initial';
         setupHomeButtonCanvas(regularHomeButton);
@@ -68,8 +77,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hoverHomeButton.addEventListener('mouseleave', () => {
       hoverHomeButton.style.display = 'none';
+      hoverHomeButton.style.cursor = 'default';
       regularHomeButton.style.display = 'initial';
       setupHomeButtonCanvas(regularHomeButton);
+    });
+  })();
+});
+
+// Home Button Comics
+document.addEventListener('DOMContentLoaded', () => {
+  (function() {
+    const homeButtonComicsCanvas = document.createElement('canvas');
+    const homeButtonComicsCtx = homeButtonComicsCanvas.getContext('2d');
+    const regularHomeButtonComics = document.querySelector('.regularHomeButtonComics');
+    const hoverHomeButtonComics = document.querySelector('.hoverHomeButtonComics');
+
+    function setupHomeButtonComicsCanvas(img) {
+      homeButtonComicsCanvas.width = img.naturalWidth;
+      homeButtonComicsCanvas.height = img.naturalHeight;
+      homeButtonComicsCtx.drawImage(img, 0, 0);
+    }
+
+    regularHomeButtonComics.onload = () => setupHomeButtonComicsCanvas(regularHomeButtonComics);
+    if (regularHomeButtonComics.complete) setupHomeButtonComicsCanvas(regularHomeButtonComics);
+
+    function isOverOpaque(e, img) {
+      const rect = img.getBoundingClientRect();
+      const scaleX = img.naturalWidth / rect.width;
+      const scaleY = img.naturalHeight / rect.height;
+      const x = (e.clientX - rect.left) * scaleX;
+      const y = (e.clientY - rect.top) * scaleY;
+      return homeButtonComicsCtx.getImageData(x, y, 1, 1).data[3] > 0;
+    }
+
+    regularHomeButtonComics.addEventListener('mousemove', (e) => {
+      if (isOverOpaque(e, regularHomeButtonComics)) {
+        regularHomeButtonComics.style.cursor = 'pointer';
+        regularHomeButtonComics.style.display = 'none';
+        hoverHomeButtonComics.style.display = 'initial';
+        setupHomeButtonComicsCanvas(hoverHomeButtonComics);
+      } else {
+        regularHomeButtonComics.style.cursor = 'default';
+      }
+    });
+
+    hoverHomeButtonComics.addEventListener('mousemove', (e) => {
+      if (isOverOpaque(e, hoverHomeButtonComics)) {
+        hoverHomeButtonComics.style.cursor = 'pointer';
+      } else {
+        hoverHomeButtonComics.style.cursor = 'default';
+        hoverHomeButtonComics.style.display = 'none';
+        regularHomeButtonComics.style.display = 'initial';
+        setupHomeButtonComicsCanvas(regularHomeButtonComics);
+      }
+    });
+
+    hoverHomeButtonComics.addEventListener('mouseleave', () => {
+      hoverHomeButtonComics.style.display = 'none';
+      hoverHomeButtonComics.style.cursor = 'default';
+      regularHomeButtonComics.style.display = 'initial';
+      setupHomeButtonComicsCanvas(regularHomeButtonComics);
     });
   })();
 });
