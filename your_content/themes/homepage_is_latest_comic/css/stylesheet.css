@@ -33,6 +33,12 @@ a {
     color: #B08669;  /* The color of the hyperlinks */
 }
 
+#banner {
+	background-color: #47604B;
+	padding-bottom: 15px;
+	margin-bottom: 0px;
+}
+
 #post-date {
 	margin-top: 0px
 	font-weight: 400;
@@ -41,8 +47,7 @@ a {
 }
 
 #socials {
-	margin-bottom: 15px;
-	padding-top: 5px;
+	padding-top: 10px;
 	padding-left: 5px;
 	display: flex;
 	padding-bottom: 5px;
@@ -52,18 +57,19 @@ a {
 #allLinks {
 	display: flex;
 	justify-content: space-between;
+	background-color: #47604B;
 }
 
 
 #socials a {
-	color: #6F855E;
+	color: #bbcc97;
 	padding-top: 4px;
 	transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
 #socials a:hover {
 	transform: scale(1.1125);
-	color: #A6B469 !important;
+	color: #F9F4EE !important;
 }
 
 .bottomTags {
@@ -147,6 +153,7 @@ img {
 
 #links-bar {
 	padding-left: 20px;
+	padding-bottom: 0px;
 }
 
 .navigation-button-disabled img, .navigation-button img {
@@ -161,10 +168,11 @@ a.link-bar-link {
 	padding: 8px 20px;
 	border-radius: 50px;
 	text-decoration: none;
-	color: #F9F4EE;
-	background-color: #6F855E;
+	color: #6F855E;
+	background-color: #bbcc97;
 	transition: background-color 0.2s, color 0.2s;
 	line-height: 2.4;
+	font-weight: bold;
 }
 
 .link-bar-separator {
@@ -173,7 +181,7 @@ a.link-bar-link {
 }
 
 a.link-bar-link:hover {
-    background-color: #bbcc97;
+    background-color: #F9F4EE;
 }
 
 /* Comic navigation buttons */
@@ -695,7 +703,7 @@ code {
 .header-socials a {
 	display: flex;
 	align-items: center;
-	color: #A6B469;
+	color: #bbcc97;
 	transition: color 0.2s, filter 0.2s;
 }
 
