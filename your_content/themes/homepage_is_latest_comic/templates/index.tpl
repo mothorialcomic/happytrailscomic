@@ -79,6 +79,18 @@ document.addEventListener('DOMContentLoaded', () => {
       regularHomeButton.style.display = 'initial';
       setupHomeButtonCanvas(regularHomeButton);
     });
+	
+	regularHomeButton.addEventListener('click', (e) => {
+      if (isOverOpaque(e, regularHomeButton)) {
+        window.location.href = '/happytrailscomic/comics/';
+      }
+    });
+
+    hoverHomeButton.addEventListener('click', (e) => {
+      if (isOverOpaque(e, hoverHomeButton)) {
+        window.location.href = '/happytrailscomic/happytrailsquestone/latest/#comic-page';
+      }
+    });
   })();
 });
 
