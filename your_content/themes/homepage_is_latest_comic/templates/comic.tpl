@@ -121,6 +121,11 @@
     {% if navigation_bar_below_blurb %}
     {% include "navigation_bar.tpl" %}
     {% endif %}
+	<script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+<hyvor-talk-comments
+	website-id="15430"
+	page-id=""
+></hyvor-talk-comments>
 {%- endblock %}
 {%- block script %}
 <script type="module">
