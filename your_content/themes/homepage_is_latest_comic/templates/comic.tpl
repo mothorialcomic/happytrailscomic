@@ -120,11 +120,12 @@
     {% if navigation_bar_below_blurb %}
     {% include "navigation_bar.tpl" %}
     {% endif %}
+	<div style="width: 90%;display: flex;justify-content: center;align-items: center;margin: 0 auto;">
 	<script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
 <hyvor-talk-comments
 	website-id="15429"
 	page-id=""
-></hyvor-talk-comments>
+></hyvor-talk-comments></div>
 {%- endblock %}
 {%- block script %}
 <script type="module">
