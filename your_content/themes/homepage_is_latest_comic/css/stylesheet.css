@@ -165,23 +165,24 @@ img {
 }
 
 a.link-bar-link {
-	padding: 8px 20px;
-	border-radius: 50px;
-	text-decoration: none;
-	color: #6F855E;
-	background-color: #bbcc97;
-	transition: background-color 0.2s, color 0.2s;
-	line-height: 2.4;
-	font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #6F855E;
+  background-color: #bbcc97;
+  transition: background-color 0.2s, color 0.2s;
+  line-height: 2.4;
+  font-weight: bold;
+}
+
+a.link-bar-link:hover,
+a.link-bar-link.active {
+  background-color: #F9F4EE;
 }
 
 .link-bar-separator {
   margin: 0px 1px;
   visibility: hidden;
-}
-
-a.link-bar-link:hover {
-    background-color: #F9F4EE;
 }
 
 /* Comic navigation buttons */

@@ -62,19 +62,19 @@
     {%- if links %}
 	<div style="" id="allLinks">
 															<div id="links-bar">
-		{# For loops let you take a list of values and do something for each of those values. In this case,
-		   it runs through list of all the links provided by the [Links Bar] section of your comic_info.ini file,
-		   and it generates a link for each of them. #}
-		{%- for link in links %}
-			<a class="link-bar-link" href="{{ link.url }}" {{'target="_blank"' if link.open_in_new_tab else"" }}> {%- if link.image_url %}
-																<img class="link-bar-link-image" src="{{ link.image_url }}">
-				{%- else %}
-					{{ link.name }}
-				{%- endif %}
-			</a>
-			{% if not loop.last %}<span class="link-bar-separator">|</span>{% endif %}
-		{%- endfor %}
-		</div>
+    {%- for link in links %}
+        <a class="link-bar-link {% if link.url == current_page_url %}active{% endif %}" 
+           href="{{ link.url }}" 
+           {{'target="_blank"' if link.open_in_new_tab else ""}}>
+            {%- if link.image_url %}
+                <img class="link-bar-link-image" src="{{ link.image_url }}">
+            {%- else %}
+                {{ link.name }}
+            {%- endif %}
+        </a>
+        {% if not loop.last %}<span class="link-bar-separator">|</span>{% endif %}
+    {%- endfor %}
+</div>
 															<div id="socials">
 																<a class="extraLinks" href="https://bsky.app/profile/puppeypawbs.art" role="button" style="color: #bbcc97; padding-top: 4px;">
 																	<svg width="40" height="40" viewBox="0 0 40 40" fill="currentColor">
