@@ -39,7 +39,8 @@
 
 #post-title {
     margin-bottom: 10px;
-	font-family: "Balsamiq Sans", sans-serif;
+	font-family: "Averia Libre", system-ui;
+	font-weight: 700;
 }
 
 #post-date {

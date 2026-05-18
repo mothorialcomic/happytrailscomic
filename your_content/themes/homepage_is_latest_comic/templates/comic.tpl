@@ -122,7 +122,7 @@
     {% endif %}
 	<script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
 <hyvor-talk-comments
-	website-id="15430"
+	website-id="15429"
 	page-id=""
 ></hyvor-talk-comments>
 {%- endblock %}
