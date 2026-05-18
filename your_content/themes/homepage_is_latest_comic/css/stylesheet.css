@@ -291,6 +291,7 @@ a.navigation-button-disabled {
 	width: 75%;  /* The maximum width of the blurb box. */
 	border-radius: 25px;
 	border: 10px solid #E0E7CD;
+	padding: 15px 15px 15px 15px;
 }
 
 #blurbQuest {

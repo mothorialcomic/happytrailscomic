@@ -84,7 +84,6 @@
             </div>
         {%- endif %}
 	</div>
-        <hr id="post-body-break">
         {#{% if transcripts %}
 		<details>
 			<summary>Click to view transcript</summary>

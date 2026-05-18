@@ -38,8 +38,8 @@
 }
 
 #post-title {
-    margin-top: 5px;
     margin-bottom: 10px;
+	font-family: "Balsamiq Sans", sans-serif;
 }
 
 #post-date {
