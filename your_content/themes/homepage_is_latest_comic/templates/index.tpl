@@ -20,6 +20,7 @@
         <p class="aboutText">Happy Trails is my passion project, and I love working on it! If you like what you see, consider checking out the Patreon! You'll get early access to all this and more!</p>
     </div>
     <img title="" src="/happytrailscomic/your_content/images/patreonbutton.png" class="patreonButton">
+	<img title="" src="/happytrailscomic/your_content/images/patreonbuttonhover.png" class="patreonButtonHover">
     <img title="" src="/happytrailscomic/your_content/images/yeensite.png" class="yeen">
 </div>
 {%- endblock %}
@@ -161,6 +162,75 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+  })();
+});
+
+// Patreon Button
+document.addEventListener('DOMContentLoaded', () => {
+  (function() {
+    const patreonButtonCanvas = document.createElement('canvas');
+    const patreonButtonCtx = patreonButtonCanvas.getContext('2d');
+    const patreonButton = document.querySelector('.patreonButton');
+    const patreonButtonHover = document.querySelector('.patreonButtonHover');
+    
+    function setupPatreonButtonCanvas(img) {
+      patreonButtonCanvas.width = img.naturalWidth;
+      patreonButtonCanvas.height = img.naturalHeight;
+      patreonButtonCtx.drawImage(img, 0, 0);
+    }
+    
+    patreonButton.onload = () => setupPatreonButtonCanvas(patreonButton);
+    if (patreonButton.complete) setupPatreonButtonCanvas(patreonButton);
+    
+    function isOverOpaque(e, img) {
+      const rect = img.getBoundingClientRect();
+      const scaleX = img.naturalWidth / rect.width;
+      const scaleY = img.naturalHeight / rect.height;
+      const x = (e.clientX - rect.left) * scaleX;
+      const y = (e.clientY - rect.top) * scaleY;
+      return patreonButtonCtx.getImageData(x, y, 1, 1).data[3] > 0;
+    }
+    
+    patreonButton.addEventListener('mousemove', (e) => {
+      if (isOverOpaque(e, patreonButton)) {
+        patreonButton.style.cursor = 'pointer';
+        patreonButton.style.display = 'none';
+        patreonButtonHover.style.display = 'initial';
+        setupPatreonButtonCanvas(patreonButtonHover);
+      } else {
+        patreonButton.style.cursor = 'default';
+      }
+    });
+    
+    patreonButtonHover.addEventListener('mousemove', (e) => {
+      if (isOverOpaque(e, patreonButtonHover)) {
+        patreonButtonHover.style.cursor = 'pointer';
+      } else {
+        patreonButtonHover.style.cursor = 'default';
+        patreonButtonHover.style.display = 'none';
+        patreonButton.style.display = 'initial';
+        setupPatreonButtonCanvas(patreonButton);
+      }
+    });
+    
+    patreonButtonHover.addEventListener('mouseleave', () => {
+      patreonButtonHover.style.display = 'none';
+      patreonButtonHover.style.cursor = 'default';
+      patreonButton.style.display = 'initial';
+      setupPatreonButtonCanvas(patreonButton);
+    });
+    
+    patreonButton.addEventListener('click', (e) => {
+      if (isOverOpaque(e, patreonButton)) {
+        window.location.href = 'https://www.patreon.com/HappyTrailsComic';
+      }
+    });
+    
+    patreonButtonHover.addEventListener('click', (e) => {
+      if (isOverOpaque(e, patreonButtonHover)) {
+        window.location.href = 'https://www.patreon.com/HappyTrailsComic';
+      }
+    });
   })();
 });
 </script>
