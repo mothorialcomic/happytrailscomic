@@ -15,7 +15,7 @@ body {
                       If you want to change the color of text in certain parts of the page, and not the whole site,
                       you can define `color` in other blocks and it will only apply to that element and all
                       of the elements it contains. */
-    background-color: white;  /* The color of the background behind everything */
+    background-color: #47604B;  /* The color of the background behind everything */
     background-image: url("../../../images/bgartfixed.png");
 	background-attachment: fixed;
 	background-size: 1097px auto;
