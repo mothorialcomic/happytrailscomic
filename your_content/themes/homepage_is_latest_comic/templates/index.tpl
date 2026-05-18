@@ -20,7 +20,7 @@
         <p class="aboutText">Happy Trails is my passion project, and I love working on it! If you like what you see, consider checking out the Patreon! You'll get early access to all this and more!</p>
     </div>
     <img title="" src="/happytrailscomic/your_content/images/patreonbutton.png" class="patreonButton">
-	<img title="" src="/happytrailscomic/your_content/images/patreonbuttonhover.png" class="patreonButtonHover">
+	<img title="" src="/happytrailscomic/your_content/images/patreonbuttonhover.png" class="patreonButtonHover" style="display:none;">
     <img title="" src="/happytrailscomic/your_content/images/yeensite.png" class="yeen">
 </div>
 {%- endblock %}
@@ -222,13 +222,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     patreonButton.addEventListener('click', (e) => {
       if (isOverOpaque(e, patreonButton)) {
-        window.location.href = 'https://www.patreon.com/HappyTrailsComic';
+        window.open('https://www.patreon.com/HappyTrailsComic', '_blank');
       }
     });
     
     patreonButtonHover.addEventListener('click', (e) => {
       if (isOverOpaque(e, patreonButtonHover)) {
-        window.location.href = 'https://www.patreon.com/HappyTrailsComic';
+        window.open('https://www.patreon.com/HappyTrailsComic', '_blank');
       }
     });
   })();
