@@ -47,6 +47,7 @@
 											<meta property="og:image:width" content="200"/>
 											<meta property="og:image:height" content="200"/>
 											<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+											<meta name="theme-color" content="#47604B">
 												<title>{{ _title }} - {{ comic_title }}</title>
     {%- endblock %}
 </head>
