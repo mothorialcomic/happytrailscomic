@@ -410,7 +410,7 @@ code {
 	margin: 0 auto;
 	width: 960px;
 	height: 1100px;
-	background-image: url("/happytrailscomic/your_content/images/castpage/boardbg.png");
+	background-image: url("/your_content/images/castpage/boardbg.png");
 }
 
 .polaroidMaple {
@@ -579,7 +579,7 @@ code {
 }
 
 #descriptionMaple {
-	background-image: url("/happytrailscomic/your_content/images/castpage/bgweb.png");
+	background-image: url("/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -596,7 +596,7 @@ code {
 }
 
 #descriptionSyrup {
-	background-image: url("/happytrailscomic/your_content/images/castpage/bgweb.png");
+	background-image: url("/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -613,7 +613,7 @@ code {
 }
 
 #descriptionBarry{
-	background-image: url("/happytrailscomic/your_content/images/castpage/bgweb.png");
+	background-image: url("/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -630,7 +630,7 @@ code {
 }
 
 #descriptionBrie {
-	background-image: url("/happytrailscomic/your_content/images/castpage/bgweb.png");
+	background-image: url("/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -836,15 +836,15 @@ code {
 .comicsLink {
   position: absolute;
   width: 390px;
-  top: 117px;
-  right: calc(50% + 0%);
+  top: 127px;
+  right: calc(59% + 0%);
 }
 
 .latestLink {
   position: absolute;
   width: 390px;
-  top: 117px;
-	left: calc(50% + 0%);
+  top: 127px;
+	left: calc(59% + 0%);
 }
 
 .ageRange {
@@ -1310,18 +1310,20 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
 }
 
 .comicsLink {
-	width: 60%;
+	width: 64%;
     top: 83%;
+	right: calc(52% + 0%);
 }
 
 .latestLink {
-	width: 60%;
+	width: 64%;
     top: 83%;
+	left: calc(52% + 0%);
 }
 
 .ageRange {
 	width: 23%;
-    top: 92%;
+    top: 87%;
 }
 
 .aboutOne {

@@ -10,12 +10,12 @@
 <div id="descriptionMapleMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
 		<div style="margin-bottom: 30px;">
-			<img src="/happytrailscomic/your_content/images/mapletext.png" class="mapleText">
+			<img src="/your_content/images/mapletext.png" class="mapleText">
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Cocker spaniel</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">28 • F (she/her)</p>
 		</div>
-		<img id="regularMapleMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/maple.png">
-		<img id="secretMapleMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/maplenude.png" style="display: none;">	
+		<img id="regularMapleMobile" class="bouncing" src="/your_content/images/castpage/maple.png">
+		<img id="secretMapleMobile" class="bouncing" src="/your_content/images/castpage/maplenude.png" style="display: none;">	
 		<article class="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;margin-left: 30px;margin-right: 30px;font-size: clamp(14px, 5vw, 28px);">
 			<p><strong style="font-weight: 600;">Maple</strong> is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it. She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p>
 			<p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p>
@@ -27,12 +27,12 @@
 <div id="descriptionSyrupMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
 		<div style="margin-bottom: 30px;"> 
-			<img src="/happytrailscomic/your_content/images/syruptext.png" class="syrupText">
+			<img src="/your_content/images/syruptext.png" class="syrupText">
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Calico</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">25 • M (he/him)</p>
 		</div>
-		<img id="regularSyrupMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/syrup.png">
-		<img id="secretSyrupMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/syrupnude.png" style="display: none;">	
+		<img id="regularSyrupMobile" class="bouncing" src="/your_content/images/castpage/syrup.png">
+		<img id="secretSyrupMobile" class="bouncing" src="/your_content/images/castpage/syrupnude.png" style="display: none;">	
 		<article class="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;margin-left: 30px;margin-right: 30px;font-size: clamp(14px, 5vw, 28px);">
 			<p><strong style="font-weight: 600;">Syrup</strong> is a former botanist who loves documenting the world around him. He's big on journaling, photography, and writing. He'd venture out into the park for new photos to take, and camping and hiking became second nature. He loves space and astronomy as well, and being outside gives him plenty to look at at night.</p>
 			<p>For him, being out in nature is a meditative experience, and he looks forward to spending time outside.</p>
@@ -44,12 +44,12 @@
 <div id="descriptionBrieMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
 		<div style="margin-bottom: 30px;">
-			<img src="/happytrailscomic/your_content/images/brietext.png" class="brieText">
+			<img src="/your_content/images/brietext.png" class="brieText">
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Reindeer</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">33 • F (she/her)</p>
 		</div>
-		<img id="regularBrieMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/brie.png">
-		<img id="secretBrieMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/brienude.png" style="display: none;">	
+		<img id="regularBrieMobile" class="bouncing" src="/your_content/images/castpage/brie.png">
+		<img id="secretBrieMobile" class="bouncing" src="/your_content/images/castpage/brienude.png" style="display: none;">	
 		<article class="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;margin-left: 30px;margin-right: 30px;font-size: clamp(14px, 5vw, 28px);">
 			<p><strong style="font-weight: 600;">Brie</strong> is a new park ranger and police officer who honestly, doesn’t care much for nature. As punishment for her hotheaded attitude, she’s over at Happy Trails for a season or two (or however long she needs to be)!</p>
 			<p>This was… supposed to be a temporary situation. She values structure and following the rules, and when it comes to being a ranger, it’s the structure she craves! Even so, she hates the fact Maple and Syrup break the rules and get away with it so often. Not to mention that there seems to be something…off about the park that seems to make everyone a little pent up.</p>
@@ -61,12 +61,12 @@
 <div id="descriptionBarryMobile" class="castMobile" style="visibility: hidden;">
 	<div class="popupMobile">
 		<div style="margin-bottom: 30px;">
-			<img src="/happytrailscomic/your_content/images/barrytext.png" class="barryText">
+			<img src="/your_content/images/barrytext.png" class="barryText">
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;margin-top: 10px;text-align: center;">Gray Wolf</p>
 			<p class="characterDetails" style="margin-left: 0px;font-size: 18px;text-align: center;">47 • M (he/him)</p>
 		</div>
-		<img id="regularBarryMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/barry.png">
-		<img id="secretBarryMobile" class="bouncing" src="/happytrailscomic/your_content/images/castpage/barrynude.png" style="display: none;">	
+		<img id="regularBarryMobile" class="bouncing" src="/your_content/images/castpage/barry.png">
+		<img id="secretBarryMobile" class="bouncing" src="/your_content/images/castpage/barrynude.png" style="display: none;">	
 		<article class="post-body" style="top: 0px;position: relative;font-family: &quot;Fredoka&quot;, sans-serif;margin-left: 30px;margin-right: 30px;font-size: clamp(14px, 5vw, 28px);">
 			<p><strong style="font-weight: 600;">Barry</strong> is a long time park ranger, having served as one for over 20 years. He's serious about his work, and loves nature and the outdoors dearly. He works to maintain the natural beauty of the park around him, and doesn't take well to folks defacing the park or messing with wildlife.</p>
 			<p>He knows about the odd quality of the park, but it hasn't affected him for a long time. He's got a past shrouded in mystery, and doesn't let people get too close to him. He keeps to himself. As long as there's peace and quiet, he's letting it be.</p>
@@ -78,10 +78,10 @@
 
 <div id="descriptionMaple">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-			<img id="regularMaple" class="characterPortrait portraitMaple bouncing" src="/happytrailscomic/your_content/images/castpage/maple.png">
-			<img id="secretMaple" class="characterPortrait portraitMaple bouncing" src="/happytrailscomic/your_content/images/castpage/maplenude.png" style="display: none; cursor: pointer;">
+			<img id="regularMaple" class="characterPortrait portraitMaple bouncing" src="/your_content/images/castpage/maple.png">
+			<img id="secretMaple" class="characterPortrait portraitMaple bouncing" src="/your_content/images/castpage/maplenude.png" style="display: none; cursor: pointer;">
 			<div style="margin: 20px;text-align: left;margin-left: 10px;">
-			<img src="/happytrailscomic/your_content/images/mapletext.png" class="mapleText">
+			<img src="/your_content/images/mapletext.png" class="mapleText">
 			<p class="characterDetails">Cocker spaniel</p><p class="characterDetails">28 • F (she/her)</p><article class="post-body">
 				<p><strong style="font-weight: 600;">Maple</strong> is a former fitness coach who ran a hiking club after hours! She came to really love the outdoors and its beauty, and quit her job to pursue an easy living in the local National Park. Using the last of her cash, she bought an RV and renovated it. She loves good handiwork, and she has the resolve to attempt high stakes tasks and see them through.</p><p>Maple loves the smell of fresh rain on grass, the feeling of rough tree bark, and the taste of a freshly foraged mushroom (checked for safety, of course!).</p><p>What might have started off with pure intentions ends when she meets Syrup, her now long term partner!</p>
 
@@ -93,22 +93,22 @@
 <div id="descriptionSyrup">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 			<div style="margin: 20px;text-align: left;">
-			<img class="syrupText" src="/happytrailscomic/your_content/images/syruptext.png">
+			<img class="syrupText" src="/your_content/images/syruptext.png">
 			<p class="characterDetails">Calico</p><p class="characterDetails">25 • M (he/him)</p><p><strong style="font-weight: 600;">Syrup</strong> is a former botanist who loves documenting the world around him. He's big on journaling, photography, and writing. He'd venture out into the park for new photos to take, and camping and hiking became second nature. He loves space and astronomy as well, and being outside gives him plenty to look at at night.</p><article class="post-body">
 				<p>For him, being out in nature is a meditative experience, and he looks forward to spending time outside.</p><p> When he meets Maple, he's in the midst of a crucial career pivot, and after some time, smitten by her optimistic attitude, decides to forgo it all and spend time with someone he loves out in the place he knows. He might have gotten... a little distracted though.</p>
 
 			</article></div>
-			<img id="regularSyrup" class="characterPortrait portraitSyrup" src="/happytrailscomic/your_content/images/castpage/syrup.png" style="cursor: pointer;">
-<img id="secretSyrup" class="characterPortrait portraitSyrup" src="/happytrailscomic/your_content/images/castpage/syrupnude.png" style="display: none; cursor: pointer;">
+			<img id="regularSyrup" class="characterPortrait portraitSyrup" src="/your_content/images/castpage/syrup.png" style="cursor: pointer;">
+<img id="secretSyrup" class="characterPortrait portraitSyrup" src="/your_content/images/castpage/syrupnude.png" style="display: none; cursor: pointer;">
 		</div>
 		<div>
 	</div>
 </div>
 <div id="descriptionBrie">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
-			<img src="/happytrailscomic/your_content/images/castpage/brie.png" id="regularBrie" class="characterPortrait portraitBrie bouncing">
-			<img id="secretBrie" class="characterPortrait portraitMaple bouncing" style="display: none; cursor: pointer;" src="/happytrailscomic/your_content/images/castpage/brienude.png">
-			<div style="margin: 20px;text-align: left;"><img class="brieText" src="/happytrailscomic/your_content/images/brietxt.png"><p class="characterDetails">Reindeer</p><p class="characterDetails">33 • F (she/her)</p><p></p><strong style="font-weight: 600;">Brie</strong> is a new park ranger and police officer who honestly, doesn’t care much for nature. As punishment for her hotheaded attitude, she’s over at Happy Trails for a season or two (or however long she needs to be)! <article class="post-body">
+			<img src="/your_content/images/castpage/brie.png" id="regularBrie" class="characterPortrait portraitBrie bouncing">
+			<img id="secretBrie" class="characterPortrait portraitMaple bouncing" style="display: none; cursor: pointer;" src="/your_content/images/castpage/brienude.png">
+			<div style="margin: 20px;text-align: left;"><img class="brieText" src="/your_content/images/brietxt.png"><p class="characterDetails">Reindeer</p><p class="characterDetails">33 • F (she/her)</p><p></p><strong style="font-weight: 600;">Brie</strong> is a new park ranger and police officer who honestly, doesn’t care much for nature. As punishment for her hotheaded attitude, she’s over at Happy Trails for a season or two (or however long she needs to be)! <article class="post-body">
 				<p>This was… supposed to be a temporary situation. She values structure and following the rules, and when it comes to being a ranger, it’s the structure she craves! Even so, she hates the fact Maple and Syrup break the rules and get away with it so often. Not to mention that there seems to be something…off about the park that seems to make everyone a little pent up.</p><p>Her relationship with Barry is strained and tense. For some strange reason Barry lets people off with a warning more than she’d say is acceptable. They both have different ways they want to run the park that don’t mesh well together.</p>
 
 			</article></div>
@@ -119,44 +119,44 @@
 <div id="descriptionBarry">
   <div class="characterBox" style="display: flex;  gap: 12px;align-items: flex-start;margin-top: 10px;margin-left: 5px;">
 			<div>
-			<div style="margin: 20px;text-align: left;"><img src="/happytrailscomic/your_content/images/barrytxt.png" class="barryText"><p class="characterDetails">Gray Wolf</p><p class="characterDetails">47 • M (he/him)</p><article class="post-body">
+			<div style="margin: 20px;text-align: left;"><img src="/your_content/images/barrytxt.png" class="barryText"><p class="characterDetails">Gray Wolf</p><p class="characterDetails">47 • M (he/him)</p><article class="post-body">
 				<p><strong style="font-weight: 600;">Barry</strong> is a long time park ranger, having served as one for over 20 years. He's serious about his work, and loves nature and the outdoors dearly. He works to maintain the natural beauty of the park around him, and doesn't take well to folks defacing the park or messing with wildlife.</p><p>He knows about the odd quality of the park, but it hasn't affected him for a long time. He's got a past shrouded in mystery, and doesn't let people get too close to him. He keeps to himself. As long as there's peace and quiet, he's letting it be.</p><p>He may not look it, but the hard exterior is just that. He's awfully lenient to folks who do nothing more than enjoy themselves in the park. Because of this, him and Brie clash often.</p>
 
 			</article></div>
 			
 		</div>
-			<img class="characterPortrait portraitSyrup bouncing" style="cursor: pointer; display: block;" id="regularBarry" src="/happytrailscomic/your_content/images/castpage/barry.png">
-<img class="characterPortrait portraitSyrup bouncing" style="display: none; cursor: pointer;" id="secretBarry" src="/happytrailscomic/your_content/images/castpage/barrynude.png">
+			<img class="characterPortrait portraitSyrup bouncing" style="cursor: pointer; display: block;" id="regularBarry" src="/your_content/images/castpage/barry.png">
+<img class="characterPortrait portraitSyrup bouncing" style="display: none; cursor: pointer;" id="secretBarry" src="/your_content/images/castpage/barrynude.png">
 		</div>
 		<div>
 	</div>
 </div>
-<img class="charas" src="/happytrailscomic/your_content/images/charas.png" style="width: 60%;max-width: 400px;margin-bottom: 10px;">
+<img class="charas" src="/your_content/images/charas.png" style="width: 60%;max-width: 400px;margin-bottom: 10px;">
 <div class="bulletinBoard">
   
-<img src="/happytrailscomic/your_content/images/castpage/Maplepin.png" class="pinOne">
-<img onclick="document.getElementById('descriptionMaple').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionMapleMobile').style.visibility = 'visible'; " src="/happytrailscomic/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
-<img src="/happytrailscomic/your_content/images/castpage/SyrupPin.png" class="pinTwo">
-<img onclick="document.getElementById('descriptionSyrup').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionSyrupMobile').style.visibility = 'visible'; " class="polaroid polaroidSyrup" src="/happytrailscomic/your_content/images/castpage/syruppolaroid.png">
-<img src="/happytrailscomic/your_content/images/castpage/bandbpin.png" class="pinThree">
-<img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionBrieMobile').style.visibility = 'visible'; " class="polaroid polaroidBrie" src="/happytrailscomic/your_content/images/castpage/briepolaroid.png">
-<img src="/happytrailscomic/your_content/images/castpage/bandbpin.png" class="pinFour">
-<img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionBarryMobile').style.visibility = 'visible'; " class="polaroid polaroidBarry" src="/happytrailscomic/your_content/images/castpage/barrypolaroid.png">
-	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1310px;left: 60px;" src="/happytrailscomic/your_content/images/ufobadge.png">
-	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1440px;left: 500px;" src="/happytrailscomic/your_content/images/flowerbadge.png">
-	<img class="badge" style="width: 160px;position: relative;transform: rotate(4deg);top: -1570px;left: 760px;" src="/happytrailscomic/your_content/images/earthbadge.png">
-	<img class="badge" style="width: 170px;position: relative;transform: rotate(4deg);top: -1330px;left: 10px;" src="/happytrailscomic/your_content/images/cryptidseekerbadge.png">
-	<img class="badge" style="width: 110px;position: relative;transform: rotate(-13deg);top: -1460px;left: 330px;" src="/happytrailscomic/your_content/images/nessiebadge.png">
-	<img class="badge" style="width: 118px;position: relative;transform: rotate(5deg);top: -1500px;left: 500px;" src="/happytrailscomic/your_content/images/cedarbadge.png">
-	<img class="badge" style="width: 136px;position: relative;transform: rotate(14deg);top: -1650px;left: 770px;" src="/happytrailscomic/your_content/images/saplingbadge.png">
-	<img class="badge" style="width: 140px;position: relative;transform: rotate(7deg);top: -1350px;left: 140px;" src="/happytrailscomic/your_content/images/redwoodbadge.png">
-	<img class="badge" style="width: 120px;position: relative;transform: rotate(-10deg);top: -1470px;left: 400px;" src="/happytrailscomic/your_content/images/oakbadge.png">
-	<img style="width: 28%;position: relative;transform: rotate(4deg);top: 3%;left: 67%;" src="/happytrailscomic/your_content/images/earthbadge.png" class="badgeMobile">
-	<img style="width: 28%;position: relative;transform: rotate(4deg);top: 15%;left: 8%;" class="badgeMobile" src="/happytrailscomic/your_content/images/cryptidseekerbadge.png">
-	<img style="width: 28%;position: relative;transform: rotate(7deg);top: 21%;left: 68%;" class="badgeMobile" src="/happytrailscomic/your_content/images/redwoodbadge.png">
-	<img style="width: 28%;position: relative;transform: rotate(-9deg);top: 26%;left: 60%;" class="badgeMobile" src="/happytrailscomic/your_content/images/nessiebadge.png">
-	<img style="width: 28%;position: relative;transform: rotate(14deg);top: 27%;left: 6%;" class="badgeMobile" src="/happytrailscomic/your_content/images/flowerbadge.png">
-	<img style="width: 28%;position: relative;transform: rotate(-9deg);top: 31%;left: 10%;" class="badgeMobile" src="/happytrailscomic/your_content/images/oakbadge.png">
+<img src="/your_content/images/castpage/Maplepin.png" class="pinOne">
+<img onclick="document.getElementById('descriptionMaple').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionMapleMobile').style.visibility = 'visible'; " src="/your_content/images/castpage/maplepolaroid.png" class="polaroid polaroidMaple">
+<img src="/your_content/images/castpage/SyrupPin.png" class="pinTwo">
+<img onclick="document.getElementById('descriptionSyrup').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionSyrupMobile').style.visibility = 'visible'; " class="polaroid polaroidSyrup" src="/your_content/images/castpage/syruppolaroid.png">
+<img src="/your_content/images/castpage/bandbpin.png" class="pinThree">
+<img onclick="document.getElementById('descriptionBrie').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionBrieMobile').style.visibility = 'visible'; " class="polaroid polaroidBrie" src="/your_content/images/castpage/briepolaroid.png">
+<img src="/your_content/images/castpage/bandbpin.png" class="pinFour">
+<img onclick="document.getElementById('descriptionBarry').style.visibility = 'visible'; document.getElementById('overlay').style.visibility = 'visible'; document.getElementById('descriptionBarryMobile').style.visibility = 'visible'; " class="polaroid polaroidBarry" src="/your_content/images/castpage/barrypolaroid.png">
+	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1310px;left: 60px;" src="/your_content/images/ufobadge.png">
+	<img class="badge" style="width: 130px;position: relative;transform: rotate(14deg);top: -1440px;left: 500px;" src="/your_content/images/flowerbadge.png">
+	<img class="badge" style="width: 160px;position: relative;transform: rotate(4deg);top: -1570px;left: 760px;" src="/your_content/images/earthbadge.png">
+	<img class="badge" style="width: 170px;position: relative;transform: rotate(4deg);top: -1330px;left: 10px;" src="/your_content/images/cryptidseekerbadge.png">
+	<img class="badge" style="width: 110px;position: relative;transform: rotate(-13deg);top: -1460px;left: 330px;" src="/your_content/images/nessiebadge.png">
+	<img class="badge" style="width: 118px;position: relative;transform: rotate(5deg);top: -1500px;left: 500px;" src="/your_content/images/cedarbadge.png">
+	<img class="badge" style="width: 136px;position: relative;transform: rotate(14deg);top: -1650px;left: 770px;" src="/your_content/images/saplingbadge.png">
+	<img class="badge" style="width: 140px;position: relative;transform: rotate(7deg);top: -1350px;left: 140px;" src="/your_content/images/redwoodbadge.png">
+	<img class="badge" style="width: 120px;position: relative;transform: rotate(-10deg);top: -1470px;left: 400px;" src="/your_content/images/oakbadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(4deg);top: 3%;left: 67%;" src="/your_content/images/earthbadge.png" class="badgeMobile">
+	<img style="width: 28%;position: relative;transform: rotate(4deg);top: 15%;left: 8%;" class="badgeMobile" src="/your_content/images/cryptidseekerbadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(7deg);top: 21%;left: 68%;" class="badgeMobile" src="/your_content/images/redwoodbadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(-9deg);top: 26%;left: 60%;" class="badgeMobile" src="/your_content/images/nessiebadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(14deg);top: 27%;left: 6%;" class="badgeMobile" src="/your_content/images/flowerbadge.png">
+	<img style="width: 28%;position: relative;transform: rotate(-9deg);top: 31%;left: 10%;" class="badgeMobile" src="/your_content/images/oakbadge.png">
 </div>
     </header>
 {% endblock %}

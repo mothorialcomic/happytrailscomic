@@ -28,17 +28,17 @@
     {%- block head %}
     <meta charset="UTF-8">
 			<link rel="preconnect" href="https://fonts.gstatic.com">
-				<link rel="stylesheet" type="text/css" href="{{ base_dir }}/your_content/themes/{{ theme }}/css/fonts.css">
-					<link rel="stylesheet" type="text/css" href="{{ base_dir }}/comic_git_engine/css/base.css">
-						<link rel="stylesheet" type="text/css" href="{{ base_dir }}/comic_git_engine/css/{{ template_name }}.css">
-							<link rel="stylesheet" type="text/css" href="{{ base_dir }}/your_content/themes/{{ theme }}/css/stylesheet.css">
-								<link rel="stylesheet" type="text/css" href="{{ base_dir }}/your_content/themes/{{ theme }}/css/base.css">
-									<link rel="stylesheet" type="text/css" href="{{ base_dir }}/your_content/themes/{{ theme }}/css/{{ template_name }}.css">
+				<link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/fonts.css">
+					<link rel="stylesheet" type="text/css" href="/comic_git_engine/css/base.css">
+						<link rel="stylesheet" type="text/css" href="/comic_git_engine/css/{{ template_name }}.css">
+							<link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/stylesheet.css">
+								<link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/base.css">
+									<link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/{{ template_name }}.css">
     {%- if comic_folder != "" %}
     {# Allows for setting specific CSS for an extra comic. #}
-    <link rel="stylesheet" type="text/css" href="{{ base_dir }}/your_content/themes/{{ theme }}/css/{{ comic_folder.strip('/') }}.css">
+    <link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/{{ comic_folder.strip('/') }}.css">
     {%- endif %}
-    <link rel="icon" href="{{ base_dir }}/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 											<meta property="og:title" content="{{ comic_title }}"/>
 											<meta property="og:description" content="{{ comic_description }}"/>
 											<meta property="og:type" content="website"/>
@@ -56,7 +56,7 @@
 {% block body %}
 <div id="container">
 													<div id="banner">
-														<a id="banner-img-link" href="{{ base_dir }}/">
+														<a id="banner-img-link" href="/">
 															<img id="banner-img" alt="banner" src="{{ banner_image }}">
         </a>
 														</div>
@@ -237,6 +237,23 @@ document.addEventListener('DOMContentLoaded', () => {
 })();
 
 });
+
+ const comics = [
+    { name: "happytrailsquestone", jsonUrl: "/happytrailsquestone/latest_comic.json", baseUrl: "/happytrailsquestone/comic/" },
+    { name: "nightofthelustmoon", jsonUrl: "/nightofthelustmoon/latest_comic.json", baseUrl: "/nightofthelustmoon/comic/" },
+	{ name: "sloppyspiel", jsonUrl: "/sloppyspiel/latest_comic.json", baseUrl: "/sloppyspiel/comic/" },
+  ];
+
+  window.latestComicUrl = null; // default until fetch resolves
+
+  Promise.all(comics.map(c =>
+    fetch(c.jsonUrl).then(res => res.json()).then(data => ({...data, ...c}))
+  )).then(results => {
+    results.sort((a, b) => new Date(b.post_date) - new Date(a.post_date));
+    const mostRecent = results[0];
+    window.latestComicUrl = mostRecent.baseUrl + mostRecent.page_name + "/#comic-page";
+    document.dispatchEvent(new Event('latestComicReady'));
+  }).catch(err => console.error("Fetch failed:", err));
 </script>
 													</body>
 												</html>

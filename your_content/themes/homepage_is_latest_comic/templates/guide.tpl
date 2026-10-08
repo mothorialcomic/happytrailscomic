@@ -19,19 +19,19 @@
 
     {# When text is surrounded by {{ these double curly braces }}, it's representing a variable that's passed in by
        the Python script that generates the HTML file. That value is dropped into the existing HTML with no changes.
-       For example, if the value passed in to `comic_base_dir` is `/comic_git`, then `{{ comic_base_dir }}/comic`
+       For example, if the value passed in to `comic_base_dir` is `/comic_git`, then `/comic`
        becomes `/comic_git/comic` #}
     <div id="comic-page">
-        <img class="comic-image" title="" src="/happytrailscomic/your_content/images/guide.png">
+        <img class="comic-image" title="" src="/your_content/images/guide.png">
     </div>
     <div id="blurbQuest">
 	<div style="display: flex; align-items: center; gap: 12px;">
-		<img class="profilePic" src="/happytrailscomic/your_content/images/meicon.png" title="" style="width: 138px;display: f;">
+		<img class="profilePic" src="/your_content/images/meicon.png" title="" style="width: 138px;display: f;">
 		<div>
 			<p style="width: 210px;text-align: center;">If you'd like to make suggestions for future quests and vote for choices, check out my Patreon!</p>
 			
 		</div>
-	<iframe src="https://yikuansun.github.io/patreonbutton/widget.html?username=https://www.patreon.com/cw/HappyTrailsComic/" height="68" scrolling="no" data-theme="light" style="border: 0; border-radius: 10px; overflow: hidden;scale: 82%;" width="200"></iframe></div>
+	<iframe src="https://yikuansun.github.io/patreonbutton/widget.html?username=https://www.patreon.com/cw/" height="68" scrolling="no" data-theme="light" style="border: 0; border-radius: 10px; overflow: hidden;scale: 82%;" width="200"></iframe></div>
         
             
             
@@ -42,10 +42,10 @@
 {%- endblock %}
 {%- block script %}
 <script type="module">
-    import { init_overlay } from "{{ base_dir }}/comic_git_engine/js/comic.js";
+    import { init_overlay } from "/comic_git_engine/js/comic.js";
     init_overlay();
 {% if transcripts %}
-    import { init_transcript } from "{{ base_dir }}/comic_git_engine/js/transcript.js";
+    import { init_transcript } from "/comic_git_engine/js/transcript.js";
     init_transcript();
 {% endif %}
 </script>

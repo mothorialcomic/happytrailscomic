@@ -19,7 +19,7 @@
 
     {# When text is surrounded by {{ these double curly braces }}, it's representing a variable that's passed in by
        the Python script that generates the HTML file. That value is dropped into the existing HTML with no changes.
-       For example, if the value passed in to `comic_base_dir` is `/comic_git`, then `{{ comic_base_dir }}/comic`
+       For example, if the value passed in to `comic_base_dir` is `/comic_git`, then `/comic`
        becomes `/comic_git/comic` #}
     {%- if comic_paths %}
     <div id="comic-page">
@@ -27,19 +27,19 @@
         {% if _on_comic_click == "overlay" %}
         <a id="click-for-overlay">
         {% elif _on_comic_click == "open image" %}
-        <a id="open-image" href="{{ base_dir }}/{{ comic_path }}">
+        <a id="open-image" href="/{{ comic_path }}">
         {% elif _on_comic_click == "open image window" %}
-        <a id="open-image-window" href="{{ base_dir }}/{{ comic_path }}" target="_blank">
+        <a id="open-image-window" href="/{{ comic_path }}" target="_blank">
         {% else %}
         <a href="{{ comic_base_dir }}/comic/{{ next_id }}/#comic-page">
         {% endif %}
-            <img class="comic-image" src="{{ base_dir }}/{{ comic_path }}" title="{{ escaped_alt_text }}"/>
+            <img class="comic-image" src="/{{ comic_path }}" title="{{ escaped_alt_text }}"/>
         </a>
         {%- endfor %}
     </div>
 
     <div id="comic-page-overlay" hidden>
-        <img id="comic-overlay-image" src="{{ base_dir }}/{{ comic_paths[0] }}" title="{{ escaped_alt_text }}"/>
+        <img id="comic-overlay-image" src="/{{ comic_paths[0] }}" title="{{ escaped_alt_text }}"/>
     </div>
     {% endif %}
 
@@ -60,7 +60,7 @@
             <div id="storyline">
                 {# `| replace(" ", "-")` takes the value in the variable, in this case `_storyline`, and replaces all
                    spaces with hyphens. This is important when building links to other parts of the site. #}
-            <a href="{{ comic_base_dir }}/archive/#archive-section-{{ _storyline | replace(" ", "-") }}">{{ _storyline }}</a>
+            <a href="/archive/#archive-section-{{ _storyline | replace(" ", "-") }}">{{ _storyline }}</a>
             </div>
         {%- endif %}
         {%- if _characters %}
@@ -72,14 +72,14 @@
             {%- for character in _characters %}
                 {# The `if not loop.last` block at the end of the next line means that the ", " string will be added
                    after every character link EXCEPT the last one. #}
-                <a href="{{ comic_base_dir }}/tagged/{{ character }}/">{{ character }}</a>{% if not loop.last %}, {% endif %}
+                <a href="/tagged/{{ character }}/">{{ character }}</a>{% if not loop.last %}, {% endif %}
             {%- endfor %}
             </div>
         {%- endif %}
         {%- if _tags %}
             <div id="tags">
             {%- for tag in _tags %}
-                <a class="tag-link" href="{{ comic_base_dir }}/tagged/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                <a class="tag-link" href="/tagged/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {%- endfor %}
             </div>
         {%- endif %}
@@ -129,10 +129,10 @@
 {%- endblock %}
 {%- block script %}
 <script type="module">
-    import { init_overlay } from "{{ base_dir }}/comic_git_engine/js/comic.js";
+    import { init_overlay } from "/comic_git_engine/js/comic.js";
     init_overlay();
 {% if transcripts %}
-    import { init_transcript } from "{{ base_dir }}/comic_git_engine/js/transcript.js";
+    import { init_transcript } from "/comic_git_engine/js/transcript.js";
 {% endif %}
 </script>
 {%- endblock %}
