@@ -22,11 +22,11 @@
        For example, if the value passed in to `comic_base_dir` is `/comic_git`, then `/comic`
        becomes `/comic_git/comic` #}
     <div id="comic-page">
-        <img class="comic-image" title="" src="{{ comic_base_dir }}/your_content/images/guide.png">
+        <img class="comic-image" title="" src="/your_content/images/guide.png">
     </div>
     <div id="blurbQuest">
 	<div style="display: flex; align-items: center; gap: 12px;">
-		<img class="profilePic" src="{{ comic_base_dir }}/your_content/images/meicon.png" title="" style="width: 138px;display: f;">
+		<img class="profilePic" src="/your_content/images/meicon.png" title="" style="width: 138px;display: f;">
 		<div>
 			<p style="width: 210px;text-align: center;">If you'd like to make suggestions for future quests and vote for choices, check out my Patreon!</p>
 			
