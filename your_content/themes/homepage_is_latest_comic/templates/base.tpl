@@ -28,22 +28,22 @@
     {%- block head %}
     <meta charset="UTF-8">
 			<link rel="preconnect" href="https://fonts.gstatic.com">
-				<link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/fonts.css">
+				<link rel="stylesheet" type="text/css" href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/fonts.css">
 					<link rel="stylesheet" type="text/css" href="/comic_git_engine/css/base.css">
 						<link rel="stylesheet" type="text/css" href="/comic_git_engine/css/{{ template_name }}.css">
-							<link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/stylesheet.css">
-								<link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/base.css">
-									<link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/{{ template_name }}.css">
+							<link rel="stylesheet" type="text/css" href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/stylesheet.css">
+								<link rel="stylesheet" type="text/css" href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/base.css">
+									<link rel="stylesheet" type="text/css" href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/{{ template_name }}.css">
     {%- if comic_folder != "" %}
     {# Allows for setting specific CSS for an extra comic. #}
-    <link rel="stylesheet" type="text/css" href="/your_content/themes/{{ theme }}/css/{{ comic_folder.strip('/') }}.css">
+    <link rel="stylesheet" type="text/css" href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/{{ comic_folder.strip('/') }}.css">
     {%- endif %}
     <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 											<meta property="og:title" content="{{ comic_title }}"/>
 											<meta property="og:description" content="{{ comic_description }}"/>
 											<meta property="og:type" content="website"/>
 											<meta property="og:url" content="{{ comic_url }}/"/>
-											<meta property="og:image" content="{{ comic_url + '/your_content/images/preview_image.png' }}"/>
+											<meta property="og:image" content="{{ comic_url + '{{ comic_base_dir }}/your_content/images/preview_image.png' }}"/>
 											<meta property="og:image:width" content="200"/>
 											<meta property="og:image:height" content="200"/>
 											<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">

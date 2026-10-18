@@ -25,7 +25,7 @@
     <div class="right-column">
         <p>This is your home page! It's the main landing page for anyone visiting your website, so make sure it looks good!</p>
 
-        <p>You can change what's on this page by editing the file found at <code>/your_content/home page.txt</code>.
+        <p>You can change what's on this page by editing the file found at <code>{{ comic_base_dir }}/your_content/home page.txt</code>.
             I've even included comments in that file to help you out, if you're new to HTML.</p>
 
         <p>You'll probably want to have links like these to your <a href="comic/001/#comic-page">first</a> and
