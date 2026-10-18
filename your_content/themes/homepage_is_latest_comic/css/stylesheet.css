@@ -419,7 +419,7 @@ code {
 	margin: 0 auto;
 	width: 960px;
 	height: 1100px;
-	background-image: url("/your_content/images/castpage/boardbg.png");
+	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/boardbg.png");
 }
 
 .polaroidMaple {
@@ -601,7 +601,7 @@ code {
 }
 
 #descriptionMaple {
-	background-image: url("/your_content/images/castpage/bgweb.png");
+	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -618,7 +618,7 @@ code {
 }
 
 #descriptionSyrup {
-	background-image: url("/your_content/images/castpage/bgweb.png");
+	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -635,7 +635,7 @@ code {
 }
 
 #descriptionBarry{
-	background-image: url("/your_content/images/castpage/bgweb.png");
+	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -652,7 +652,7 @@ code {
 }
 
 #descriptionBrie {
-	background-image: url("/your_content/images/castpage/bgweb.png");
+	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
