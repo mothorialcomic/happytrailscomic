@@ -2,26 +2,35 @@
 {%- block content %}
 
 <div class="welcomeOne">
-    <img title="" class="welcomeBanner" src="{{ comic_base_dir }}/your_content/images/welcomebanner.png">
-    <p class="welcomeText">Happy Trails is a comic series about two fun-loving kinky campers! It's a silly little romp that explores different kinks from all over with a comfy attitude. Read my latest page, or dive into some previous comics of mine!</p>
-    <p class="welcomeText">Have fun looking around, Camper!</p>
-    <img class="regularHomeButtonComics comicsLink" src="{{ comic_base_dir }}/your_content/images/buttonshomeM.png" />
-	<img class="hoverHomeButtonComics comicsLink" src="{{ comic_base_dir }}/your_content/images/buttonshomeMAlt.png" style="display:none;" />
-    <img class="regularHomeButton latestLink" src="{{ comic_base_dir }}/your_content/images/buttonshomeS.png" />
-	<img class="hoverHomeButton latestLink" src="{{ comic_base_dir }}/your_content/images/buttonshomeSAlt.png" style="display:none;" />
-    <img title="" src="{{ comic_base_dir }}/your_content/images/18plus.png" class="ageRange">
+    <img title="" class="welcomeBanner" src="{{ base_dir }}/your_content/images/welcomebanner.png">
+    <p class="welcomeText">Follow Maple and Syrup on their adventures in Happy Trails, a National Park with a hidden secret that makes the flora and fauna very pernicious (and promiscuous)...but for what reason?! How!? Why!!</p>
+    <p class="welcomeText welcomeTextTwo">What are these strange creatures, and what do they want!? And why do they always have to be so sexy about it!!?!</p>
+    <img class="regularHomeButtonComics comicsLink" src="{{ base_dir }}/your_content/images/buttonshomeM.png" />
+	<img class="hoverHomeButtonComics comicsLink" src="{{ base_dir }}/your_content/images/buttonshomeMAlt.png" style="display:none;" />
+    <img class="regularHomeButton latestLink" src="{{ base_dir }}/your_content/images/buttonshomeS.png" />
+	<img class="hoverHomeButton latestLink" src="{{ base_dir }}/your_content/images/buttonshomeSAlt.png" style="display:none;" />
+	<img class="comicsLinkMobile" src="{{ base_dir }}/your_content/images/buttonshomeM.png"
+     onclick="this.style.display='none'; document.getElementById('comicsButtonMobileHover').style.display='block'; setTimeout(function(){ window.location.href='{{ base_dir }}/comics/'; }, 100);" />
+<img id="comicsButtonMobileHover" class="comicsLinkMobile" src="{{ base_dir }}/your_content/images/buttonshomeMAlt.png" style="display:none;"
+     onclick="window.location.href='{{ base_dir }}/comics/';" />
+
+<img class="latestLinkMobile" src="{{ base_dir }}/your_content/images/buttonshomeS.png"
+     onclick="this.style.display='none'; document.getElementById('LatestButtonMobileHover').style.display='block'; setTimeout(function(){ window.location.href=window.latestComicUrl; }, 100);" />
+<img id="LatestButtonMobileHover" class="latestLinkMobile" src="{{ base_dir }}/your_content/images/buttonshomeSAlt.png" style="display:none;"
+     onclick="window.location.href=window.latestComicUrl;" />
+    <img title="" src="{{ base_dir }}/your_content/images/18plus.png" class="ageRange">
 </div>
 <div class="aboutOne">
-    <img title="" src="{{ comic_base_dir }}/your_content/images/aboutartist.png" class="aboutArtist">
-	<img title="" src="{{ comic_base_dir }}/your_content/images/meicon.png" class="yeenMobile">
+    <img title="" src="{{ base_dir }}/your_content/images/aboutartist.png" class="aboutArtist">
+	<img title="" src="{{ base_dir }}/your_content/images/meicon.png" class="yeenMobile">
     <div style="padding-left: 10px; padding-right: 10px;">
         <p class="aboutText">Thanks for taking a look!<br>I'm plum, and I make this thing!</p>
         <p class="aboutText">A little about me, I love nature, the color green (if you can't tell) and making art!</p>
         <p class="aboutText">Happy Trails is my passion project, and I love working on it! If you like what you see, consider checking out the Patreon! You'll get early access to all this and more!</p>
     </div>
-    <img title="" src="{{ comic_base_dir }}/your_content/images/patreonbutton.png" class="patreonButton">
-	<img title="" src="{{ comic_base_dir }}/your_content/images/patreonbuttonhover.png" class="patreonButtonHover" style="display:none;">
-    <img title="" src="{{ comic_base_dir }}/your_content/images/yeensite.png" class="yeen">
+    <img title="" src="{{ base_dir }}/your_content/images/patreonbutton.png" class="patreonButton">
+	<img title="" src="{{ base_dir }}/your_content/images/patreonbuttonhover.png" class="patreonButtonHover" style="display:none;">
+    <img title="" src="{{ base_dir }}/your_content/images/yeensite.png" class="yeen">
 </div>
 {%- endblock %}
 {% block script %}
@@ -222,13 +231,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     patreonButton.addEventListener('click', (e) => {
       if (isOverOpaque(e, patreonButton)) {
-        window.open('https://www.patreon.com/HappyTrailsComic', '_blank');
+        window.open('https://www.patreon.com/cw/puppeypawbs', '_blank');
       }
     });
     
     patreonButtonHover.addEventListener('click', (e) => {
       if (isOverOpaque(e, patreonButtonHover)) {
-        window.open('https://www.patreon.com/HappyTrailsComic', '_blank');
+        window.open('https://www.patreon.com/cw/puppeypawbs', '_blank');
       }
     });
   })();

@@ -33,30 +33,30 @@
 			      href="https://fonts.gstatic.com">
 				<link rel="stylesheet"
 				      type="text/css"
-				      href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/fonts.css">
+				      href="{{ base_dir }}/your_content/themes/{{ theme }}/css/fonts.css">
 					<link rel="stylesheet"
 					      type="text/css"
-					      href="/comic_git_engine/css/base.css">
+					      href="{{ base_dir }}/comic_git_engine/css/base.css">
 						<link rel="stylesheet"
 						      type="text/css"
-						      href="/comic_git_engine/css/{{ template_name }}.css">
+						      href="{{ base_dir }}/comic_git_engine/css/{{ template_name }}.css">
 							<link rel="stylesheet"
 							      type="text/css"
-							      href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/stylesheet.css">
+							      href="{{ base_dir }}/your_content/themes/{{ theme }}/css/stylesheet.css">
 								<link rel="stylesheet"
 								      type="text/css"
-								      href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/base.css">
+								      href="{{ base_dir }}/your_content/themes/{{ theme }}/css/base.css">
 									<link rel="stylesheet"
 									      type="text/css"
-									      href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/{{ template_name }}.css">
+									      href="{{ base_dir }}/your_content/themes/{{ theme }}/css/{{ template_name }}.css">
     {%- if comic_folder != "" %}
     {# Allows for setting specific CSS for an extra comic. #}
     <link rel="stylesheet"
 										      type="text/css"
-										      href="{{ comic_base_dir }}/your_content/themes/{{ theme }}/css/{{ comic_folder.strip('/') }}.css">
+										      href="{{ base_dir }}/your_content/themes/{{ theme }}/css/{{ comic_folder.strip('/') }}.css">
     {%- endif %}
     <link rel="icon"
-											      href="/favicon.ico"
+											      href="{{ base_dir }}/favicon.ico"
 											      type="image/x-icon"/>
 											<meta property="og:title"
 											      content="{{ comic_title }}"/>
@@ -67,7 +67,7 @@
 											<meta property="og:url"
 											      content="{{ comic_url }}/"/>
 											<meta property="og:image"
-											      content="{{ comic_url + '{{ comic_base_dir }}/your_content/images/preview_image.png' }}"/>
+											      content="{{ comic_url + '/your_content/images/preview_image.png' }}"/>
 											<meta property="og:image:width"
 											      content="200"/>
 											<meta property="og:image:height"
@@ -85,7 +85,7 @@
 <div id="container">
 														<div id="banner">
 															<a id="banner-img-link"
-															   href="/">
+															   href="{{ base_dir }}/">
 																<img id="banner-img"
 																     alt="banner"
 																     src="{{ banner_image }}">
@@ -124,12 +124,15 @@
 															</div>
     {%- endif %}
 		<div id="mobile-header">
-																<button class="hamburger"
-																        aria-label="Toggle menu">
-																	<span/>
-																	<span/>
-																	<span/>
-																</button>
+		<h1 class="menuMobile">MENU</h1>
+																<button class="hamburger" aria-label="Toggle menu">
+  <svg viewBox="0 0 40 30" width="40" height="30" fill="none"
+       stroke="#F9F4EE" stroke-width="3" stroke-linecap="round" aria-hidden="true">
+    <path class="line line-top"    d="M4 6 C 12 3, 24 8, 36 5" />
+    <path class="line line-middle" d="M4 15 C 14 17, 26 12, 36 15" />
+    <path class="line line-bottom" d="M4 25 C 13 22, 25 27, 36 24" />
+  </svg>
+</button>
 															</div>
 															<div id="menu-dropdown">
 																<div id="menu-dropdown-inner">
@@ -200,7 +203,7 @@
 																	<span class="link-bar-separator">|</span>
 																	<a class="extraLinks"
 																	   class="n03"
-																	   href="https://patreon.com/HappyTrailsComic"
+																	   href="https://www.patreon.com/cw/puppeypawbs"
 																	   role="button"
 																	   style="color: #4F614E; padding-top: 4px;">
 																		<svg width="40"
@@ -223,17 +226,22 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Hamburger menu
-  const hamburger = document.querySelector('.hamburger');
-  const dropdown = document.getElementById('menu-dropdown');
-  if (!hamburger || !dropdown) {
-    console.error('Hamburger or dropdown not found!');
-    return;
-  }
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('is-open');
-    dropdown.classList.toggle('open');
-  });
+	// Hamburger menu
+	const header = document.getElementById('mobile-header');
+	const hamburger = document.querySelector('.hamburger');
+	const dropdown = document.getElementById('menu-dropdown');
+
+	if (!header || !hamburger || !dropdown) {
+	console.error('Header, hamburger, or dropdown not found!');
+	return;
+	}
+
+	header.addEventListener('click', () => {
+	const isOpen = hamburger.classList.toggle('is-open');
+	dropdown.classList.toggle('open', isOpen);
+	header.classList.toggle('is-open', isOpen);
+	hamburger.setAttribute('aria-expanded', isOpen);
+	});
 
   // Banner click detection
   (function() {
@@ -291,9 +299,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
  const comics = [
-    { name: "happytrailsquestone", jsonUrl: "/happytrailsquestone/latest_comic.json", baseUrl: "/happytrailsquestone/comic/" },
-    { name: "nightofthelustmoon", jsonUrl: "/nightofthelustmoon/latest_comic.json", baseUrl: "/nightofthelustmoon/comic/" },
-	{ name: "sloppyspiel", jsonUrl: "/sloppyspiel/latest_comic.json", baseUrl: "/sloppyspiel/comic/" },
+    { name: "happytrailsquestone", jsonUrl: "{{ base_dir }}/happytrailsquestone/latest_comic.json", baseUrl: "{{ base_dir }}/happytrailsquestone/comic/" },
+    { name: "nightofthelustmoon", jsonUrl: "{{ base_dir }}/nightofthelustmoon/latest_comic.json", baseUrl: "{{ base_dir }}/nightofthelustmoon/comic/" },
+	{ name: "sloppyspiel", jsonUrl: "{{ base_dir }}/sloppyspiel/latest_comic.json", baseUrl: "{{ base_dir }}/sloppyspiel/comic/" },
   ];
 
   window.latestComicUrl = null; // default until fetch resolves

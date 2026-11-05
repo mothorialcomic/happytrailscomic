@@ -38,9 +38,8 @@
 }
 
 #post-title {
-    margin-bottom: 10px;
-	font-family: "Averia Libre", system-ui;
-	font-weight: 700;
+	font-family: "YeenfontRegular";
+	font-size: 32px;
 }
 
 #post-date {

@@ -41,7 +41,7 @@ a {
 }
 
 #post-date {
-	margin-top: 0px
+	margin-top: 0px;
 	font-weight: 400;
 	color: #704f38;
 	font-size: smaller;
@@ -71,7 +71,7 @@ a {
 
 #socials a:hover {
 	transform: scale(1.1125);
-	color: #F9F4EE !important;
+	color: #bbcc97 !important;
 }
 
 .bottomTags {
@@ -128,6 +128,15 @@ a {
 	max-width: 1000px;
 	transition: opacity 0.2s ease;
 	width: 100%;
+	margin-top: -32px;
+}
+
+.patreonButtonComic {
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.patreonButtonComic.glow-hover {
+  filter: drop-shadow(0 0 12px #4F614E);
 }
 
 .comic-image {
@@ -215,7 +224,7 @@ a.navigation-button-disabled {
 }
 
 .button:hover {
-    background-color: background-color: #F9F4EE;;  /* Color of button hyperlinks when the mouse hovers over it */
+    background-color: background-color: #F9F4EE;  /* Color of button hyperlinks when the mouse hovers over it */
 }
 
 #comic-page {
@@ -274,7 +283,7 @@ a.navigation-button-disabled {
 /* Transcripts */
 
 #transcripts-container {
-    width: 100%
+    width: 100%;
 }
 
 #transcript-panel {
@@ -340,6 +349,12 @@ code {
 
 #post-date {
     font-weight: bold;  /* Delete this to unbold the post date */
+}
+
+#blurb h2 {
+  font-family: "YeenfontRegular";
+  font-size: 34px;
+  margin: 10px;
 }
 
 #storyline, #characters, #tags {
@@ -413,13 +428,28 @@ code {
   cursor: pointer;
 }
 
+.patreonButton, .patreonButtonHover {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.patreonButtonHTQ, .patreonButtonHTQHover {
+  width: 180px;
+  margin-top: 10px;
+}
+
+#blurbQuestMobile {
+	display: none;
+}
+
 .bulletinBoard {
 	border-radius: 51px;
 	border: 8px solid #734E37;
 	margin: 0 auto;
 	width: 960px;
 	height: 1100px;
-	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/boardbg.png");
+	background-image: url("../../../images/castpage/boardbg.png");
+	overflow: clip;
 }
 
 .polaroidMaple {
@@ -521,7 +551,7 @@ code {
 	width: 404px;
 	position: relative;
 	left: -107px;
-	top: -99px;
+	top: -60px;
 	margin-right: -114px;
 	margin-bottom: -316px;
 }
@@ -545,7 +575,7 @@ code {
 	cursor: pointer;
 	display: block;
 	width: 400px;
-	top: -90px;
+	top: -60px;
 	margin-bottom: -206px;
 	left: -100px;
 	position: relative;
@@ -601,7 +631,7 @@ code {
 }
 
 #descriptionMaple {
-	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/bgweb.png");
+	background-image: url("../../../images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -618,7 +648,7 @@ code {
 }
 
 #descriptionSyrup {
-	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/bgweb.png");
+	background-image: url("../../../images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -635,7 +665,7 @@ code {
 }
 
 #descriptionBarry{
-	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/bgweb.png");
+	background-image: url("../../../images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -652,7 +682,7 @@ code {
 }
 
 #descriptionBrie {
-	background-image: url("{{ comic_base_dir }}/your_content/images/castpage/bgweb.png");
+	background-image: url("../../../images/castpage/bgweb.png");
 	border-radius: 25px;
 	border: 10px solid #F9F4EE;
 	margin-left: -10px;
@@ -675,6 +705,80 @@ code {
 	margin-top: 10px;
 	margin-left: 5px;
 	margin-bottom: 10px;
+}
+
+.comicList h1 {
+	 font-family: 'YeenfontRegular' !important;
+}
+
+.comicList a {
+  text-decoration: none;
+}
+
+.comicList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.comic-item {
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+.comic-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.comic-item img {
+  display: block;
+  border-radius: 4px;
+  width: 250px;
+  margin: 0 auto;
+  transition: 0.2s ease;
+}
+
+.comic-item img:hover {
+	filter: brightness(1.2);
+}
+
+.comic-item h1 {
+  font-size: 1.5rem;
+  margin-top: 12px;
+  color: #4F614E;
+}
+
+.comicSectionOther {
+	font-family: 'YeenfontRegular';
+	font-size: 58px;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	color: #4F614E;
+}
+
+.comicSectionOther::before,
+.comicSectionOther::after {
+  content: "";
+  flex: 1;
+  border-bottom: 3px solid #4F614E;
+}
+
+.comicSectionOther::before {
+  margin-right: 20px;
+}
+
+.comicSectionOther::after {
+  margin-left: 20px;
 }
 
 .comics {
@@ -712,7 +816,7 @@ code {
 #mobile-header {
 	display: none;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	background-color: #47604B;
 	padding: 0 20px;
 	height: 60px;
@@ -733,7 +837,7 @@ code {
 
 .header-socials a:hover,
 .header-socials a:active {
-	color: #fff;
+	color: #F9F4EE;
 	filter: drop-shadow(0 0 5px #F35E36);
 }
 
@@ -749,26 +853,29 @@ code {
 	padding: 0;
 }
 
-.hamburger span {
-	display: block;
-	width: 100%;
-	height: 3px;
-	background-color: #fff;
-	border-radius: 3px;
-	transition: transform 0.3s ease, opacity 0.3s ease;
+.hamburger {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
-.hamburger.is-open span:nth-child(1) {
-	transform: translateY(9.5px) rotate(45deg);
+.hamburger .line {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.35s ease, opacity 0.2s ease;
 }
 
-.hamburger.is-open span:nth-child(2) {
-	opacity: 0;
-	transform: scaleX(0);
+/* Hamburger -> X */
+.hamburger.is-open .line-top {
+  transform: translateY(10px) rotate(45deg);
 }
-
-.hamburger.is-open span:nth-child(3) {
-	transform: translateY(-9.5px) rotate(-45deg);
+.hamburger.is-open .line-middle {
+  transform: scaleX(0);
+  opacity: 0;
+}
+.hamburger.is-open .line-bottom {
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 #menu-dropdown {
@@ -788,10 +895,10 @@ code {
 #links-bar-mobile a {
   color: white;
   text-decoration: none;
-  font-family: "Fredoka", sans-serif;
-  font-size: 2em;
+  font-family: "YeenfontRegular", sans-serif;
+  font-size: 35px;
   text-align: center;
-  padding: 15px 0;
+  padding: 9px 0 3px 0;
   background-color: #47604B;
   border-bottom: 1px solid rgba(255,255,255,0.2);
   border-radius: 0;
@@ -832,7 +939,7 @@ code {
   border: 10px solid #E0E7CD;
   text-align: left;
   max-width: 100%;
-  padding: 8px 15px 80px 15px;
+  padding: 8px 15px 40px 15px;
   justify-content: center;
   display: flex;
   margin: 0 auto;
@@ -841,6 +948,7 @@ code {
   align-items: center;
   flex-direction: column;
   position: relative;
+  margin-bottom: 300px;
 }
 
 .welcomeBanner {
@@ -858,21 +966,26 @@ code {
 .comicsLink {
   position: absolute;
   width: 390px;
-  top: 127px;
+  top: 173px;
   right: calc(59% + 0%);
 }
 
 .latestLink {
   position: absolute;
   width: 390px;
-  top: 127px;
-	left: calc(59% + 0%);
+  top: 173px;
+  left: calc(59% + 0%);
+}
+
+.comicsLinkMobile, .latestLinkMobile {
+	display: none;
+	position: absolute;
 }
 
 .ageRange {
   position: absolute;
   width: 110px;
-  top: 187px;
+  top: 223px;
 }
 
 .aboutOne {
@@ -907,9 +1020,19 @@ code {
   margin-bottom: 8px;
 }
 
-.patreonButton, .patreonButtonHover {
-  width: 80%;
-  margin-top: 10px;
+#mobile-header {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#mobile-header .menuMobile {
+  font-family: 'YeenfontRegular';
+  margin-bottom: 16px;
+  color: #F9F4EE;
+}
+
+#mobile-header.is-open {
+  background-color: #6F855E;
 }
 
 .yeen {
@@ -924,8 +1047,6 @@ code {
 	display: none;
 }
 
-.latestLink:hover {}
-
 @media only screen and (max-width: 900px) {
 
 body {
@@ -938,12 +1059,23 @@ body {
 	padding: 0px;
 	margin: 0px;
 	background-color: #FFFFED;
+	overflow-x: hidden;
+	border-radius: 0px;
 }
 
 #banner {
 	width: 100%;
 	margin-bottom: -5px;
 	background-color: #47604B;
+	border-radius: 0;
+}
+
+#post-title {
+  font-size: 22px;
+}
+
+#banner-img {
+  margin-top: 0px;
 }
 
 .navigation-button-disabled img, .navigation-button img {
@@ -961,6 +1093,15 @@ body {
 	border: none;
 	margin: 0;
 	border-radius: 0;
+}
+
+.comicSectionOther {
+    justify-content: center;
+  }
+
+.comicSectionOther::before,
+.comicSectionOther::after {
+display: none;
 }
 
 .bulletinBoard {
@@ -1037,6 +1178,22 @@ body {
     height: auto;
     top: 72%;
     left: 30%;
+}
+
+#blurbQuestMobile {
+	display: inline-block;
+  text-align: left;
+  max-width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 15px 10px 15px;
+  background-color: #E0E7CD;
+  border-radius: 25px;
+  border: 10px solid #E0E7CD;
+  margin-top: 10px;
+}
+
+#blurbQuest {
+	display: none;
 }
 
 #secretMapleMobile {
@@ -1185,6 +1342,12 @@ body {
 	display: none;
 }
 
+.patreonButtonComic {
+	margin-top: -20px !important;
+	margin-bottom: -40px !important;
+	width: 80% !important;
+}
+
 .close-btn {
 	position: fixed;
 	bottom: 0;
@@ -1199,6 +1362,18 @@ body {
     cursor: pointer;
     font-family: "Fredoka", sans-serif;
 	display: block;
+}
+
+.welcomeTextTwo {
+	padding-bottom: 10px;
+}
+
+.welcomeText {
+	font-size: 13px;
+}
+
+.aboutText {
+	font-size: 13px;
 }
 
 .infinite-page-image {
@@ -1329,8 +1504,9 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
 
 .welcomeOne {
 	width: 90%;
-    padding: 8px 15px 26px 15px;
+    padding: 8px 15px 16px 15px;
     box-sizing: border-box;
+	margin-bottom: 50%;
 }
 
 .welcomeBanner {
@@ -1338,21 +1514,29 @@ body:has(#descriptionMapleMobile:not([style*="visibility: hidden"])),
   margin-top: 10px;
 }
 
-.comicsLink {
+.comicsLink, .latestLink {
+	display: none !important;
+}
+
+.comicsLinkMobile {
 	width: 64%;
     top: 83%;
 	right: calc(52% + 0%);
+	display: block;
+	position: absolute;
 }
 
-.latestLink {
+.latestLinkMobile {
 	width: 64%;
     top: 83%;
 	left: calc(52% + 0%);
+	display: block;
+	position: absolute;
 }
 
 .ageRange {
-	width: 23%;
-    top: 87%;
+	width: 17%;
+    top: 93%;
 }
 
 .aboutOne {

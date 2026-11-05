@@ -27,19 +27,19 @@
         {% if _on_comic_click == "overlay" %}
         <a id="click-for-overlay">
         {% elif _on_comic_click == "open image" %}
-        <a id="open-image" href="/{{ comic_path }}">
+        <a id="open-image" href="{{ base_dir }}/{{ comic_path }}">
         {% elif _on_comic_click == "open image window" %}
-        <a id="open-image-window" href="/{{ comic_path }}" target="_blank">
+        <a id="open-image-window" href="{{ base_dir }}/{{ comic_path }}" target="_blank">
         {% else %}
         <a href="{{ comic_base_dir }}/comic/{{ next_id }}/#comic-page">
         {% endif %}
-            <img class="comic-image" src="/{{ comic_path }}" title="{{ escaped_alt_text }}"/>
+            <img class="comic-image" src="{{ base_dir }}/{{ comic_path }}" title="{{ escaped_alt_text }}"/>
         </a>
         {%- endfor %}
     </div>
 
     <div id="comic-page-overlay" hidden>
-        <img id="comic-overlay-image" src="/{{ comic_paths[0] }}" title="{{ escaped_alt_text }}"/>
+        <img id="comic-overlay-image" src="{{ base_dir }}/{{ comic_paths[0] }}" title="{{ escaped_alt_text }}"/>
     </div>
     {% endif %}
 
@@ -50,8 +50,13 @@
     <div id="blurb">
 	<div style="display: flex; gap: 12px;">
 		<div>
-			<h1 id="post-title">{{ page_title }}</h1>
-			<h3 id="post-date">{{ _post_date }}</h3>
+			<div class="descriptionHeader">
+				<img src="{{ base_dir }}/your_content/images/meicon.png" class="icon">
+				<div class="post-title-group">
+					<h1 id="post-title">{{ page_title }}</h1>
+					<h3 id="post-date">{{ _post_date }}</h3>
+				</div>
+			</div>
 			<article id="post-body" style="color: #47604b;">
 				{{ post_html }}
 			</article>
@@ -60,7 +65,7 @@
             <div id="storyline">
                 {# `| replace(" ", "-")` takes the value in the variable, in this case `_storyline`, and replaces all
                    spaces with hyphens. This is important when building links to other parts of the site. #}
-            <a href="/archive/#archive-section-{{ _storyline | replace(" ", "-") }}">{{ _storyline }}</a>
+            <a href="{{ comic_base_dir }}/archive/#archive-section-{{ _storyline | replace(" ", "-") }}">{{ _storyline }}</a>
             </div>
         {%- endif %}
         {%- if _characters %}
@@ -72,18 +77,19 @@
             {%- for character in _characters %}
                 {# The `if not loop.last` block at the end of the next line means that the ", " string will be added
                    after every character link EXCEPT the last one. #}
-                <a href="/tagged/{{ character }}/">{{ character }}</a>{% if not loop.last %}, {% endif %}
+                <a href="{{ comic_base_dir }}/tagged/{{ character }}/">{{ character }}</a>{% if not loop.last %}, {% endif %}
             {%- endfor %}
             </div>
         {%- endif %}
         {%- if _tags %}
             <div id="tags">
             {%- for tag in _tags %}
-                <a class="tag-link" href="/tagged/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                <a class="tag-link" href="{{ comic_base_dir }}/tagged/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {%- endfor %}
             </div>
         {%- endif %}
 	</div>
+
         {#{% if transcripts %}
 		<details>
 			<summary>Click to view transcript</summary>
@@ -116,6 +122,7 @@
     </div>
 		</div>
 	</div>
+	<img src="{{ base_dir }}/your_content/images/adbannerMaple.png" style="width: 550px;margin-top: -30px;margin-bottom: -100px;cursor: pointer;" class="patreonButtonComic">
 
     {% if navigation_bar_below_blurb %}
     {% include "navigation_bar.tpl" %}
@@ -129,10 +136,60 @@
 {%- endblock %}
 {%- block script %}
 <script type="module">
-    import { init_overlay } from "/comic_git_engine/js/comic.js";
+    import { init_overlay } from "{{ base_dir }}/comic_git_engine/js/comic.js";
     init_overlay();
 {% if transcripts %}
-    import { init_transcript } from "/comic_git_engine/js/transcript.js";
+    import { init_transcript } from "{{ base_dir }}/comic_git_engine/js/transcript.js";
 {% endif %}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  (function() {
+    const patreonButtonCanvas = document.createElement('canvas');
+    const patreonButtonCtx = patreonButtonCanvas.getContext('2d');
+    const patreonButton = document.querySelector('.patreonButtonComic');
+    
+    if (!patreonButton) return;
+
+    function setupPatreonButtonCanvas(img) {
+      patreonButtonCanvas.width = img.naturalWidth;
+      patreonButtonCanvas.height = img.naturalHeight;
+      patreonButtonCtx.drawImage(img, 0, 0);
+    }
+    
+    patreonButton.onload = () => setupPatreonButtonCanvas(patreonButton);
+    if (patreonButton.complete) setupPatreonButtonCanvas(patreonButton);
+    
+    function isOverOpaque(e, img) {
+      const rect = img.getBoundingClientRect();
+      const scaleX = img.naturalWidth / rect.width;
+      const scaleY = img.naturalHeight / rect.height;
+      const x = (e.clientX - rect.left) * scaleX;
+      const y = (e.clientY - rect.top) * scaleY;
+      return patreonButtonCtx.getImageData(x, y, 1, 1).data[3] > 0;
+    }
+    
+    patreonButton.addEventListener('mousemove', (e) => {
+      if (isOverOpaque(e, patreonButton)) {
+        patreonButton.style.cursor = 'pointer';
+        patreonButton.classList.add('glow-hover');
+      } else {
+        patreonButton.style.cursor = 'default';
+        patreonButton.classList.remove('glow-hover');
+      }
+    });
+
+    patreonButton.addEventListener('mouseleave', () => {
+      patreonButton.style.cursor = 'default';
+      patreonButton.classList.remove('glow-hover');
+    });
+    
+    patreonButton.addEventListener('click', (e) => {
+      if (isOverOpaque(e, patreonButton)) {
+        window.open('https://www.patreon.com/cw/puppeypawbs', '_blank');
+      }
+    });
+  })();
+});
 </script>
 {%- endblock %}
